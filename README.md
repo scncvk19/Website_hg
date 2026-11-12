@@ -33,6 +33,23 @@ npm run start
 
 Ich pinne Next.js und React auf die bei Erstellung (12.11.2026) recherchierten stabilen Versionen. Next.js 16.4.6, React 19.3.1, TypeScript 5.9.3. Die lokale Abfrage des npm-Registrys im Arbeitscontainer scheiterte an der DNS-Auflösung; eine Installation und ein Build waren deshalb nicht möglich. Der tatsächliche Build und die Lockdatei stehen deshalb noch aus. Nach erfolgreichem npm install package-lock.json committen und weitere Installationen mit npm ci durchführen. Vor Veröffentlichung Abhängigkeiten auf Aktualität prüfen.
 
+## Lokale Vorschau mit Docker Desktop (Windows)
+
+Ich kann die Website alternativ in einem Linux-Container unter Docker Desktop mit WSL 2 betreiben. Git und ein laufendes, für den Firmen-PC freigegebenes Docker Desktop sind erforderlich; Node.js muss nicht unter Windows installiert werden.
+
+Im bereits geklonten Repository in PowerShell:
+
+```powershell
+git status
+git pull --ff-only
+docker compose up -d --build
+docker compose ps
+```
+
+Ich öffne anschließend http://localhost:3000. Der Port wird nur an 127.0.0.1 gebunden. Das Image website-hg:local wird lokal aus dem privaten Repository gebaut; das Basisimage node:22-bookworm-slim stammt von Docker Hub. Ich veröffentliche kein Firmenimage. Bei Problemen nutze ich `docker compose logs --tail=100 website`; zum Beenden `docker compose down`.
+
+Der Dockerfile baut Next.js und startet als nicht privilegierter Benutzer. Da noch keine package-lock.json vorhanden ist, verwendet der erste Build npm install; bei vorhandener Lockdatei wird npm ci verwendet. Der erste Docker-Build ist noch nicht getestet. Die produktive Firmenwebsite, DNS und bestehende Container bleiben unverändert. Docker Desktop muss für die geschäftliche Nutzung freigegeben sein.
+
 ## Struktur
 
 ```text
