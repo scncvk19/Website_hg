@@ -33,7 +33,7 @@
 .footerBottom nav{display:flex;flex-wrap:wrap;gap:18px}
 .footerBottom a{color:var(--navy)}
 @media(max-width:1180px){.header :global(.header-cta){display:none}}
-@media(max-width:1020px){
+@media(max-width:1120px){
  .header :global(.desktop-nav),.desktopSocial{display:none}
  .header :global(.mobile-nav){display:block;position:relative}
  .header :global(.header-inner){flex-wrap:wrap;justify-content:flex-end;gap:8px}
