@@ -22,7 +22,8 @@ Stand: 12.11.2026 · Interner Entwurf
 | Hochgeladene transparente PNG lokal in Header und Footer (DE/EN) einbinden; externe Logoquelle entfernen | ✅ |
 | Favicon aus Firmenlogo für Deutsch und Englisch einbinden | ✅ |
 | Partner-, Technologie- und Qualifikationsübersicht mit lokalen Icons (DE/EN) auf Startseite und Über-uns-Seite ergänzen | ✅ |
-| Aktuelle Azure-/ITIL-Zertifikatstitel, Dell-Partnerstatus, weitere historische Nachweise und Nutzungsrechte offizieller Logos intern bestätigen | ⬜ |
+| Öffentliche Zertifikatsseite erneut abgleichen; zweisprachiges Archiv mit elf Nachweisen und historischem EMC-Abzeichen erstellen | ✅ |
+| Originaldateien für Azure, ITIL und Dell-Partnerstatus erhalten, konkrete Titel und Gültigkeit prüfen sowie freigegebene Zertifikatsbilder lokal einbinden | ⬜ |
 | Darstellung und Kontrast von Logo, Favicon und Referenzkarten im Browser prüfen; Corporate Design, Teamfotos, Kundenreferenzen und Nutzungsrechte bestätigen | ⬜ |
 | Unternehmensdaten, Registerangaben und Datenschutzerklärung vervollständigen und fachlich freigeben | ⬜ |
 | Tatsächliche Leistungen, kostenloses Erstgespräch, Schulungsformate und Betreuungspakete durch Geschäftsleitung freigeben | ⬜ |

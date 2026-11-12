@@ -29,7 +29,7 @@ export function Footer({ lang = "de" }: { lang?: Language }) {
   return <footer className="footer"><div className="container"><div className="footer-grid">
     <div><Brand lang={lang}/><p>{t.tagline}<br/>{t.region}</p></div>
     <div><h2>{t.nav[0]}</h2>{items.map(s=><Link key={s.slug} href={routes.services[lang]+"/"+s.slug}>{s.title}</Link>)}</div>
-    <div><h2>{t.company}</h2><Link href={routes.about[lang]}>{t.nav[1]}</Link><Link href={routes.guide[lang]}>{t.guide}</Link><Link href={routes.contact[lang]}>{t.nav[3]}</Link><Link href={routes.contact[lang]+"#support"}>{t.customers}</Link><a href={company.linkedin} rel="noopener noreferrer">LinkedIn</a></div>
+    <div><h2>{t.company}</h2><Link href={routes.about[lang]}>{t.nav[1]}</Link><Link href={routes.certificates[lang]}>{lang==="de"?"Zertifikate":"Certificates"}</Link><Link href={routes.guide[lang]}>{t.guide}</Link><Link href={routes.contact[lang]}>{t.nav[3]}</Link><Link href={routes.contact[lang]+"#support"}>{t.customers}</Link><a href={company.linkedin} rel="noopener noreferrer">LinkedIn</a></div>
     <div><h2>{t.nav[3]}</h2><address>{company.name}<br/>{company.street}<br/>{company.city}</address><a href={"tel:"+company.tel}>{company.phone}</a><a href={"mailto:"+company.email}>{company.email}</a></div>
   </div><div className="footer-bottom"><span>© {new Date().getFullYear()} HG-Systeme e.K. · {t.draft}</span><div><Link href={routes.legal[lang]}>{t.legal}</Link><Link href={routes.privacy[lang]}>{t.privacy}</Link></div></div></div></footer>;
 }

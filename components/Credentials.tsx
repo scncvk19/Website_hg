@@ -23,7 +23,8 @@ export default function Credentials({ lang, detailed = false }: { lang: Language
         <span className="credential-source">{t[item.evidence]}</span>
       </article>)}</div>
     </div>)}
-    {detailed?<div className="credential-history"><h3>{t.historyTitle}</h3><p>{t.history}</p></div>:<Link className="text-link" href={routes.about[lang]+"#qualifications"}>{t.more} <Icon name="arrow"/></Link>}
+    {detailed&&<div className="credential-history"><h3>{t.historyTitle}</h3><p>{t.history}</p></div>}
+    <Link className="text-link" href={routes.certificates[lang]}>{lang==="de"?"Zertifikate und Nachweise ansehen":"View certificates and credentials"} <Icon name="arrow"/></Link>
     <p className="credential-note small muted">{t.notice}</p>
   </div></section>;
 }

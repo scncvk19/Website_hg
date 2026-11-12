@@ -3,6 +3,7 @@ export const routes = {
   home: { de: "/", en: "/en" },
   services: { de: "/leistungen", en: "/en/services" },
   about: { de: "/ueber-uns", en: "/en/about" },
+  certificates: { de: "/zertifikate", en: "/en/certificates" },
   guide: { de: "/ratgeber", en: "/en/guide" },
   contact: { de: "/kontakt", en: "/en/contact" },
   legal: { de: "/impressum", en: "/en/legal" },
