@@ -20,6 +20,7 @@ const paths: Record<string, ReactNode> = {
   workflow: <><rect x="2" y="3" width="7" height="6" rx="1"/><rect x="15" y="15" width="7" height="6" rx="1"/><path d="M9 6h8a3 3 0 0 1 3 3v6M15 18H7a3 3 0 0 1-3-3V9"/><path d="m17 12 3 3 3-3"/></>,
   search: <><circle cx="10" cy="10" r="6"/><path d="m14.5 14.5 6 6"/></>,
   activity: <path d="M2 12h5l3-8 4 16 3-8h5"/>,
+  "chevron-down": <path d="m6 9 6 6 6-6"/>,
   menu: <path d="M4 6h16M4 12h16M4 18h16"/>
 };
 export default function Icon({ name, className = "" }: { name: string; className?: string }) {

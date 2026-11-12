@@ -4,8 +4,8 @@ Interner Entwurf für einen neuen Firmenauftritt von HG-Systeme e.K., Eberbach. 
 
 ## Was enthalten ist
 
-- Startseite mit regionaler Positionierung, Leistungsübersicht und Sicherheitscheck als Einstieg.
-- Sechs eigene Leistungsseiten: IT-Betreuung, Sicherheitscheck, Backup, Firewall/Netzwerk, Schulungen und Green IT.
+- Startseite mit regionaler Positionierung, verlinktem IT-Konzept und fünfstufigem Neukundenmodell.
+- Sieben eigene Leistungsseiten: IT-Betreuung, Sicherheitscheck, Backup, Firewall/Netzwerk, Schulungen, Green IT und Automatisierung.
 - Über uns mit öffentlich beschriebener Branchenerfahrung (Medizin, Automobil, Industrie).
 - Ratgeber, FAQ und getrennte Kontaktwege für Interessenten und Bestandskunden.
 - Responsive Navigation, mobile Kartenlayouts, lokale SVG-Illustration und Fokusmarkierungen.
@@ -50,21 +50,49 @@ Ich öffne anschließend http://localhost:3000. Der Port wird nur an 127.0.0.1 g
 
 Der Dockerfile baut Next.js und startet als nicht privilegierter Benutzer. Da noch keine package-lock.json vorhanden ist, verwendet der erste Build npm install; bei vorhandener Lockdatei wird npm ci verwendet. Der erste Docker-Build ist noch nicht getestet. Die produktive Firmenwebsite, DNS und bestehende Container bleiben unverändert. Docker Desktop muss für die geschäftliche Nutzung freigegeben sein.
 
-## Struktur
+## Struktur und Inhaltspflege
 
-```text
-app/                   Next.js App Router, Seiten und globales CSS
-app/leistungen/[slug]/  Statisch erzeugte Leistungsdetailseiten
-components/            Navigation, Footer, Karten und SVG-Icons
-lib/content.ts         Unternehmensdaten, Leistungen und FAQ
-public/images/branding/ Firmenlogo als transparente PNG
-public/images/branding/hg-systeme-favicon.png  Favicon aus Firmenlogo
-TODO.md                Aufgaben und Freigaben
-```
+Ich pflege die Texte in den vorhandenen Dateien. Deutsch und Englisch bleiben getrennt, gemeinsame Firmenangaben und Komponenten verwende ich nur einmal.
+
+| Inhalt | Datei / Verzeichnis |
+|---|---|
+| Firmenname, Anschrift, Telefon, E-Mail, LinkedIn | `lib/content.ts` → `company` |
+| GitHub, Instagram, LinkedIn | `lib/social.ts` → `socialProfiles`; LinkedIn übernimmt `company.linkedin` |
+| Deutsche Leistungen, Leistungsumfang, FAQ | `lib/content.ts` → `services`, `faqs` |
+| Englische Leistungen und FAQ | `lib/content-en.ts` → `servicesEn`, `faqsEn` |
+| Startseite, Überschrift, Einleitung, Branchenleiste | `app/(de)/page.tsx`, `app/(en)/en/page.tsx` |
+| Branchen und Unternehmensbeschreibung | `app/(de)/ueber-uns/page.tsx`, `app/(en)/en/about/page.tsx` |
+| Leistungsübersichten und Detailseiten | `app/(de)/leistungen/`, `app/(en)/en/services/`; Inhalte zentral in den Leistungsdateien |
+| IT-Konzept und sechs verlinkte Bereiche | `components/ITConcept.tsx` |
+| Neukundenmodell und fünf Prozessstufen | `components/ITApproach.tsx` |
+| Zertifikate, Partner, Herstellerlinks und historische Nachweise | `lib/credentials.ts` |
+| Darstellung der Qualifikationen | `components/Credentials.tsx`, `FeaturedCertificates.tsx`, `TechnologyPartners.tsx`, `CertificatesPage.tsx`, `BrandMark.tsx` |
+| Navigation, Footer, Slogan, Kontaktbanner | `components/Site.tsx` → `copy`, `Header`, `Footer`, `ContactBand` |
+| Social-Media-Icons | `components/SocialLinks.tsx` |
+| Kontaktseite, Formular- und Bestätigungstexte | `components/ContactPage.tsx`, `ContactForm.tsx`, `ContactThanks.tsx` |
+| Ratgeber | `app/(de)/ratgeber/page.tsx`, `app/(en)/en/guide/page.tsx`; FAQ in `lib/content*.ts` |
+| Impressum | `app/(de)/impressum/page.tsx`, `app/(en)/en/legal/page.tsx` |
+| Datenschutz | `app/(de)/datenschutz/page.tsx`, `app/(en)/en/privacy/page.tsx` |
+| Sprachen und URL-Paare | `lib/locale.ts`, `components/LanguageSwitch.tsx` |
+| Firmenlogo und Favicon | `public/images/branding/`; Metadaten in `app/(de)/layout.tsx`, `app/(en)/layout.tsx` |
+| Herstellerlogos | `public/images/partners/`; Zuordnung in `components/BrandMark.tsx` |
+| Farben, Schrift und Abstände | `app/globals.css` (CSS-Variablen in `:root`) |
+| Navigation, Social Media und Footer-Design | `components/navigation.module.css` |
+| Grafiken und Qualifikationsdesign | `components/it-concept.module.css`, `components/credentials.module.css` |
+| Docker und lokale Konfiguration | `Dockerfile`, `compose.yaml`, `.env.example`; echte Werte nur in lokaler `.env` |
+| Aufgaben und Freigaben | `TODO.md`, `OFFENE-FRAGEN.md` |
+
+### Beispiel: Firmenprofile ändern
+
+In `lib/social.ts` trage ich bei GitHub und Instagram die vollständige HTTPS-Adresse des freigegebenen HG-Systeme-Firmenprofils ein. LinkedIn wird über `company.linkedin` gepflegt. Leere URLs werden nicht angezeigt. Header, mobiles Menü, Footer und Kontaktseite verwenden dieselbe zentrale Liste. Ich verlinke keine privaten Accounts oder Repositories als Firmenprofile.
+
+### Änderungen prüfen und übernehmen
+
+Ich ändere beide Sprachfassungen, prüfe mit `git diff`, baue die lokale Vorschau mit `docker compose up -d --build` neu und kontrolliere die betroffenen Seiten im Browser. Bei Slug-Änderungen aktualisiere ich auch `lib/locale.ts` und plane gegebenenfalls Weiterleitungen. Keine Zugangsdaten oder internen Kundendaten einchecken.
 
 ## Design und Inhalte
 
-Nach der ersten Designrückmeldung verwende ich Blau, Marineblau und helle Hintergründe. Die Startseite hat einen hellen Einstieg, dunklere Fließtexte und kontrastreiche Buttons. Die wichtigsten Text-Farb-Paare wurden rechnerisch geprüft (6,2:1 bis 15,3:1); eine vollständige Browser- und Barrierefreiheitsprüfung steht aus. Ich verwende die hochgeladene transparente PNG-Datei unverändert unter `public/images/branding/hg-systeme-logo.png` für Header und Footer auf allen Seiten (DE/EN). Die externe LinkedIn-Bildquelle entfällt. Das Logo wird unverzerrt dargestellt; im dunklen Footer erhöhe ich die Helligkeit nur per CSS für die Lesbarkeit. Ich verwende auch ein 64×64-PNG-Favicon aus dem Firmenlogo; die endgültige Markenfreigabe bleibt offen. Ich bestätige Corporate Design, Fotos, Bildrechte, aktuelle Teamangaben und Referenzen. Keine fremden Logos oder erfundenen Kundenstimmen.
+Nach der ersten Designrückmeldung verwende ich Blau, Marineblau und helle Hintergründe. Die Startseite hat einen hellen Einstieg, dunklere Fließtexte und kontrastreiche Buttons. Die wichtigsten Text-Farb-Paare wurden rechnerisch geprüft (6,2:1 bis 15,3:1); eine vollständige Browser- und Barrierefreiheitsprüfung steht aus. Ich verwende die hochgeladene transparente PNG-Datei unverändert unter `public/images/branding/hg-systeme-logo.png` für Header und Footer auf allen Seiten (DE/EN). Die externe LinkedIn-Bildquelle entfällt. Das Logo wird unverzerrt dargestellt. Der helle Footer verwendet das transparente Logo ohne Helligkeitsfilter. Ich verwende auch ein 64×64-PNG-Favicon aus dem Firmenlogo; die endgültige Markenfreigabe bleibt offen. Ich bestätige Corporate Design, Fotos, Bildrechte, aktuelle Teamangaben und Referenzen. Keine fremden Logos oder erfundenen Kundenstimmen.
 
 Die Inhalte basieren auf unserem [Wachstumskonzept](https://github.com/scncvk19/Startegie), insbesondere der Website-Analyse und den Dienstleistungsentwürfen. Ungeprüfte Preise, SLA, Registerangaben und neue Referenzen werden nicht behauptet. Die veröffentlichten Kontaktdaten der bestehenden [Impressumsseite](https://www.hg-systeme.de/IMPRESSUM/) dienen als Referenz und müssen vor Veröffentlichung bestätigt werden. Kostenlose Erstgespräche, konkrete neue Pakete und Workshopformate sind noch nicht freigegeben.
 
@@ -126,3 +154,8 @@ Der alternative WatchGuard-Import war erfolgreich (Commit 5ac780c). Microsoft, P
 Ich habe die bestehende IT-Konzept-Grafik in einer gemeinsamen DE/EN-Komponente erweitert. Sechs verlinkte Leistungsbereiche führen direkt zu Backup, Netzwerk, Sicherheit, Support, Awareness und Automatisierung. Die neue Stufenpyramide auf beiden Startseiten erklärt die Arbeitsweise vom Erfassen der Architektur über Risikobewertung und Abhärtung bis zu Prozessoptimierung und laufendem Betrieb. Die fünf Schritte sind im Quelltext chronologisch, visuell vom Fundament nach oben angeordnet; auf kleinen Geräten erscheinen gleich breite Stufen. Sie ersetzt den bisherigen wiederholten Sicherheitscheck-Block und verweist weiter auf die bestehende Sicherheitscheck-Seite. Änderungen erfolgen nach Vereinbarung, mit geeigneter Sicherung und Prüfung. 
 
 Für Industrie habe ich Datenerfassung, Datenverarbeitung, Schnittstellen und softwarebasierte Prozesssteuerung konkretisiert. Die siebte Leistungsseite `/leistungen/automatisierung` bzw. `/en/services/automation` ist über die vorhandene zentrale Leistungsstruktur, die Startseite, den Footer und die Sprachauswahl erreichbar. Ich grenze Produktionsanlagen, SPS und sicherheitskritische Steuerungen bewusst ab: kein pauschales OT-Angebot oder Eingriff ohne separate fachliche Prüfung und Freigabe. Die neuen Inhalte sind interne Angebotsentwürfe und werden vor Veröffentlichung fachlich bestätigt. Die Grafiken sind lokale React-/CSS-Komponenten, keine Bilder oder externen Bibliotheken. Build und Browserdarstellung sind noch zu prüfen.
+
+
+### Navigation und kompakter Footer
+
+Nach dem Vorbild meiner OWA-Labs-Website verwende ich kleine lokale SVG-Social-Icons im Desktop-Header, im mobilen Menü, auf der Kontaktseite und im Footer. Das bestätigte HG-Systeme-LinkedIn-Profil ist aktiv. GitHub und Instagram bleiben bis zur Bestätigung der öffentlichen Firmenprofile ausgeblendet. Keine privaten OWA-Labs-Adressen, Platzhalterlinks, Social-Media-Embeds oder Tracking-Skripte. Der helle Footer zeigt Logo, Slogan, Telefon und Social-Links; Leistungen, Unternehmen und Kontakt sind standardmäßig geschlossene native details-Elemente. Impressum und Datenschutz bleiben direkt sichtbar. Die responsive Darstellung und Bedienung sind noch im Browser zu prüfen.

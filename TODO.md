@@ -11,6 +11,11 @@ Stand: 12.11.2026 · Interner Entwurf
 | IT-Konzept mit sechs verlinkten Themen und Neukunden-Stufenpyramide DE/EN umsetzen | ✅ |
 | Automatisierungsumfang und Vorgehensmodell fachlich freigeben; Pyramide, Links und mobile Darstellung prüfen | ⬜ |
 | Responsive CSS, mobile Navigation, Tastatur-Fokus und lokale Icons implementiert | ✅ |
+| Social-Media-Links zentral vorbereiten; Firmen-LinkedIn mit lokalen Icons einbinden | ✅ |
+| Footer mit geschlossenen, ausklappbaren Bereichen und sichtbaren Rechtslinks vereinfachen | ✅ |
+| Verzeichnis- und Inhaltspflege in README dokumentieren | ✅ |
+| Offizielle HG-Systeme-GitHub- und Instagram-URLs in lib/social.ts eintragen | ⬜ |
+| Neue Navigation, Social-Links und Footer in beiden Sprachen im Browser prüfen | ⬜ |
 | Keine externen Tracker; Entwurfskennzeichnung und Noindex eingerichtet | ✅ |
 | Quellcode im Repository bereitstellen; GitHub-Dateiliste und statische Linkziele prüfen | ✅ |
 | Dockerfile, Compose und Docker-Anleitung für lokale Windows-Vorschau erstellen | ✅ |

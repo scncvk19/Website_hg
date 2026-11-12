@@ -1,0 +1,48 @@
+/* Navigation, Social Media und kompakter Footer. */
+.header :global(.header-inner){gap:clamp(10px,1.5vw,20px)}
+.header :global(.desktop-nav){gap:clamp(12px,1.5vw,20px)}
+.header :global(.official-logo){width:180px}
+.desktopSocial{flex-shrink:0}
+.socialLinks{display:flex;align-items:center;gap:4px;flex-wrap:wrap;color:var(--navy)}
+.socialLinks a{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:7px;min-width:36px;min-height:36px;border-radius:6px;color:inherit;line-height:1.3}
+.socialLinks a:hover{background:#e8f1fb;color:var(--teal)}
+.labeledSocial{gap:6px}
+.labeledSocial a{font-size:.86rem;font-weight:600}
+.mobileSocial{border-top:1px solid var(--line);padding-top:6px;margin-top:5px}
+.mobileSocial .socialLinks{flex-direction:column;align-items:stretch}
+.mobileSocial .socialLinks a{display:flex;justify-content:flex-start}
+.footer{background:#f8fafc;color:var(--muted);border-top:1px solid var(--line);padding:32px 0 19px}
+.footerIntro{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding-bottom:24px}
+.footerBrand{display:flex;flex-direction:column;align-items:flex-start;gap:5px}
+.footerBrand :global(.official-logo){width:160px;filter:none}
+.footerBrand p{font-size:.86rem;line-height:1.55;margin:0;color:var(--muted)}
+.footerQuick{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.quickPhone{display:inline-flex;gap:7px;align-items:center;font-size:.9rem;font-weight:650;color:var(--navy);white-space:nowrap}
+.quickPhone svg{width:17px;height:17px}
+.quickPhone:hover{color:var(--teal)}
+.footerGroups{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.footerGroup{min-width:0}
+.footerGroup summary{display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer;list-style:none;font-size:.94rem;font-weight:680;color:var(--navy);padding:15px 0;min-height:48px}
+.footerGroup summary::-webkit-details-marker{display:none}
+.footerGroup summary svg{width:17px;height:17px;color:var(--muted);transition:transform .15s ease}
+.footerGroup[open] summary svg{transform:rotate(180deg)}
+.footerLinks{display:flex;flex-direction:column;gap:8px;padding:0 0 16px;font-size:.88rem;line-height:1.55;overflow-wrap:anywhere}
+.footerLinks a:hover,.footerBottom a:hover{text-decoration:underline;text-underline-offset:3px;color:var(--teal)}
+.footerLinks address{font-size:.88rem;line-height:1.6}
+.footerBottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:18px;font-size:.78rem;color:var(--muted)}
+.footerBottom nav{display:flex;flex-wrap:wrap;gap:18px}
+.footerBottom a{color:var(--navy)}
+@media(max-width:1180px){.header :global(.header-cta){display:none}}
+@media(max-width:1020px){
+ .header :global(.desktop-nav),.desktopSocial{display:none}
+ .header :global(.mobile-nav){display:block;position:relative}
+ .header :global(.header-inner){flex-wrap:wrap;justify-content:flex-end;gap:8px}
+ .header :global(.brand){margin-right:auto}
+ .header :global(.mobile-nav summary){list-style:none;display:flex;align-items:center;gap:6px;font-weight:650;font-size:.85rem;cursor:pointer;padding:9px;border:1px solid var(--line);border-radius:8px}
+ .header :global(.mobile-nav nav){position:absolute;right:0;top:calc(100% + 10px);width:min(280px,calc(100vw - 32px));background:white;border:1px solid var(--line);box-shadow:var(--shadow);border-radius:12px;padding:8px}
+ .header :global(.mobile-nav nav>a){display:block;padding:12px 10px;border-radius:7px;font-weight:600;font-size:.9rem}
+ .header :global(.mobile-nav nav>a:hover){background:var(--paper)}
+}
+@media(max-width:740px){.footerGroups{grid-template-columns:minmax(0,1fr);gap:0}.footerGroup+.footerGroup{border-top:1px solid var(--line)}.footerIntro{align-items:flex-start}.footerQuick{gap:9px}.footerBottom{align-items:flex-start}.header :global(.official-logo){width:155px}}
+@media(max-width:480px){.header :global(.official-logo){width:120px;max-width:100%}.footer{padding-top:24px}.footerBrand :global(.official-logo){width:145px}}
+@media(max-width:350px){.header :global(.official-logo){width:105px}.header :global(.mobile-nav summary){padding:7px}.footerQuick{width:100%}}

@@ -4,6 +4,8 @@ import { servicesEn } from "@/lib/content-en";
 import { routes, type Language } from "@/lib/locale";
 import Icon from "@/components/Icon";
 import LanguageSwitch from "@/components/LanguageSwitch";
+import SocialLinks from "@/components/SocialLinks";
+import styles from "./navigation.module.css";
 
 // Lokales Firmenlogo für beide Sprachen und alle Seiten.
 const logoUrl = "/images/branding/hg-systeme-logo.png";
@@ -17,21 +19,49 @@ export function Brand({ lang = "de" }: { lang?: Language }) {
 }
 export function Header({ lang = "de" }: { lang?: Language }) {
   const t = copy[lang];
-  return <><div className="preview-bar">{t.preview}</div><header className="site-header"><div className="container header-inner"><Brand lang={lang}/>
+  return <><div className="preview-bar">{t.preview}</div><header className={"site-header "+styles.header}><div className="container header-inner"><Brand lang={lang}/>
     <nav className="desktop-nav" aria-label={t.navigation}>{navRoutes.map((r,i)=><Link key={r[lang]} href={r[lang]}>{t.nav[i]}</Link>)}</nav>
+    <div className={styles.desktopSocial}><SocialLinks lang={lang}/></div>
     <Link className="button button-small header-cta" href={routes.contact[lang]}>{t.consultation}<Icon name="arrow"/></Link>
     <LanguageSwitch lang={lang}/>
-    <details className="mobile-nav"><summary aria-label={t.open}><Icon name="menu"/> {t.menu}</summary><nav aria-label={t.mobile}>{navRoutes.map((r,i)=><Link key={r[lang]} href={r[lang]}>{t.nav[i]}</Link>)}<Link href={routes.contact[lang]+"#support"}>{t.existing}</Link></nav></details>
+    <details className="mobile-nav"><summary aria-label={t.open}><Icon name="menu"/> {t.menu}</summary><nav aria-label={t.mobile}>{navRoutes.map((r,i)=><Link key={r[lang]} href={r[lang]}>{t.nav[i]}</Link>)}<Link href={routes.contact[lang]+"#support"}>{t.existing}</Link><div className={styles.mobileSocial}><SocialLinks lang={lang} labels/></div></nav></details>
   </div></header></>;
 }
 export function Footer({ lang = "de" }: { lang?: Language }) {
   const t=copy[lang], items=lang==="de"?services:servicesEn;
-  return <footer className="footer"><div className="container"><div className="footer-grid">
-    <div><Brand lang={lang}/><p>{t.tagline}<br/>{t.region}</p></div>
-    <div><h2>{t.nav[0]}</h2>{items.map(s=><Link key={s.slug} href={routes.services[lang]+"/"+s.slug}>{s.title}</Link>)}</div>
-    <div><h2>{t.company}</h2><Link href={routes.about[lang]}>{t.nav[1]}</Link><Link href={routes.certificates[lang]}>{lang==="de"?"Zertifikate":"Certificates"}</Link><Link href={routes.guide[lang]}>{t.guide}</Link><Link href={routes.contact[lang]}>{t.nav[3]}</Link><Link href={routes.contact[lang]+"#support"}>{t.customers}</Link><a href={company.linkedin} rel="noopener noreferrer">LinkedIn</a></div>
-    <div><h2>{t.nav[3]}</h2><address>{company.name}<br/>{company.street}<br/>{company.city}</address><a href={"tel:"+company.tel}>{company.phone}</a><a href={"mailto:"+company.email}>{company.email}</a></div>
-  </div><div className="footer-bottom"><span>© {new Date().getFullYear()} HG-Systeme e.K. · {t.draft}</span><div><Link href={routes.legal[lang]}>{t.legal}</Link><Link href={routes.privacy[lang]}>{t.privacy}</Link></div></div></div></footer>;
+  const de=lang==="de";
+  return <footer className={styles.footer}><div className="container">
+    <div className={styles.footerIntro}>
+      <div className={styles.footerBrand}><Brand lang={lang}/><p>{t.tagline}<br/>{t.region}</p></div>
+      <div className={styles.footerQuick}>
+        <a className={styles.quickPhone} href={"tel:"+company.tel}><Icon name="phone"/>{company.phone}</a>
+        <SocialLinks lang={lang}/>
+      </div>
+    </div>
+    <div className={styles.footerGroups}>
+      <details className={styles.footerGroup}>
+        <summary>{t.nav[0]}<Icon name="chevron-down"/></summary>
+        <div className={styles.footerLinks}>{items.map(s=><Link key={s.slug} href={routes.services[lang]+"/"+s.slug}>{s.title}</Link>)}</div>
+      </details>
+      <details className={styles.footerGroup}>
+        <summary>{t.company}<Icon name="chevron-down"/></summary>
+        <div className={styles.footerLinks}><Link href={routes.about[lang]}>{t.nav[1]}</Link><Link href={routes.certificates[lang]}>{de?"Partner & Qualifikationen":"Partners & qualifications"}</Link><Link href={routes.guide[lang]}>{t.guide}</Link></div>
+      </details>
+      <details className={styles.footerGroup}>
+        <summary>{t.nav[3]}<Icon name="chevron-down"/></summary>
+        <div className={styles.footerLinks}>
+          <address>{company.name}<br/>{company.street}<br/>{company.city}</address>
+          <a href={"mailto:"+company.email}>{company.email}</a>
+          <Link href={routes.contact[lang]}>{de?"Kontaktformular":"Contact form"}</Link>
+          <Link href={routes.contact[lang]+"#support"}>{t.customers}</Link>
+        </div>
+      </details>
+    </div>
+    <div className={styles.footerBottom}>
+      <span>© {new Date().getFullYear()} {company.name} · {t.draft}</span>
+      <nav aria-label={de?"Rechtliche Informationen":"Legal information"}><Link href={routes.legal[lang]}>{t.legal}</Link><Link href={routes.privacy[lang]}>{t.privacy}</Link></nav>
+    </div>
+  </div></footer>;
 }
 export function SectionHeading({ eyebrow, title, text }: { eyebrow: string; title: string; text?: string }) {
   return <div className="section-heading"><p className="eyebrow">{eyebrow}</p><h2>{title}</h2>{text&&<p className="muted">{text}</p>}</div>;

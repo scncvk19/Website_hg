@@ -1,5 +1,6 @@
 import { PageIntro } from "@/components/Site";
 import Icon from "@/components/Icon";
+import SocialLinks from "@/components/SocialLinks";
 import ContactForm from "@/components/ContactForm";
 import { company } from "@/lib/content";
 import type { Language } from "@/lib/locale";
@@ -16,6 +17,6 @@ export default function ContactPage({ lang }: { lang: Language }) {
     <ContactForm lang={lang} accessKey={key}/>
     <div id="support" className="notice"><h2>{t.existing}</h2><p>{t.support}</p><a className="text-link" href={"tel:"+company.tel}>{t.call}<Icon name="arrow"/></a></div>
   </div><aside className="detail-aside"><span className="icon-tile"><Icon name="pin"/></span><h2>{company.name}</h2><address>{company.street}<br/>{company.city}<br/>{t.country}</address><p>{t.region}</p>
-    <div className="contact-options"><a href={"tel:"+company.tel}><span className="icon-tile"><Icon name="phone"/></span><div><strong>{t.phone}</strong><span>{company.phone}</span></div></a><a href={"mailto:"+company.email+"?subject="+encodeURIComponent(t.subject)}><span className="icon-tile"><Icon name="mail"/></span><div><strong>{t.email}</strong><span>{company.email}</span></div></a></div><p className="small muted">{t.note}</p><a className="text-link" href={company.linkedin} rel="noopener noreferrer">{t.linkedin}<Icon name="arrow"/></a>
+    <div className="contact-options"><a href={"tel:"+company.tel}><span className="icon-tile"><Icon name="phone"/></span><div><strong>{t.phone}</strong><span>{company.phone}</span></div></a><a href={"mailto:"+company.email+"?subject="+encodeURIComponent(t.subject)}><span className="icon-tile"><Icon name="mail"/></span><div><strong>{t.email}</strong><span>{company.email}</span></div></a></div><p className="small muted">{t.note}</p><SocialLinks lang={lang} labels/>
   </aside></div></section></>;
 }
