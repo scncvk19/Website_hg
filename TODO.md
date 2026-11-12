@@ -9,7 +9,7 @@ Stand: 12.11.2026 · Interner Entwurf
 | Sechs Leistungsseiten, Startseite, Über uns, Ratgeber und Kontakt angelegt | ✅ |
 | Responsive CSS, mobile Navigation, Tastatur-Fokus und lokale Icons implementiert | ✅ |
 | Keine externen Tracker/Formulardienste; Entwurfskennzeichnung und Noindex eingerichtet | ✅ |
-| Quellcode im Repository bereitstellen | ✅ |
+| Quellcode im Repository bereitstellen; GitHub-Dateiliste und statische Linkziele prüfen | ✅ |
 | npm-Installation, Lockdatei, Typecheck und Produktionsbuild tatsächlich ausführen | 🔄 |
 | Browserprüfung Desktop, Smartphone und Querformat; Navigation, FAQ, Links und 404 prüfen | ⬜ |
 | Aktuelles Logo, Farben, Teamfotos, Referenzen und Nutzungsrechte intern bestätigen | ⬜ |
