@@ -21,6 +21,7 @@ export function Header({ lang = "de" }: { lang?: Language }) {
   const t = copy[lang];
   return <><div className="preview-bar">{t.preview}</div><header className={"site-header "+styles.header}><div className="container header-inner"><Brand lang={lang}/>
     <nav className="desktop-nav" aria-label={t.navigation}>{navRoutes.map((r,i)=><Link key={r[lang]} href={r[lang]}>{t.nav[i]}</Link>)}</nav>
+    <Link className={styles.mobileHome} href={routes.home[lang]}>{t.nav[0]}</Link>
     <div className={styles.desktopSocial}><SocialLinks lang={lang}/></div>
     <Link className="button button-small header-cta" href={routes.contact[lang]}>{t.consultation}<Icon name="arrow"/></Link>
     <LanguageSwitch lang={lang}/>
