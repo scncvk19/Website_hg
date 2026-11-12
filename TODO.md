@@ -17,7 +17,10 @@ Stand: 12.11.2026 · Interner Entwurf
 | Social-Media-Links zentral vorbereiten; Firmen-LinkedIn mit lokalen Icons einbinden | ✅ |
 | Footer mit geschlossenen, ausklappbaren Bereichen und sichtbaren Rechtslinks vereinfachen | ✅ |
 | Verzeichnis- und Inhaltspflege in README dokumentieren | ✅ |
-| Offizielle HG-Systeme-GitHub- und Instagram-URLs in lib/social.ts eintragen | ⬜ |
+| Offizielle HG-Systeme-GitHub- und Instagram-URLs in lib/social.ts eintragen | ✅ |
+| Navigation Willkommen/Welcome, zentrale E-Mail info@hg-systeme.de und aktualisierte Rechtsseiten DE/EN implementieren | ✅ |
+| Vorhandene Unternehmensangaben sowie alle Themen der bisherigen Datenschutzseite abgleichen; Google-Maps-Karte mit freiwilliger Aktivierung und externem Kartenlink einbinden | ✅ |
+| Karte, keine Google-Anfrage vor Aktivierung, neue Navigation, E-Mail und Social-Links auf beiden Sprachfassungen im Browser prüfen | ⬜ |
 | Neue Navigation, Social-Links und Footer in beiden Sprachen im Browser prüfen | ⬜ |
 | Keine externen Tracker; Entwurfskennzeichnung und Noindex eingerichtet | ✅ |
 | Quellcode im Repository bereitstellen; GitHub-Dateiliste und statische Linkziele prüfen | ✅ |
@@ -26,7 +29,7 @@ Stand: 12.11.2026 · Interner Entwurf
 | package-lock.json aus bestätigter Installation übernehmen und reproduzierbare Installation mit npm ci prüfen | ⬜ |
 | Deutsch/Englisch mit Sprachwechsel, lokalisierten Seiten, Leistungsbeschreibungen und FAQ implementieren | ✅ |
 | Kontaktformular mit Web3Forms, hCaptcha, festem Erfolgsziel und deaktiviertem Standardversand implementieren | ✅ |
-| Firmenpostfach und eigenen Web3Forms-Schlüssel festlegen; Anbieter/Datenschutz freigeben; Captcha serverseitig aktivieren | ⬜ |
+| Firmenpostfach info@hg-systeme.de für öffentliche Kontakte bestätigt; tatsächlichen Web3Forms-Empfänger und eigenen Schlüssel einrichten, Anbieter/Datenschutz freigeben, Captcha serverseitig aktivieren | ⬜ |
 | Beide Sprachfassungen, Sprachwechsel, Formular-Fehlerfälle und echte Testzustellung nach Freigabe prüfen | ⬜ |
 | Browserprüfung Desktop, Smartphone und Querformat; Navigation, FAQ, Links und 404 prüfen | ⬜ |
 | Farbkonzept auf Blau umstellen, wichtige Textkontraste rechnerisch prüfen und öffentliches Firmenlogo im Entwurf einbinden | ✅ |
@@ -44,7 +47,7 @@ Stand: 12.11.2026 · Interner Entwurf
 | Zertifikatsgültigkeit, Partnerstatus und Markenfreigaben prüfen | ⬜ |
 | Offene Freigaben und Entscheidungen in OFFENE-FRAGEN.md dokumentieren | ✅ |
 | Darstellung und Kontrast von Logo, Favicon und Referenzkarten im Browser prüfen; Corporate Design, Teamfotos, Kundenreferenzen und Nutzungsrechte bestätigen | ⬜ |
-| Unternehmensdaten, Registerangaben und Datenschutzerklärung vervollständigen und fachlich freigeben | ⬜ |
+| Übernommene Unternehmensdaten, fehlende Registerangaben und Datenschutzerklärung einschließlich Maps/Hosting/Formular fachlich vervollständigen und freigeben | ⬜ |
 | Tatsächliche Leistungen, kostenloses Erstgespräch, Schulungsformate und Betreuungspakete durch Geschäftsleitung freigeben | ⬜ |
 | Gegebenenfalls geschützte Vorschau über Vercel einrichten | ⬜ |
 | Produktionshosting, DNS, Migration, alte URLs/Weiterleitungen und Rückweg planen | ⬜ |
