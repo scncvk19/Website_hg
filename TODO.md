@@ -10,6 +10,8 @@ Stand: 12.11.2026 · Interner Entwurf
 | Responsive CSS, mobile Navigation, Tastatur-Fokus und lokale Icons implementiert | ✅ |
 | Keine externen Tracker/Formulardienste; Entwurfskennzeichnung und Noindex eingerichtet | ✅ |
 | Quellcode im Repository bereitstellen; GitHub-Dateiliste und statische Linkziele prüfen | ✅ |
+| Dockerfile, Compose und Docker-Anleitung für lokale Windows-Vorschau erstellen | ✅ |
+| Docker Desktop auf Firmen-PC prüfen; ersten Docker-Build und lokalen Seitenaufruf bestätigen | 🔄 |
 | npm-Installation, Lockdatei, Typecheck und Produktionsbuild tatsächlich ausführen | 🔄 |
 | Browserprüfung Desktop, Smartphone und Querformat; Navigation, FAQ, Links und 404 prüfen | ⬜ |
 | Farbkonzept auf Blau umstellen, wichtige Textkontraste rechnerisch prüfen und öffentliches Firmenlogo im Entwurf einbinden | ✅ |
@@ -22,4 +24,4 @@ Stand: 12.11.2026 · Interner Entwurf
 
 ## Nächster Schritt
 
-Ich prüfe das Projekt lokal mit npm install, npm run typecheck, npm run build und Browser-Tests. Das Arbeitsumfeld konnte das npm-Registry nicht auflösen; deshalb ist kein Build-Erfolg bestätigt. Danach bespreche ich Design, Firmenangaben, rechtliche Texte und konkrete Leistungen mit der Geschäftsleitung. Die bestehende Firmenwebsite bleibt bis zu einer späteren ausdrücklich genehmigten Umstellung unverändert.
+Ich prüfe das Projekt lokal bevorzugt mit Docker Desktop und docker compose up -d --build; alternativ mit npm install, npm run typecheck, npm run build. Danach folgen Browser-Tests. Das Arbeitsumfeld konnte das npm-Registry nicht auflösen; deshalb ist kein Build-Erfolg bestätigt. Danach bespreche ich Design, Firmenangaben, rechtliche Texte und konkrete Leistungen mit der Geschäftsleitung. Die bestehende Firmenwebsite bleibt bis zu einer späteren ausdrücklich genehmigten Umstellung unverändert.
