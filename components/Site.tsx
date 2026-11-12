@@ -2,12 +2,14 @@ import Link from "next/link";
 import { company, services } from "@/lib/content";
 import Icon from "@/components/Icon";
 
+// Vorläufige Bildquelle: öffentliches HG-Systeme-Unternehmensprofil. Vor Veröffentlichung durch freigegebene lokale Originaldatei ersetzen.
+const logoUrl = "https://media.licdn.com/dms/image/v2/C4E0BAQECcN-vw3kdCg/company-logo_200_200/company-logo_200_200/0/1660038328244/hg_systeme_e_k_logo?e=2147483647&t=Jmf5pOW-VHLtiCgVRzWtGSJDbv9GvDDKAUefrBLwVDg&v=beta";
+
 const navigation = [["Leistungen", "/leistungen"], ["Über uns", "/ueber-uns"], ["Ratgeber", "/ratgeber"], ["Kontakt", "/kontakt"]] as const;
 
 export function Brand() {
   return <Link href="/" className="brand" aria-label="HG-Systeme – Startseite">
-    <span className="brand-mark" aria-hidden="true">HG<span>.</span></span>
-    <span className="brand-word">HG-Systeme<small>IT · Sicherheit · Betreuung</small></span>
+    <img className="official-logo" src={logoUrl} alt="HG-Systeme" width={180} height={82} referrerPolicy="no-referrer" />
   </Link>;
 }
 export function Header() {
