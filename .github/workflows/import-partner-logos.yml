@@ -1,0 +1,30 @@
+name: Import partner logos
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/import-partner-logos.yml'
+permissions:
+  contents: write
+concurrency:
+  group: partner-logo-import
+  cancel-in-progress: false
+jobs:
+  import:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Import available logos
+        run: python3 scripts/import_partner_logos.py
+        continue-on-error: true
+      - name: Save validated files
+        run: |
+          git add -- public/images/partners
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Import local manufacturer logos"
+          git push origin HEAD:main

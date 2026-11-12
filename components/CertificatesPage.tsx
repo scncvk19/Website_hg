@@ -1,26 +1,19 @@
 import Link from "next/link";
-import CertificateImage from "@/components/CertificateImage";
 import FeaturedCertificates from "@/components/FeaturedCertificates";
-import { PageIntro, SectionHeading, ContactBand } from "@/components/Site";
-import { certificateRecords } from "@/lib/credentials";
-import { routes, type Language } from "@/lib/locale";
-
-const copy = {
-  de:{ title:"Zertifikate und Qualifikationen",intro:"Weiterbildung, technische Erfahrung und nachvollziehbare Nachweise gehören zu unserer Arbeit.", eyebrow:"Fachkompetenz", current:"Zertifizierungen", currentText:"Unsere benannten Qualifikationen in Azure-Administration und IT-Service-Management. Die persönliche Gültigkeit wird vor Veröffentlichung geprüft.", pending:"Originalnachweis ausstehend", archive:"Veröffentlichte Nachweise", archiveText:"Zertifikate, Schulungsnachweise und Partnerabzeichen aus unserer bisherigen Unternehmenswebsite. Die Jahresangaben dokumentieren den damaligen Stand.", year:"Dokumentiertes Jahr", source:"Originalseite ansehen", back:"Zur Unternehmensübersicht", notice:"Interner Entwurf: Abzeichen zeigen den Zertifikatstyp, nicht die persönliche Verifikation. Dell-Partnerstufe, Gültigkeit, personenbezogene Angaben und Nutzungsrechte vor Veröffentlichung prüfen." },
-  en:{ title:"Certificates and qualifications",intro:"Professional development, technical experience and verifiable records are part of our work.", eyebrow:"Technical expertise", current:"Certifications",currentText:"Our identified qualifications in Azure administration and IT service management. Individual validity will be verified before publication.",pending:"Original evidence pending",archive:"Published records",archiveText:"Certificates, training records and partner badges from our previous company website. The years document the historical status.",year:"Documented year",source:"View original page",back:"Back to company overview",notice:"Internal draft: Badges illustrate the credential type and do not verify individual credentials. Review Dell partner tier, validity, personal data and usage rights before publication." }
-} as const;
+import TechnologyPartners from "@/components/TechnologyPartners";
+import {PageIntro,ContactBand} from "@/components/Site";
+import {certificateRecords,brandLinks} from "@/lib/credentials";
+import {routes,type Language} from "@/lib/locale";
+import styles from "./credentials.module.css";
 export default function CertificatesPage({lang}:{lang:Language}){
-  const t=copy[lang];
-  return <><PageIntro eyebrow={t.eyebrow} title={t.title} text={t.intro}/>
-  <section className="section"><div className="container">
-    <Link className="back-link" href={routes.about[lang]+"#qualifications"}>← {t.back}</Link>
-    <SectionHeading eyebrow={t.eyebrow} title={t.current} text={t.currentText}/>
-    <FeaturedCertificates lang={lang}/>
-    <p className="credential-note small muted"><strong>Dell Technologies Partner</strong> · {lang==="de"?"Partnerstufe noch zu bestätigen":"Partner tier to be confirmed"}</p>
-    <p className="credential-note muted small">{t.notice}</p>
-  </div></section>
-  <section className="section section-soft"><div className="container">
-    <SectionHeading eyebrow={t.eyebrow} title={t.archive} text={t.archiveText}/>
-    <div className="credential-grid">{certificateRecords.map(item=><article className="credential-card" key={item.id}><CertificateImage id={item.id} alt={item.title+(item.year?" "+item.year:"")} icon={item.icon} kind="archive"/><h4>{item.title}{item.year?" · "+item.year:""}</h4><p>{item.description[lang]}</p>{item.year&&<p className="small">{t.year}: {item.year}</p>}</article>)}</div>
-  </div></section><ContactBand lang={lang}/></>;
+ const de=lang==="de";
+ return <><PageIntro eyebrow={de?"Fachkompetenz":"Expertise"} title={de?"Zertifikate & Qualifikationen":"Certificates & qualifications"} text={de?"Weiterbildung, technische Erfahrung und bewährte Technologielösungen.":"Professional development, technical experience and established technology solutions."}/>
+ <section className={"section "+styles.root}><div className="container">
+ <Link className="quiet-link" href={routes.about[lang]+"#qualifications"}>{de?"Zur Unternehmensübersicht":"Back to company overview"}</Link>
+ <div className="quiet-group"><h2>{de?"Zertifizierungen":"Certifications"}</h2><FeaturedCertificates lang={lang}/></div>
+ <div className="quiet-group"><h2>{de?"Technologien & Hersteller":"Technologies & vendors"}</h2><TechnologyPartners lang={lang}/></div>
+ <div className="quiet-group"><h2>{de?"Veröffentlichte Nachweise":"Published records"}</h2><p className="quiet-description">{de?"Die folgenden Nachweise dokumentieren frühere Schulungen und Herstellerqualifikationen. Jahresangaben beziehen sich auf den damaligen Stand und belegen keine aktuell gültige Zertifizierung.":"These records document earlier training and vendor qualifications. Dates describe the historical record, not current certification validity."}</p>
+ <div className="quiet-records">{certificateRecords.map(item=><div className="quiet-record" key={item.id}><div><strong>{brandLinks[item.id]?<a href={brandLinks[item.id]} target="_blank" rel="noopener noreferrer">{item.title}</a>:item.title}</strong>{item.year&&<span>{item.year}</span>}</div><p>{item.description[lang]}</p></div>)}</div></div>
+ <p className="quiet-description">{de?"ITIL® ist eine eingetragene Marke der PeopleCert-Gruppe. Herstellerlogos bezeichnen die jeweiligen Unternehmen.":"ITIL® is a registered trademark of the PeopleCert group. Vendor logos identify their respective companies."}</p>
+ </div></section><ContactBand lang={lang}/></>;
 }

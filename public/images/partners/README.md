@@ -1,0 +1,2 @@
+# Herstellerlogos
+Die lokal eingebundenen Herstellerlogos dienen der Identifikation, nicht als Zertifizierungsbeweis. Microsoft, Dell, WatchGuard und PeopleCert werden aus den dokumentierten Quellen importiert. G DATA Silver Partner: freigegebenes aktuelles Herstellerlogo aus dem Partnerportal als gdata.png ergänzen. Password Safe: freigegebenes Logo als passwordsafe.svg ergänzen. Ohne Datei erscheint der Herstellername. Vor Veröffentlichung Markenrechte und Partnerstatus prüfen.

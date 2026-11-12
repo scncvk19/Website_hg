@@ -1,0 +1,22 @@
+[
+  {
+    "id": "microsoft",
+    "path": "/images/partners/microsoft.svg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg"
+  },
+  {
+    "id": "dell",
+    "path": "/images/partners/dell.svg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Dell_Technologies_logo.svg"
+  },
+  {
+    "id": "watchguard",
+    "path": "/images/partners/watchguard.svg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Watchguard_logo.svg"
+  },
+  {
+    "id": "peoplecert",
+    "path": "/images/partners/peoplecert.svg",
+    "url": "https://cdn.brandfetch.io/id5JrIexGs/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1790897989037"
+  }
+]

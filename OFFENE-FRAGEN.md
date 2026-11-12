@@ -7,7 +7,7 @@ Stand: 12.11.2026 · Interner Entwurf
 | Nr. | Frage | Vorschlag / nächster Schritt |
 |---|---|---|
 | 1 | Sind AZ-104 und ITIL 4 Foundation aktuell gültig, und dürfen die Mitarbeiterabzeichen veröffentlicht werden? | Gültigkeit und freigegebene Badges prüfen, keine privaten Prüfungsnummern veröffentlichen. |
-| 2 | Welchen aktuellen Dell-Partnerstatus haben wir? Welche anderen Herstellerpartnerschaften sind noch aktiv? | Partnerstufen und freigegebene Logos intern bestätigen. EMC und macmon 2018 bleiben historische Nachweise. |
+| 2 | Welche Dell- und WatchGuard-Partnerstufe besteht? G DATA Silver Partner ist intern benannt. Welche weiteren Partnerschaften sind aktiv? | Partnerstufen und freigegebene Logos intern bestätigen. EMC und macmon 2018 bleiben historische Nachweise. |
 | 3 | Dürfen sämtliche alten Zertifikatsbilder mit möglicherweise sichtbaren Namen auf der neuen Website veröffentlicht werden? | Die zwölf JPG-Vorschaubilder liegen lokal vor. Vor Freigabe ansehen und personenbezogene Daten ggf. schwärzen. Höher aufgelöste Originale nur nach Bedarf ersetzen. |
 | 4 | Welche Kundenreferenzen, Teamfotos und aktuellen Qualifikationen dürfen öffentlich genannt werden? | Schriftliche Freigaben, aktuelle Teamangaben und Bildrechte prüfen. |
 | 5 | Welche Leistungen und Konditionen bieten wir verbindlich an? | Kostenloses Erstgespräch, Sicherheitscheck, Betreuungspakete, Schulungsformate und Remote-/Vor-Ort-Abrechnung bestätigen. |

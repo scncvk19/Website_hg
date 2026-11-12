@@ -27,7 +27,9 @@ Stand: 12.11.2026 · Interner Entwurf
 | Zertifikatsseite mit „Zertifizierungen“ und „Veröffentlichte Nachweise“ strukturieren; externe Bild-Fallbacks entfernen | ✅ |
 | Zwölf historische JPG-Dateien per GitHub-Import lokal ins Repository übernehmen und Ergebnis verifizieren | ✅ |
 | Azure-/ITIL-Abzeichen lokal importieren und Ergebnis verifizieren | ✅ |
-| Gültigkeit/Partnerstatus sowie Rechte und personenbezogene Angaben aller Bilder prüfen | ⬜ |
+| Dezente Herstellerübersicht, G DATA Silver Partner, WatchGuard und verlinkte Textnachweise statt Urkundenbilder | ✅ |
+| Herstellerlogos lokal ergänzen und prüfen (G DATA und Password Safe: freigegebene Dateien) | 🔄 |
+| Zertifikatsgültigkeit, Partnerstatus und Markenfreigaben prüfen | ⬜ |
 | Offene Freigaben und Entscheidungen in OFFENE-FRAGEN.md dokumentieren | ✅ |
 | Darstellung und Kontrast von Logo, Favicon und Referenzkarten im Browser prüfen; Corporate Design, Teamfotos, Kundenreferenzen und Nutzungsrechte bestätigen | ⬜ |
 | Unternehmensdaten, Registerangaben und Datenschutzerklärung vervollständigen und fachlich freigeben | ⬜ |

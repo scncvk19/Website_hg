@@ -6,8 +6,9 @@ type Copy = Record<Language, string>;
 type Credential = { id: string; icon: string; name: string; category: "technology" | "qualification"; description: Copy; evidence: "confirmed" | "requested" | "profile" | "historical" | "website" };
 export const credentials: Credential[] = [
   { id:"azure", icon:"cloud", name:"Microsoft Certified: Azure Administrator Associate (AZ-104)", category:"qualification", description:{de:"Verwaltung, Absicherung und Überwachung von Azure-Umgebungen.",en:"Administration, security and monitoring of Azure environments."}, evidence:"confirmed" },
-  { id:"dell", icon:"server", name:"Dell Partner", category:"technology", description:{de:"Business-Hardware und Server-Infrastruktur.",en:"Business hardware and server infrastructure."}, evidence:"requested" },
+  { id:"dell", icon:"server", name:"Dell Technologies", category:"technology", description:{de:"Business-Hardware und Server-Infrastruktur.",en:"Business hardware and server infrastructure."}, evidence:"requested" },
   { id:"watchguard", icon:"shield", name:"WatchGuard", category:"technology", description:{de:"Firewalls und Netzwerksicherheit.",en:"Firewalls and network security."}, evidence:"profile" },
+  { id:"gdata", icon:"shield", name:"G DATA CyberDefense", category:"technology", description:{de:"Endpoint-Sicherheit und Cybersecurity.",en:"Endpoint security and cybersecurity."}, evidence:"requested" },
   { id:"microsoft", icon:"monitor", name:"Microsoft", category:"technology", description:{de:"Microsoft-Technologien und IT-Infrastruktur.",en:"Microsoft technologies and IT infrastructure."}, evidence:"profile" },
   { id:"passwordsafe", icon:"key", name:"Passwordsafe", category:"technology", description:{de:"Passwortmanagement und sichere Zugangsdaten.",en:"Password management and secure credentials."}, evidence:"profile" },
   { id:"itil", icon:"award", name:"ITIL® 4 Foundation", category:"qualification", description:{de:"Grundlagen des IT-Service-Managements nach ITIL 4.",en:"Foundation-level IT service management knowledge based on ITIL 4."}, evidence:"confirmed" },
@@ -41,3 +42,9 @@ export const certificateRecords: CertificateRecord[] = [
 
 // Die beiden persönlichen Qualifikationen wurden im Projektauftrag konkret bestätigt.
 export const featuredCertificates = credentials.filter(item => item.evidence === "confirmed");
+
+// Partnerangaben: G DATA Silver Partner intern benannt, Dell und WatchGuard ohne unbestätigte Stufe.
+export const partnerLabels: Record<string,string> = {gdata:"Silver Partner",dell:"Partner"};
+export const brandLinks: Record<string,string> = {
+  azure:"https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/",itil:"https://www.peoplecert.org/",dell:"https://www.dell.com/",watchguard:"https://www.watchguard.com/",gdata:"https://www.gdata.de/",microsoft:"https://www.microsoft.com/",passwordsafe:"https://www.passwordsafe.de/",kaspersky:"https://www.kaspersky.com/",knox:"https://www.samsungknox.com/",terra:"https://www.terracloud.de/","passwordsafe-2020":"https://www.passwordsafe.de/","passwordsafe-2017":"https://www.passwordsafe.de/",medidoc:"https://www.medidok.de/","macmon-partner":"https://www.macmon.eu/",macmon:"https://www.macmon.eu/","windows-2019":"https://www.microsoft.com/windows-server",sway:"https://sway.cloud.microsoft/",emc:"https://www.dell.com/"
+};
