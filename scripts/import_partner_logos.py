@@ -9,6 +9,9 @@ failed=[]
 for item in assets:
     dest=ROOT/"public"/item["path"].lstrip("/")
     try:
+        if dest.exists():
+            validate(dest.read_bytes(),dest.suffix)
+            continue
         req=urllib.request.Request(item["url"],headers={"User-Agent":"HG-Systeme internal website preview logo import","Accept":"image/svg+xml,image/*"})
         with urllib.request.urlopen(req,timeout=30) as response:
             if not response.geturl().startswith("https://"):

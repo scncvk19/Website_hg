@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/import-partner-logos.yml'
+      - 'lib/partner-logo-assets.json'
 permissions:
   contents: write
 concurrency:

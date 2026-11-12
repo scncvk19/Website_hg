@@ -4,7 +4,7 @@ import {join} from "node:path";
 const marks: Record<string,{file:string;name:string}> = {
  azure:{file:"microsoft.svg",name:"Microsoft"},microsoft:{file:"microsoft.svg",name:"Microsoft"},
  itil:{file:"peoplecert.svg",name:"PeopleCert"},dell:{file:"dell.svg",name:"Dell Technologies"},
- watchguard:{file:"watchguard.svg",name:"WatchGuard"},gdata:{file:"gdata.png",name:"G DATA"},
+ watchguard:{file:"watchguard.png",name:"WatchGuard"},gdata:{file:"gdata.png",name:"G DATA"},
  passwordsafe:{file:"passwordsafe.svg",name:"Password Safe"}
 };
 export default function BrandMark({id,name}:{id:string;name:string}){
