@@ -12,6 +12,8 @@ Stand: 12.11.2026 · Interner Entwurf
 | Branchenleiste zwischen IT-Konzept und Neukundenmodell auf beiden Startseiten entfernen; Branchenbeschreibung unter Über uns behalten | ✅ |
 | Automatisierungsumfang und Vorgehensmodell fachlich freigeben; Pyramide, Links und mobile Darstellung prüfen | ⬜ |
 | Responsive CSS, mobile Navigation, Tastatur-Fokus und lokale Icons implementiert | ✅ |
+| Ungenutzte CSS-Regeln, Icons und alten Zertifikatsimport entfernen; README und Datenschutztexte konsolidieren | ✅ |
+| TypeScript und Produktionsbuild nach Bereinigung im GitHub-Workflow prüfen | 🔄 |
 | Social-Media-Links zentral vorbereiten; Firmen-LinkedIn mit lokalen Icons einbinden | ✅ |
 | Footer mit geschlossenen, ausklappbaren Bereichen und sichtbaren Rechtslinks vereinfachen | ✅ |
 | Verzeichnis- und Inhaltspflege in README dokumentieren | ✅ |

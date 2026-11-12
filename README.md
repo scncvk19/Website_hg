@@ -104,7 +104,7 @@ Vercel ist eine mögliche spätere Plattform wie bei OWA Labs. Noch kein Deploym
 
 ## Status
 
-Quellcode und Seitenstruktur erstellt, GitHub-Commit und 13 Seitenrouten geprüft. Die statisch untersuchten internen Linkziele sind vorhanden. Build, Browserprüfung, Branding, Datenschutz, tatsächliche Leistungsfreigabe und Veröffentlichung sind offen. Die englische Fassung und das vorbereitete Kontaktformular sind implementiert; Live-Versand ist nicht aktiviert. Siehe [TODO](TODO.md).
+Quellcode und Seitenstruktur erstellt; die deutschen und englischen Routen werden gemeinsam gepflegt. Die statisch untersuchten internen Linkziele sind vorhanden. Browserprüfung, Branding, Datenschutz, tatsächliche Leistungsfreigabe und Veröffentlichung sind offen. Die englische Fassung und das vorbereitete Kontaktformular sind implementiert; Live-Versand ist nicht aktiviert. Siehe [TODO](TODO.md).
 
 ## Deutsch / Englisch und Kontaktformular
 
@@ -124,30 +124,17 @@ Ich habe keine realen Kontaktanfragen ausgelöst und keinen produktiven Formular
 
 ## Partner, Qualifikationen und Referenzen
 
-Ich habe eine zentrale Übersicht in `lib/credentials.ts` und `components/Credentials.tsx` ergänzt. Sie erscheint auf Startseite und Über-uns-Seite in beiden Sprachen. Lokale, neutrale SVG-Icons machen die Themen erkennbar, ohne ungeprüfte Herstellersiegel zu verwenden. Azure Administrator Associate (AZ-104) und ITIL 4 Foundation sind im Projektauftrag konkret benannt; die persönlichen Gültigkeiten und der Dell-Partnerstatus bleiben vor Veröffentlichung zu bestätigen. Microsoft, WatchGuard, Passwordsafe und Datenschutzqualifikationen sind im öffentlichen Unternehmensprofil beschrieben. Die frühere Website-Analyse dokumentiert historische Windows-Server-Schulungen und Herstellerbilder (2017–2020); daraus leite ich keine aktuellen Zertifizierungen ab.
+Ich pflege die Zertifizierungen, Hersteller und zwölf veröffentlichten Nachweise zentral in `lib/credentials.ts`. Die Seite steht unter /zertifikate und /en/certificates zur Verfügung. Auf Startseite und Über-uns-Seite verwende ich eine reduzierte Übersicht.
 
-Quellen: [Über uns](https://www.hg-systeme.de/UeBER-UNS/), [Zertifikate](https://www.hg-systeme.de/Zertifikate/), [Unternehmensprofil](https://de.linkedin.com/company/hg-systeme-e-k), [bisherige Website-Analyse](https://github.com/scncvk19/Startegie/blob/main/03_Marketing/Website-Analyse.md). Beim ersten Abruf waren Startseite und Zertifikatsseite nicht erreichbar. Beim erneuten Abruf am 12.11.2026 konnte ich die öffentlichen Bildtitel der Zertifikatsseite und das EMC Authorized Partner-Abzeichen auf der Startseite auslesen. Die Bilddateien selbst konnte ich nicht herunterladen; die konkreten Azure-/ITIL-Zertifikate sind dort nicht genannt. Die Unternehmensgeschichte und Branchenerfahrung sind auf der öffentlich indexierten Über-uns-Seite belegt. Ich veröffentliche keine Kundennamen, Partnerstufen oder Zertifikatssiegel ohne Bestätigung und Nutzungsfreigabe. Originale Zertifikate und offizielle Herstellerlogos ergänze ich erst nach Prüfung.
+- Microsoft Certified: Azure Administrator Associate (AZ-104) und ITIL 4 Foundation sind intern konkret benannt. Persönliche Gültigkeit vor Veröffentlichung prüfen.
+- G DATA CyberDefense ist intern als Silver Partner benannt. Dell ist als Partner ohne Stufe aufgeführt, WatchGuard ohne unbestätigte Partnerstufe.
+- Historische Nachweise: Kaspersky, Samsung Knox, terra cloud, Password Safe 2017/2020, medidoc, macmon und macmon Partner 2018, Windows Server 2019 Grundkurs, Microsoft Sway Grundkurs, KFZ-Gewerbe 2018 sowie EMC Authorized Partner. Sie werden nur namentlich, mit bekannten Jahren und Herstellerlinks dargestellt; keine Aussage über aktuelle Zertifizierung.
 
-Das Favicon `public/images/branding/hg-systeme-favicon.png` ist ein quadratisches 64×64-PNG aus der vorhandenen transparenten Originaldatei, mit proportionaler Verkleinerung und transparentem Rand. Beide Root-Layouts referenzieren dieses Symbol.
+Quellen: [Über uns](https://www.hg-systeme.de/UeBER-UNS/), [Zertifikate](https://www.hg-systeme.de/Zertifikate/), [Unternehmensprofil](https://de.linkedin.com/company/hg-systeme-e-k), [Website-Analyse](https://github.com/scncvk19/Startegie/blob/main/03_Marketing/Website-Analyse.md). Die alte Zertifikatsseite wurde am 12.11.2026 abgeglichen. Die früher importierten Urkundenbilder und ihre Bildquellen bleiben in der privaten Git-Historie, werden aber nicht mehr ausgeliefert oder heruntergeladen.
 
-### Zertifikatsarchiv
+### Herstellerlogos
 
-Ich habe eine eigene zweisprachige Seite unter /zertifikate und /en/certificates ergänzt. Sie enthält alle elf öffentlich bezeichneten Nachweise (Kaspersky, Samsung Knox, terra cloud, Password Safe 2017/2020, medidoc, macmon Partner und macmon 2018, Windows Server 2019 Grundkurs, Sway Grundkurs, KFZ-Gewerbe 2018) sowie das historische EMC-Partnerabzeichen der Startseite. Die Einträge stehen zentral in lib/credentials.ts. Die ursprünglichen öffentlichen Quellen sind in lib/certificate-assets.json dokumentiert. AZ-104 und ITIL 4 Foundation sind jetzt konkret benannt. Dell bleibt als Partnerangabe mit offener Stufe separat. Die zwölf historischen Bildquellen und zwei Abzeichen sind zentral in lib/certificate-assets.json hinterlegt. Die Website lädt ausschließlich lokal importierte Bilder; bei fehlenden Dateien zeigt sie ein neutrales Symbol. Der Microsoft-Learn-Associate-Badge ist ein allgemeines Zertifizierungsabzeichen; der ITIL-Badge stammt aus der PeopleCert-Ausstellerseite bei Credly. Keine fremden persönlichen Verifikationslinks.
-
-### Zertifikatsbilder lokal übernehmen (Windows)
-
-Im Repository-Ordner in PowerShell: `powershell -NoProfile -File .\scripts\import-certificate-images.ps1` (falls erforderlich nach lokaler Richtlinienfreigabe). Das Skript lädt 14 öffentlich referenzierte Bilder in public/images/certificates und prüft Format und Größe. Ich kontrolliere Bilder, Rechte und personenbezogene Informationen vor dem Commit. Danach baue ich Docker neu. Der direkte Binärdownload war im Arbeitsumfeld nicht möglich; der Import und die Browserdarstellung sind noch nicht verifiziert. Externe Bild-Fallbacks wurden entfernt. Die historischen Bilddateien werden durch einen einmaligen GitHub-Import oder lokal per Skript übernommen. Der erste [GitHub-Import](https://github.com/scncvk19/Website_hg/actions/runs/43195552404) war erfolgreich. Alle zwölf JPG-Vorschaubilder der alten Website sind lokal im Repository vorhanden (Commit 32f8bbf). Es handelt sich um die öffentlich verlinkten picture-200-Fassungen, nicht um höher aufgelöste Originale. Auch beide neueren Abzeichen wurden lokal importiert (Commit fb93666). Alle 14 Bilddateien sind im Repository vorhanden. Ich habe die Dateipfade und die Vollständigkeit geprüft; die Browserdarstellung und die Freigabe der Nachweise stehen noch aus. Der Import-Workflow ist nur noch bei Bedarf manuell auslösbar.
-
-Die offenen Freigaben und Entscheidungen sind zentral in [OFFENE-FRAGEN.md](OFFENE-FRAGEN.md) zusammengefasst. Die Aufgabenliste bleibt in [TODO.md](TODO.md).
-
-### Partner und Qualifikationen – überarbeitete Darstellung
-
-Ich zeige keine Urkundenbilder oder persönlichen Abzeichen mehr. Alle zwölf veröffentlichten Nachweise bleiben namentlich mit Jahresangaben und Herstellerlinks erhalten. Microsoft und PeopleCert stehen für AZ-104 und ITIL 4 Foundation. G DATA CyberDefense ergänze ich als Silver Partner gemäß interner Angabe, WatchGuard ohne unbestätigte Stufe. Dell bleibt Partner ohne Stufenangabe. Die Startseite enthält eine reduzierte Auswahl, die Zertifikatsseite die gesamte Übersicht. Logos liegen lokal in public/images/partners; bei fehlenden Dateien erscheint der Markenname. G DATA und Password Safe ergänze ich mit freigegebenen Herstellerdateien. Die alten Bilder werden nicht mehr öffentlich bereitgestellt, bleiben aber in der privaten Git-Historie. Markenrechte und Zertifikatsgültigkeit vor Veröffentlichung prüfen.
-
-Stand der Logoübernahme: Microsoft, Dell und PeopleCert wurden lokal importiert und im Repository geprüft. WatchGuard-SVG wurde beim Download mit HTTP 429 abgewiesen; deshalb nutze ich als Alternative die öffentliche PNG-Fassung desselben Logos. G DATA und Password Safe benötigen noch freigegebene Logo-Dateien. Der alte Zertifikatsimport ist deaktiviert; frühere Bildimport-Anweisungen in dieser Dokumentation sind historischer Projektstand und nicht mehr auszuführen.
-
-Der alternative WatchGuard-Import war erfolgreich (Commit 5ac780c). Microsoft, PeopleCert, Dell und WatchGuard sind lokal vorhanden. G DATA Silver Partner und Password Safe sind bis zum Vorliegen freigegebener Logos mit ihren Namen dargestellt. Der Import-Workflow ist wieder ausschließlich manuell startbar. Browser- und Build-Prüfung stehen noch aus.
-
+Microsoft, PeopleCert, Dell und WatchGuard liegen lokal in `public/images/partners/`. G DATA und Password Safe erscheinen bis zur Freigabe geeigneter Logo-Dateien als Text. Die Zuordnung steht in `components/BrandMark.tsx`, die Importquellen in `lib/partner-logo-assets.json`. Der manuelle GitHub-Workflow `Import partner logos` nutzt ausschließlich `scripts/import_partner_logos.py`, das SVG und PNG prüft und vorhandene gültige Dateien beibehält. Kein automatischer Bilderimport im Betrieb, keine externen Bildanfragen. Markenrechte und Partnerstatus vor Veröffentlichung bestätigen.
 
 ### IT-Konzept, Neukunden und Automatisierung
 
@@ -161,3 +148,8 @@ Für Industrie habe ich Datenerfassung, Datenverarbeitung, Schnittstellen und so
 ### Navigation und kompakter Footer
 
 Nach dem Vorbild meiner OWA-Labs-Website verwende ich kleine lokale SVG-Social-Icons im Desktop-Header, im mobilen Menü, auf der Kontaktseite und im Footer. Das bestätigte HG-Systeme-LinkedIn-Profil ist aktiv. GitHub und Instagram bleiben bis zur Bestätigung der öffentlichen Firmenprofile ausgeblendet. Keine privaten OWA-Labs-Adressen, Platzhalterlinks, Social-Media-Embeds oder Tracking-Skripte. Der helle Footer zeigt Logo, Slogan, Telefon und Social-Links; Leistungen, Unternehmen und Kontakt sind standardmäßig geschlossene native details-Elemente. Impressum und Datenschutz bleiben direkt sichtbar. Die responsive Darstellung und Bedienung sind noch im Browser zu prüfen.
+
+
+### Codeprüfung
+
+Ich habe die nicht mehr genutzten globalen CSS-Regeln für die ursprüngliche Grafik, Branchenleiste, Sicherheitscheck-Grafik, alten Footer und Zertifikatsgalerie entfernt. Überholte Icon-Definitionen und alte Zertifikats-Downloadfunktionen sind bereinigt. Die noch benötigte Dateivalidierung ist direkt im Herstellerlogo-Import enthalten. Die historischen Quellen bleiben nachvollziehbar; die öffentliche Website enthält keine Urkundenbilder. Beide Sprachen und die aktuellen Funktionen bleiben unverändert. Der GitHub-Workflow `Website checks` prüft TypeScript und den Next.js-Produktionsbuild bei Änderungen am Code; er verwendet keine Zugangsdaten und führt keine Bereitstellung aus.
