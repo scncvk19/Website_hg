@@ -16,9 +16,8 @@ Stand: 12.11.2026 · Interner Entwurf
 | 8 | Wo soll die neue Website produktiv betrieben werden? | Bestehendes Hosting oder freigegebene Plattform festlegen; HTTPS, Sicherung, Zugriffsschutz und Betrieb klären. |
 | 9 | Wie wird die bestehende Website abgelöst? | Alte URLs, Weiterleitungen, DNS, Backup und Rückweg planen; bestehende Seite bis zur ausdrücklichen Freigabe unverändert lassen. |
 | 10 | Sind beide Sprachen, Navigation, Formulare, Bilder und Mobilansicht geprüft? | Docker-Build, Typecheck, Browserprüfung und Testversand nach Freigabe durchführen. |
-
 | 11 | Welche öffentlichen GitHub- und Instagram-Firmenprofile sollen verlinkt werden? | Offizielle URLs in lib/social.ts eintragen; LinkedIn ist bestätigt. Keine privaten Accounts oder Repositories verlinken. |
 
 ## Bereits entschieden
 
-Ich behalte Deutsch als Standardsprache, Englisch unter /en, das blaue HG-Design, das transparente lokale Firmenlogo, die beiden konkreten Zertifizierungstitel und eine dezente Galerie unter „Veröffentlichte Nachweise“. Historische Nachweise sind keine Behauptung heutiger Gültigkeit. Die produktive Website bleibt bis zur Freigabe unverändert.
+Ich behalte Deutsch als Standardsprache, Englisch unter /en, das blaue HG-Design, das transparente lokale Firmenlogo, die beiden konkreten Zertifizierungstitel und eine dezente, verlinkte Textliste unter „Veröffentlichte Nachweise“. Historische Nachweise sind keine Behauptung heutiger Gültigkeit. Die produktive Website bleibt bis zur Freigabe unverändert.
