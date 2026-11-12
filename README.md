@@ -84,7 +84,7 @@ Ich pflege die Texte in den vorhandenen Dateien. Deutsch und Englisch bleiben ge
 
 ### Beispiel: Firmenprofile ändern
 
-In `lib/social.ts` trage ich bei GitHub und Instagram die vollständige HTTPS-Adresse des freigegebenen HG-Systeme-Firmenprofils ein. LinkedIn wird über `company.linkedin` gepflegt. Leere URLs werden nicht angezeigt. Header, mobiles Menü, Footer und Kontaktseite verwenden dieselbe zentrale Liste. Ich verlinke keine privaten Accounts oder Repositories als Firmenprofile.
+In `lib/social.ts` pflege ich die bestätigten GitHub- und Instagram-Firmenprofile. LinkedIn wird über `company.linkedin` gepflegt. Leere URLs werden nicht angezeigt. Header, mobiles Menü, Footer und Kontaktseite verwenden dieselbe zentrale Liste. Ich verlinke keine privaten Accounts oder Repositories als Firmenprofile.
 
 ### Änderungen prüfen und übernehmen
 
@@ -98,7 +98,7 @@ Die Inhalte basieren auf unserem [Wachstumskonzept](https://github.com/scncvk19/
 
 ## Datenschutz und Betrieb
 
-Keine Trackingbibliotheken, externen Schriftarten oder Karten-Embeds. Das Kontaktformular ist vorbereitet, aber standardmäßig deaktiviert. Bei Freigabe verwende ich Web3Forms und hCaptcha; beide Dienste sind externe Datenempfänger. Das Firmenlogo wird lokal ausgeliefert; für das Bild ist keine Verbindung zu LinkedIn erforderlich. Telefon- und E-Mail-Links führen zum vorhandenen Kontakt; der Supportweg für Bestandskunden bleibt wie vereinbart. Hosting, Serverprotokolle und Rechtsangaben müssen vor Freigabe fachlich geprüft werden. Kein echter Kundenvorgang wurde ausgelöst.
+Keine Trackingbibliotheken oder externen Schriftarten. Die Standortkarte im Impressum lädt Google Maps erst nach ausdrücklichem Klick; ohne diesen erfolgt keine Kartenanfrage. Das Kontaktformular ist vorbereitet, aber standardmäßig deaktiviert. Bei Freigabe verwende ich Web3Forms und hCaptcha; beide Dienste sind externe Datenempfänger. Das Firmenlogo wird lokal ausgeliefert; für das Bild ist keine Verbindung zu LinkedIn erforderlich. Telefon- und E-Mail-Links führen zum vorhandenen Kontakt; der Supportweg für Bestandskunden bleibt wie vereinbart. Hosting, Serverprotokolle und Rechtsangaben müssen vor Freigabe fachlich geprüft werden. Kein echter Kundenvorgang wurde ausgelöst.
 
 Vercel ist eine mögliche spätere Plattform wie bei OWA Labs. Noch kein Deployment, keine Domain-Änderung und kein Zugriff auf die produktive Website. Vor einer Vorschau auf Vercel Zugriffsschutz prüfen (privates GitHub-Repository schützt eine öffentliche Deployment-URL nicht); lokale Vorschau ist der sichere erste Schritt. Für eine öffentliche Freigabe müssen Entwurfsbanner, Noindex/robots und Rechtsseiten bewusst aktualisiert werden, kanonische Produktions-URL und Sitemap festgelegt und die Freigabe dokumentiert sein.
 
@@ -147,7 +147,7 @@ Für Industrie habe ich Datenerfassung, Datenverarbeitung, Schnittstellen und so
 
 ### Navigation und kompakter Footer
 
-Nach dem Vorbild meiner OWA-Labs-Website verwende ich kleine lokale SVG-Social-Icons im Desktop-Header, im mobilen Menü, auf der Kontaktseite und im Footer. Das bestätigte HG-Systeme-LinkedIn-Profil ist aktiv. GitHub und Instagram bleiben bis zur Bestätigung der öffentlichen Firmenprofile ausgeblendet. Keine privaten OWA-Labs-Adressen, Platzhalterlinks, Social-Media-Embeds oder Tracking-Skripte. Der helle Footer zeigt Logo, Slogan, Telefon und Social-Links; Leistungen, Unternehmen und Kontakt sind standardmäßig geschlossene native details-Elemente. Impressum und Datenschutz bleiben direkt sichtbar. Die responsive Darstellung und Bedienung sind noch im Browser zu prüfen.
+Nach dem Vorbild meiner OWA-Labs-Website verwende ich kleine lokale SVG-Social-Icons im Desktop-Header, im mobilen Menü, auf der Kontaktseite und im Footer. Die bestätigten Firmenprofile GitHub, Instagram und LinkedIn sind aktiv. Instagram wird über die kanonische Profiladresse ohne den mitgelieferten xtok-Parameter verlinkt. Keine privaten OWA-Labs-Adressen, Platzhalterlinks, Social-Media-Embeds oder Tracking-Skripte. Der helle Footer zeigt Logo, Slogan, Telefon und Social-Links; Leistungen, Unternehmen und Kontakt sind standardmäßig geschlossene native details-Elemente. Impressum und Datenschutz bleiben direkt sichtbar. Die responsive Darstellung und Bedienung sind noch im Browser zu prüfen.
 
 
 ### Codeprüfung
@@ -155,3 +155,13 @@ Nach dem Vorbild meiner OWA-Labs-Website verwende ich kleine lokale SVG-Social-I
 Ich habe die nicht mehr genutzten globalen CSS-Regeln für die ursprüngliche Grafik, Branchenleiste, Sicherheitscheck-Grafik, alten Footer und Zertifikatsgalerie entfernt. Überholte Icon-Definitionen und alte Zertifikats-Downloadfunktionen sind bereinigt. Die noch benötigte Dateivalidierung ist direkt im Herstellerlogo-Import enthalten. Die historischen Quellen bleiben nachvollziehbar; die öffentliche Website enthält keine Urkundenbilder. Beide Sprachen und die aktuellen Funktionen bleiben unverändert. Der GitHub-Workflow `Website checks` prüft TypeScript und den Next.js-Produktionsbuild bei Änderungen am Code; er verwendet keine Zugangsdaten und führt keine Bereitstellung aus.
 
 Prüfergebnis 12.11.2026: [Website checks #43207107291](https://github.com/scncvk19/Website_hg/actions/runs/43207107291) erfolgreich für Commit 573ee61. npm-Installation, Produktionsbuild (33 statisch generierte Seiten), `npm run typecheck` und Validierung der vier vorhandenen Herstellerlogos ohne Netzwerkzugriff bestanden. Die Warnungen zu punycode und zur Node-20-Laufzeit der GitHub-Actions sind nicht blockierend; Actions-Versionen bei der nächsten planmäßigen Abhängigkeitspflege aktualisieren. Keine produktive Bereitstellung. Lokale Docker- und Browserprüfung sowie Lockdatei bleiben offen.
+
+### Impressum, Datenschutz, Standort und Kontaktdaten
+
+Ich habe die öffentlich abrufbaren Unternehmensangaben aus dem [bisherigen Impressum](https://www.hg-systeme.de/IMPRESSUM/) übernommen: HG-Systeme e.K., Inhaber Michael Gray (verantwortlich nach § 18 MStV), Markgrafenstraße 3, 69412 Eberbach, Telefonnummer. Die zentrale Adresse in `lib/content.ts` lautet auf Wunsch info@hg-systeme.de. Sie wird in beiden Sprachen, im Footer, Kontakt und den Rechtsseiten verwendet. Die tatsächliche Zustelladresse des vorbereiteten Web3Forms-Formulars wird separat beim Anbieter festgelegt; kein Versand aktiviert oder getestet.
+
+Ich habe die vier Themen der [bisherigen Datenschutzseite](https://www.hg-systeme.de/Datenschutz/) (Inhaltshaftung, Linkhaftung, Urheberrecht, Datenschutz/unverlangte Werbung) vollständig thematisch in eigenen Formulierungen übernommen und ins Englische übertragen. Die bestehenden Angaben zur neuen Website, optionalem Formular und den erforderlichen Datenschutzprüfungen bleiben erhalten. Veraltete TMG-Verweise werden nicht als geltendes Recht übernommen. Ich behaupte keine vollständige oder rechtlich geprüfte Datenschutzerklärung; Registerangaben, Hosting, tatsächliche Datenempfänger, Rechtsgrundlagen, Fristen und weitere Pflichtangaben vor Veröffentlichung bestätigen.
+
+`components/LocationMap.tsx` und `components/location-map.module.css` enthalten die Standortkarte DE/EN. Die Firmenadresse wird aus `lib/content.ts` gebildet. Google Maps wird erst auf ausdrücklichen Klick geladen; die Karte kann wieder ausgeblendet werden. Ein separater externer Kartenlink bleibt verfügbar. Vor öffentlichem Einsatz prüfe ich Kartenfunktion, Einwilligung, mögliche Cookies, Datenempfänger, Drittlandübermittlung und Datenschutzhinweise. Ohne Klick wird kein Google-Maps-Iframe erzeugt. Keine API-Schlüssel erforderlich. Kein öffentliches Deployment.
+
+Die Hauptnavigation enthält „Willkommen“ bzw. „Welcome“; Logo, Links und der kompakte Footer bleiben erhalten. Die Breakpoints wurden für den zusätzlichen Menüpunkt und die drei Social-Icons angepasst. Offizielle Profile: https://github.com/Hg-Systeme428, https://www.instagram.com/hgsysteme/ und das bestehende LinkedIn-Profil. Aktualisierung der Linkziele, Karte, Navigation und E-Mail in beiden Sprachen implementiert; tatsächliche Browserprüfung bleibt offen.
