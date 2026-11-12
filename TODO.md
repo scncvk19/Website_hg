@@ -25,8 +25,9 @@ Stand: 12.11.2026 · Interner Entwurf
 | Öffentliche Zertifikatsseite erneut abgleichen; zweisprachiges Archiv mit elf Nachweisen und historischem EMC-Abzeichen erstellen | ✅ |
 | AZ-104 und ITIL 4 Foundation konkret benennen, dezente Abzeichen und zwölf historische Bildquellen in DE/EN integrieren | ✅ |
 | Zertifikatsseite mit „Zertifizierungen“ und „Veröffentlichte Nachweise“ strukturieren; externe Bild-Fallbacks entfernen | ✅ |
-| Historische Bilddateien per GitHub-Import lokal ins Repository übernehmen und Ergebnis verifizieren | 🔄 |
-| Azure-/ITIL-Abzeichen lokal importieren, Gültigkeit/Partnerstatus sowie Rechte und personenbezogene Angaben aller Bilder prüfen | ⬜ |
+| Zwölf historische JPG-Dateien per GitHub-Import lokal ins Repository übernehmen und Ergebnis verifizieren | ✅ |
+| Azure-/ITIL-Abzeichen lokal importieren und Ergebnis verifizieren | 🔄 |
+| Gültigkeit/Partnerstatus sowie Rechte und personenbezogene Angaben aller Bilder prüfen | ⬜ |
 | Offene Freigaben und Entscheidungen in OFFENE-FRAGEN.md dokumentieren | ✅ |
 | Darstellung und Kontrast von Logo, Favicon und Referenzkarten im Browser prüfen; Corporate Design, Teamfotos, Kundenreferenzen und Nutzungsrechte bestätigen | ⬜ |
 | Unternehmensdaten, Registerangaben und Datenschutzerklärung vervollständigen und fachlich freigeben | ⬜ |

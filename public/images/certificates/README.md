@@ -6,4 +6,4 @@ Die Bildquellen und Dateinamen pflege ich in `lib/certificate-assets.json`. Die 
 - `microsoft/`: Azure-Abzeichen
 - `itil/`: ITIL-Abzeichen
 
-Ich importiere die historischen Dateien einmalig mit dem GitHub-Workflow oder lokal mit dem bestehenden PowerShell-Skript. Der Python-Import prüft Format und Größe und überspringt bereits vorhandene, gültige Dateien. Auf der Website werden ausschließlich lokale Dateien angezeigt; fehlende Bilder haben ein neutrales Ersatzsymbol. Vor Veröffentlichung prüfe ich die Rechte, personenbezogenen Angaben und die Gültigkeit persönlicher Zertifizierungen.
+Ich habe die zwölf historischen Dateien erfolgreich mit dem GitHub-Workflow importiert (Commit 32f8bbf). Der Workflow ist zusätzlich für die beiden aktuellen Abzeichen vorbereitet; alternativ nutze ich das lokale PowerShell-Skript. Der Python-Import prüft Format und Größe und überspringt bereits vorhandene, gültige Dateien. Auf der Website werden ausschließlich lokale Dateien angezeigt; fehlende Bilder haben ein neutrales Ersatzsymbol. Vor Veröffentlichung prüfe ich die Rechte, personenbezogenen Angaben und die Gültigkeit persönlicher Zertifizierungen.
