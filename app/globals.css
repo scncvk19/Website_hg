@@ -37,3 +37,19 @@
 @media(max-width:1100px){.header-cta{display:none}}
 @media(max-width:800px){.header-inner{flex-wrap:wrap;gap:8px}.desktop-nav{display:none}.mobile-nav{display:block;position:relative}.mobile-nav summary{list-style:none;display:flex;align-items:center;gap:6px;font-weight:650;font-size:.85rem;cursor:pointer;padding:9px;border:1px solid var(--line);border-radius:8px}.mobile-nav nav{position:absolute;right:0;top:calc(100% + 10px);width:min(260px,calc(100vw - 32px));background:white;border:1px solid var(--line);box-shadow:var(--shadow);border-radius:12px;padding:8px}.mobile-nav nav a{display:block;padding:12px 10px;border-radius:7px;font-weight:600;font-size:.9rem}.brand{margin-right:auto}.language-switch a{padding:6px 7px}}
 @media(max-width:480px){.contact-field-grid{grid-template-columns:minmax(0,1fr)}.header-inner .official-logo{max-width:120px}.language-switch a{padding:5px 6px}}
+
+/* Partner- und Qualifikationsübersicht: neutrale lokale SVG-Icons, keine externen Siegel. */
+.credentials-section{scroll-margin-top:24px}
+.credential-group{margin-bottom:28px}
+.credential-group>h3{font-size:1.2rem;margin-bottom:14px}
+.credential-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.credential-card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:22px;min-width:0;display:flex;flex-direction:column;align-items:flex-start}
+.credential-card .icon-tile{margin-bottom:13px;width:46px;height:46px}
+.credential-card h4{font-size:1.1rem;line-height:1.35;margin:0 0 8px;overflow-wrap:anywhere}
+.credential-card p{font-size:.95rem;color:var(--muted);margin:0 0 14px;overflow-wrap:anywhere}
+.credential-source{margin-top:auto;font-size:.77rem;color:var(--muted);border-top:1px solid var(--line);padding-top:10px;width:100%;overflow-wrap:anywhere}
+.credential-history{max-width:820px;margin:32px 0 20px}
+.credential-history p{color:var(--muted)}
+.credential-note{max-width:820px;margin:20px 0 0;line-height:1.6}
+@media(max-width:800px){.credential-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.credential-grid{grid-template-columns:minmax(0,1fr)}.credential-card{padding:18px}}

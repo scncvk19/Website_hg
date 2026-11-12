@@ -58,13 +58,13 @@ app/leistungen/[slug]/  Statisch erzeugte Leistungsdetailseiten
 components/            Navigation, Footer, Karten und SVG-Icons
 lib/content.ts         Unternehmensdaten, Leistungen und FAQ
 public/images/branding/ Firmenlogo als transparente PNG
-public/icon.svg         Temporäres textbasiertes Symbol
+public/images/branding/hg-systeme-favicon.png  Favicon aus Firmenlogo
 TODO.md                Aufgaben und Freigaben
 ```
 
 ## Design und Inhalte
 
-Nach der ersten Designrückmeldung verwende ich Blau, Marineblau und helle Hintergründe. Die Startseite hat einen hellen Einstieg, dunklere Fließtexte und kontrastreiche Buttons. Die wichtigsten Text-Farb-Paare wurden rechnerisch geprüft (6,2:1 bis 15,3:1); eine vollständige Browser- und Barrierefreiheitsprüfung steht aus. Ich verwende die hochgeladene transparente PNG-Datei unverändert unter `public/images/branding/hg-systeme-logo.png` für Header und Footer auf allen Seiten (DE/EN). Die externe LinkedIn-Bildquelle entfällt. Das Logo wird unverzerrt dargestellt; im dunklen Footer erhöhe ich die Helligkeit nur per CSS für die Lesbarkeit. Das provisorische Favicon und die endgültige Markenfreigabe stehen noch aus. Ich bestätige Corporate Design, Fotos, Bildrechte, aktuelle Teamangaben und Referenzen. Keine fremden Logos oder erfundenen Kundenstimmen.
+Nach der ersten Designrückmeldung verwende ich Blau, Marineblau und helle Hintergründe. Die Startseite hat einen hellen Einstieg, dunklere Fließtexte und kontrastreiche Buttons. Die wichtigsten Text-Farb-Paare wurden rechnerisch geprüft (6,2:1 bis 15,3:1); eine vollständige Browser- und Barrierefreiheitsprüfung steht aus. Ich verwende die hochgeladene transparente PNG-Datei unverändert unter `public/images/branding/hg-systeme-logo.png` für Header und Footer auf allen Seiten (DE/EN). Die externe LinkedIn-Bildquelle entfällt. Das Logo wird unverzerrt dargestellt; im dunklen Footer erhöhe ich die Helligkeit nur per CSS für die Lesbarkeit. Ich verwende auch ein 64×64-PNG-Favicon aus dem Firmenlogo; die endgültige Markenfreigabe bleibt offen. Ich bestätige Corporate Design, Fotos, Bildrechte, aktuelle Teamangaben und Referenzen. Keine fremden Logos oder erfundenen Kundenstimmen.
 
 Die Inhalte basieren auf unserem [Wachstumskonzept](https://github.com/scncvk19/Startegie), insbesondere der Website-Analyse und den Dienstleistungsentwürfen. Ungeprüfte Preise, SLA, Registerangaben und neue Referenzen werden nicht behauptet. Die veröffentlichten Kontaktdaten der bestehenden [Impressumsseite](https://www.hg-systeme.de/IMPRESSUM/) dienen als Referenz und müssen vor Veröffentlichung bestätigt werden. Kostenlose Erstgespräche, konkrete neue Pakete und Workshopformate sind noch nicht freigegeben.
 
@@ -93,3 +93,11 @@ Das Formular verwendet Web3Forms nach dem Vorbild von OWA Labs. Der Empfänger i
 5. Nach Freigabe mit Testdaten auf einer zugelassenen HTTPS-Umgebung prüfen: fehlendes/ungültiges Captcha muss abgewiesen werden, erfolgreiche Zustellung an das richtige Postfach, Antwortadresse, Fehlerfall, beide Sprachen und interne Dankeseite. Der öffentliche Web3Forms-Formularschlüssel ist im Browser sichtbar; er ist kein vertrauliches SMTP-Passwort.
 
 Ich habe keine realen Kontaktanfragen ausgelöst und keinen produktiven Formulardienst aktiviert. Keine Weiterleitung oder Weitergabe an OWA Labs. Ohne eigene Konfiguration bleibt der Versand deaktiviert. Die Angaben zu Datenschutz und Leistungen sind weiterhin interne Entwürfe.
+
+## Partner, Qualifikationen und Referenzen
+
+Ich habe eine zentrale Übersicht in `lib/credentials.ts` und `components/Credentials.tsx` ergänzt. Sie erscheint auf Startseite und Über-uns-Seite in beiden Sprachen. Lokale, neutrale SVG-Icons machen die Themen erkennbar, ohne ungeprüfte Herstellersiegel zu verwenden. Azure, ITIL und Dell Partner stammen aus dem Projektauftrag; konkrete Zertifikatstitel, Gültigkeit und Partnerstufe bestätige ich intern. Microsoft, WatchGuard, Passwordsafe und Datenschutzqualifikationen sind im öffentlichen Unternehmensprofil beschrieben. Die frühere Website-Analyse dokumentiert historische Windows-Server-Schulungen und Herstellerbilder (2017–2020); daraus leite ich keine aktuellen Zertifizierungen ab.
+
+Quellen: [Über uns](https://www.hg-systeme.de/UeBER-UNS/), [Zertifikate](https://www.hg-systeme.de/Zertifikate/), [Unternehmensprofil](https://de.linkedin.com/company/hg-systeme-e-k), [bisherige Website-Analyse](https://github.com/scncvk19/Startegie/blob/main/03_Marketing/Website-Analyse.md). Der direkte Abruf der Startseite und der Zertifikatsseite schlug erneut mit 502 fehl; ich konnte keine vollständige aktuelle Bild-/Zertifikatsliste verifizieren. Die Unternehmensgeschichte und Branchenerfahrung sind auf der öffentlich indexierten Über-uns-Seite belegt. Ich veröffentliche keine Kundennamen, Partnerstufen oder Zertifikatssiegel ohne Bestätigung und Nutzungsfreigabe. Originale Zertifikate und offizielle Herstellerlogos ergänze ich erst nach Prüfung.
+
+Das Favicon `public/images/branding/hg-systeme-favicon.png` ist ein quadratisches 64×64-PNG aus der vorhandenen transparenten Originaldatei, mit proportionaler Verkleinerung und transparentem Rand. Beide Root-Layouts referenzieren dieses Symbol.

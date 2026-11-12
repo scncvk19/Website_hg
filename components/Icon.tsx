@@ -12,6 +12,11 @@ const paths: Record<string, ReactNode> = {
   phone: <path d="M21 16v3a2 2 0 0 1-2 2C10 21 3 14 3 5a2 2 0 0 1 2-2h3l2 5-3 2a13 13 0 0 0 7 7l2-3 5 2Z"/>,
   mail: <><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></>,
   pin: <><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></>,
+  cloud: <path d="M5 18a4 4 0 1 1 .8-7.9A6 6 0 0 1 17.5 9a4.5 4.5 0 1 1 1 9H5Z"/>,
+  server: <><rect x="3" y="3" width="18" height="8" rx="2"/><rect x="3" y="13" width="18" height="8" rx="2"/><path d="M7 7h.01M7 17h.01M11 7h6M11 17h6"/></>,
+  award: <><circle cx="12" cy="8" r="5"/><path d="m8 12-2 9 6-3 6 3-2-9"/></>,
+  key: <><circle cx="8" cy="9" r="4"/><path d="m11 12 9 9m-4-4 2-2m-5-1 2-2"/></>,
+  monitor: <><rect x="3" y="3" width="18" height="13" rx="2"/><path d="M12 16v5M7 21h10"/></>,
   menu: <path d="M4 6h16M4 12h16M4 18h16"/>
 };
 export default function Icon({ name, className = "" }: { name: string; className?: string }) {
