@@ -19,7 +19,8 @@ Stand: 12.11.2026 · Interner Entwurf
 | Beide Sprachfassungen, Sprachwechsel, Formular-Fehlerfälle und echte Testzustellung nach Freigabe prüfen | ⬜ |
 | Browserprüfung Desktop, Smartphone und Querformat; Navigation, FAQ, Links und 404 prüfen | ⬜ |
 | Farbkonzept auf Blau umstellen, wichtige Textkontraste rechnerisch prüfen und öffentliches Firmenlogo im Entwurf einbinden | ✅ |
-| Original-Logo als freigegebene lokale SVG/PNG übernehmen, Favicon und Corporate Design bestätigen; Teamfotos, Referenzen und Nutzungsrechte prüfen | ⬜ |
+| Hochgeladene transparente PNG lokal in Header und Footer (DE/EN) einbinden; externe Logoquelle entfernen | ✅ |
+| Darstellung und Kontrast des lokalen Logos im Browser prüfen, Favicon und Corporate Design bestätigen; Teamfotos, Referenzen und Nutzungsrechte prüfen | ⬜ |
 | Unternehmensdaten, Registerangaben und Datenschutzerklärung vervollständigen und fachlich freigeben | ⬜ |
 | Tatsächliche Leistungen, kostenloses Erstgespräch, Schulungsformate und Betreuungspakete durch Geschäftsleitung freigeben | ⬜ |
 | Gegebenenfalls geschützte Vorschau über Vercel einrichten | ⬜ |

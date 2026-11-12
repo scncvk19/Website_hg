@@ -57,19 +57,20 @@ app/                   Next.js App Router, Seiten und globales CSS
 app/leistungen/[slug]/  Statisch erzeugte Leistungsdetailseiten
 components/            Navigation, Footer, Karten und SVG-Icons
 lib/content.ts         Unternehmensdaten, Leistungen und FAQ
+public/images/branding/ Firmenlogo als transparente PNG
 public/icon.svg         Temporäres textbasiertes Symbol
 TODO.md                Aufgaben und Freigaben
 ```
 
 ## Design und Inhalte
 
-Nach der ersten Designrückmeldung verwende ich Blau, Marineblau und helle Hintergründe. Die Startseite hat einen hellen Einstieg, dunklere Fließtexte und kontrastreiche Buttons. Die wichtigsten Text-Farb-Paare wurden rechnerisch geprüft (6,2:1 bis 15,3:1); eine vollständige Browser- und Barrierefreiheitsprüfung steht aus. Das Logo mit blauem Bogen stammt vorläufig aus dem [offiziellen LinkedIn-Unternehmensprofil](https://de.linkedin.com/company/hg-systeme-e-k) und wird als Bild mit Referrer-Policy no-referrer geladen. Die Originaldatei konnte ich im Arbeitsumfeld nicht herunterladen. Vor Veröffentlichung ersetze ich diese externe Bildquelle durch eine intern freigegebene lokale SVG- oder PNG-Datei und aktualisiere das provisorische Favicon. Ich bestätige Corporate Design, Fotos, Bildrechte, aktuelle Teamangaben und Referenzen. Keine fremden Logos oder erfundenen Kundenstimmen.
+Nach der ersten Designrückmeldung verwende ich Blau, Marineblau und helle Hintergründe. Die Startseite hat einen hellen Einstieg, dunklere Fließtexte und kontrastreiche Buttons. Die wichtigsten Text-Farb-Paare wurden rechnerisch geprüft (6,2:1 bis 15,3:1); eine vollständige Browser- und Barrierefreiheitsprüfung steht aus. Ich verwende die hochgeladene transparente PNG-Datei unverändert unter `public/images/branding/hg-systeme-logo.png` für Header und Footer auf allen Seiten (DE/EN). Die externe LinkedIn-Bildquelle entfällt. Das Logo wird unverzerrt dargestellt; im dunklen Footer erhöhe ich die Helligkeit nur per CSS für die Lesbarkeit. Das provisorische Favicon und die endgültige Markenfreigabe stehen noch aus. Ich bestätige Corporate Design, Fotos, Bildrechte, aktuelle Teamangaben und Referenzen. Keine fremden Logos oder erfundenen Kundenstimmen.
 
 Die Inhalte basieren auf unserem [Wachstumskonzept](https://github.com/scncvk19/Startegie), insbesondere der Website-Analyse und den Dienstleistungsentwürfen. Ungeprüfte Preise, SLA, Registerangaben und neue Referenzen werden nicht behauptet. Die veröffentlichten Kontaktdaten der bestehenden [Impressumsseite](https://www.hg-systeme.de/IMPRESSUM/) dienen als Referenz und müssen vor Veröffentlichung bestätigt werden. Kostenlose Erstgespräche, konkrete neue Pakete und Workshopformate sind noch nicht freigegeben.
 
 ## Datenschutz und Betrieb
 
-Keine Trackingbibliotheken, externen Schriftarten oder Karten-Embeds. Das Kontaktformular ist vorbereitet, aber standardmäßig deaktiviert. Bei Freigabe verwende ich Web3Forms und hCaptcha; beide Dienste sind externe Datenempfänger. Ausnahme im internen Entwurf: Das Logo wird vorläufig von LinkedIn geladen; dadurch entsteht eine externe Anfrage. Vor Veröffentlichung wird das Logo lokal eingebunden. Telefon- und E-Mail-Links führen zum vorhandenen Kontakt; der Supportweg für Bestandskunden bleibt wie vereinbart. Hosting, Serverprotokolle und Rechtsangaben müssen vor Freigabe fachlich geprüft werden. Kein echter Kundenvorgang wurde ausgelöst.
+Keine Trackingbibliotheken, externen Schriftarten oder Karten-Embeds. Das Kontaktformular ist vorbereitet, aber standardmäßig deaktiviert. Bei Freigabe verwende ich Web3Forms und hCaptcha; beide Dienste sind externe Datenempfänger. Das Firmenlogo wird lokal ausgeliefert; für das Bild ist keine Verbindung zu LinkedIn erforderlich. Telefon- und E-Mail-Links führen zum vorhandenen Kontakt; der Supportweg für Bestandskunden bleibt wie vereinbart. Hosting, Serverprotokolle und Rechtsangaben müssen vor Freigabe fachlich geprüft werden. Kein echter Kundenvorgang wurde ausgelöst.
 
 Vercel ist eine mögliche spätere Plattform wie bei OWA Labs. Noch kein Deployment, keine Domain-Änderung und kein Zugriff auf die produktive Website. Vor einer Vorschau auf Vercel Zugriffsschutz prüfen (privates GitHub-Repository schützt eine öffentliche Deployment-URL nicht); lokale Vorschau ist der sichere erste Schritt. Für eine öffentliche Freigabe müssen Entwurfsbanner, Noindex/robots und Rechtsseiten bewusst aktualisiert werden, kanonische Produktions-URL und Sitemap festgelegt und die Freigabe dokumentiert sein.
 

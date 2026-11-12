@@ -5,15 +5,15 @@ import { routes, type Language } from "@/lib/locale";
 import Icon from "@/components/Icon";
 import LanguageSwitch from "@/components/LanguageSwitch";
 
-// Vorläufige Bildquelle; vor Veröffentlichung durch freigegebene lokale Datei ersetzen.
-const logoUrl = "https://media.licdn.com/dms/image/v2/C4E0BAQECcN-vw3kdCg/company-logo_200_200/company-logo_200_200/0/1660038328244/hg_systeme_e_k_logo?e=2147483647&t=Jmf5pOW-VHLtiCgVRzWtGSJDbv9GvDDKAUefrBLwVDg&v=beta";
+// Lokales Firmenlogo für beide Sprachen und alle Seiten.
+const logoUrl = "/images/branding/hg-systeme-logo.png";
 const copy = {
  de: { nav:["Leistungen","Über uns","Ratgeber","Kontakt"], preview:"Interner Website-Entwurf · Noch nicht zur Veröffentlichung freigegeben", brand:"HG-Systeme – Startseite", navigation:"Hauptnavigation", mobile:"Mobile Navigation", menu:"Menü", open:"Navigation öffnen", consultation:"Erstgespräch", existing:"Bestandskunden-Support", tagline:"Mit uns immer sicher vernetzt!", region:"IT-Dienstleistungen aus Eberbach.", company:"Unternehmen", guide:"Ratgeber & FAQ", customers:"Bestandskunden", legal:"Impressum", privacy:"Datenschutz", draft:"Interner Entwurf", more:"Mehr erfahren", bandLabel:"Persönlich. Regional. Verständlich.", bandTitle:"Was können wir für Ihre IT tun?", bandText:"Erzählen Sie uns, was Sie beschäftigt. Gemeinsam finden wir einen sinnvollen nächsten Schritt.", bandButton:"Erstgespräch vereinbaren" },
  en: { nav:["Services","About us","IT guide","Contact"], preview:"Internal website draft · Not approved for publication", brand:"HG-Systeme – Home", navigation:"Main navigation", mobile:"Mobile navigation", menu:"Menu", open:"Open navigation", consultation:"Initial consultation", existing:"Existing customer support", tagline:"Stay securely connected with us!", region:"IT services from Eberbach.", company:"Company", guide:"IT guide & FAQ", customers:"Existing customers", legal:"Legal notice", privacy:"Privacy", draft:"Internal draft", more:"Learn more", bandLabel:"Personal. Regional. Clear.", bandTitle:"How can we help with your IT?", bandText:"Tell us what you need. Together we will find a sensible next step.", bandButton:"Arrange a consultation" }
 } as const;
 const navRoutes = [routes.services, routes.about, routes.guide, routes.contact];
 export function Brand({ lang = "de" }: { lang?: Language }) {
-  return <Link href={routes.home[lang]} className="brand" aria-label={copy[lang].brand}><img className="official-logo" src={logoUrl} alt="HG-Systeme" width={180} height={82} referrerPolicy="no-referrer"/></Link>;
+  return <Link href={routes.home[lang]} className="brand" aria-label={copy[lang].brand}><img className="official-logo" src={logoUrl} alt="HG-Systeme" width={2172} height={724}/></Link>;
 }
 export function Header({ lang = "de" }: { lang?: Language }) {
   const t = copy[lang];
