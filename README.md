@@ -69,10 +69,26 @@ Die Inhalte basieren auf unserem [Wachstumskonzept](https://github.com/scncvk19/
 
 ## Datenschutz und Betrieb
 
-Keine Trackingbibliotheken, externen Schriftarten, Karten-Embeds, Web3Forms, hCaptcha oder Kontaktformular-Backend. Ausnahme im internen Entwurf: Das Logo wird vorläufig von LinkedIn geladen; dadurch entsteht eine externe Anfrage. Vor Veröffentlichung wird das Logo lokal eingebunden. Telefon- und E-Mail-Links führen zum vorhandenen Kontakt; der Supportweg für Bestandskunden bleibt wie vereinbart. Hosting, Serverprotokolle und Rechtsangaben müssen vor Freigabe fachlich geprüft werden. Kein echter Kundenvorgang wurde ausgelöst.
+Keine Trackingbibliotheken, externen Schriftarten oder Karten-Embeds. Das Kontaktformular ist vorbereitet, aber standardmäßig deaktiviert. Bei Freigabe verwende ich Web3Forms und hCaptcha; beide Dienste sind externe Datenempfänger. Ausnahme im internen Entwurf: Das Logo wird vorläufig von LinkedIn geladen; dadurch entsteht eine externe Anfrage. Vor Veröffentlichung wird das Logo lokal eingebunden. Telefon- und E-Mail-Links führen zum vorhandenen Kontakt; der Supportweg für Bestandskunden bleibt wie vereinbart. Hosting, Serverprotokolle und Rechtsangaben müssen vor Freigabe fachlich geprüft werden. Kein echter Kundenvorgang wurde ausgelöst.
 
 Vercel ist eine mögliche spätere Plattform wie bei OWA Labs. Noch kein Deployment, keine Domain-Änderung und kein Zugriff auf die produktive Website. Vor einer Vorschau auf Vercel Zugriffsschutz prüfen (privates GitHub-Repository schützt eine öffentliche Deployment-URL nicht); lokale Vorschau ist der sichere erste Schritt. Für eine öffentliche Freigabe müssen Entwurfsbanner, Noindex/robots und Rechtsseiten bewusst aktualisiert werden, kanonische Produktions-URL und Sitemap festgelegt und die Freigabe dokumentiert sein.
 
 ## Status
 
-Quellcode und Seitenstruktur erstellt, GitHub-Commit und 13 Seitenrouten geprüft. Die statisch untersuchten internen Linkziele sind vorhanden. Build, Browserprüfung, Branding, Datenschutz, tatsächliche Leistungsfreigabe und Veröffentlichung sind offen. Siehe [TODO](TODO.md).
+Quellcode und Seitenstruktur erstellt, GitHub-Commit und 13 Seitenrouten geprüft. Die statisch untersuchten internen Linkziele sind vorhanden. Build, Browserprüfung, Branding, Datenschutz, tatsächliche Leistungsfreigabe und Veröffentlichung sind offen. Die englische Fassung und das vorbereitete Kontaktformular sind implementiert; Live-Versand ist nicht aktiviert. Siehe [TODO](TODO.md).
+
+## Deutsch / Englisch und Kontaktformular
+
+Ich habe die Website auf Deutsch und Englisch aufgebaut. Die bisherigen deutschen URLs bleiben unverändert, die englischen Seiten beginnen mit /en. Die Sprachauswahl verlinkt auf die entsprechende Seite der anderen Sprache. Beide Sprachen nutzen das gleiche Layout, dieselben Unternehmensdaten und das gleiche CSS; englische Leistungsbeschreibungen und FAQ pflege ich in lib/content-en.ts. Die beiden Route-Gruppen haben eigene Root-Layouts für korrektes HTML-lang. Der Wechsel zwischen den Sprachen lädt das Dokument neu.
+
+Das Formular verwendet Web3Forms nach dem Vorbild von OWA Labs. Der Empfänger ist an den eigenen HG-Systeme-Formularschlüssel gebunden. Ich übertrage ausschließlich definierte Felder per HTTPS an den festen Web3Forms-Endpunkt. Das Captcha wird erst nach Bestätigung der Datenschutzhinweise geladen. Der erfolgreiche Versand führt auf eine feste interne Dankeseite, ohne personenbezogene Angaben in der URL. Die deutsche und englische Kontaktseite bleiben auch ohne Formularversand per Telefon und E-Mail nutzbar.
+
+### Aktivierung (erst nach Freigabe)
+
+1. Eigenes Web3Forms-Formular für ein bestätigtes Firmenpostfach anlegen. Keinen OWA-Labs-Schlüssel verwenden.
+2. hCaptcha in den Web3Forms-Formulareinstellungen verbindlich aktivieren (serverseitige Prüfung). Bei einem geeigneten Tarif zusätzlich die produktive Domain beschränken.
+3. Datenschutz, Auftragsverarbeitung, Drittlandtransfer, Empfänger, Aufbewahrung und Anbieterbedingungen fachlich prüfen und freigeben lassen. Web3Forms nennt US-Server; hCaptcha ist ebenfalls ein externer Anbieter. Wenn diese Anbieter nicht freigegeben werden, verwende ich stattdessen einen betrieblich freigegebenen Maildienst.
+4. .env.example nach .env kopieren, den HG-Systeme-Formularschlüssel lokal eintragen und HG_CONTACT_FORM_ENABLED=true setzen. Bei Docker Compose wird die Konfiguration zur Laufzeit übernommen; nach Änderung docker compose up -d ausführen. Für npm lokal .env verwenden. .env wird nicht eingecheckt oder in das Docker-Image kopiert.
+5. Nach Freigabe mit Testdaten auf einer zugelassenen HTTPS-Umgebung prüfen: fehlendes/ungültiges Captcha muss abgewiesen werden, erfolgreiche Zustellung an das richtige Postfach, Antwortadresse, Fehlerfall, beide Sprachen und interne Dankeseite. Der öffentliche Web3Forms-Formularschlüssel ist im Browser sichtbar; er ist kein vertrauliches SMTP-Passwort.
+
+Ich habe keine realen Kontaktanfragen ausgelöst und keinen produktiven Formulardienst aktiviert. Keine Weiterleitung oder Weitergabe an OWA Labs. Ohne eigene Konfiguration bleibt der Versand deaktiviert. Die Angaben zu Datenschutz und Leistungen sind weiterhin interne Entwürfe.

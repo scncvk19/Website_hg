@@ -6,3 +6,6 @@ services:
     ports:
       - "127.0.0.1:3000:3000"
     init: true
+    environment:
+      HG_CONTACT_FORM_ENABLED: "${HG_CONTACT_FORM_ENABLED:-false}"
+      HG_WEB3FORMS_ACCESS_KEY: "${HG_WEB3FORMS_ACCESS_KEY:-}"

@@ -1,0 +1,49 @@
+import type { Service } from "./content";
+
+export const servicesEn: Service[] = [
+  { slug: "it-support", icon: "support", title: "IT support & managed services", subtitle: "Personal assistance and predictable support for your business IT.",
+    intro: "From workstations and email to printers and servers, we help keep your business IT running reliably. Depending on your needs, we provide remote support or visit your premises.",
+    features: ["Remote and on-site support as agreed","Monitoring and regular maintenance of agreed systems","Clear monthly reports and dedicated contacts","Individual support packages with a defined scope"],
+    benefit: "You keep an overview of your IT and know whom to contact when problems arise.",
+    limit: "Response times, support allowances, covered devices, licences and on-site visits are agreed individually. Unlimited support is not included by default.",
+    steps: ["Discuss requirements and existing infrastructure","Agree scope and responsibilities","Set up support and review it regularly"] },
+  { slug: "security-check", icon: "shield", title: "IT security & security assessment", subtitle: "Understand risks. Take targeted action.",
+    intro: "How well prepared is your business IT for outages and cyber risks? We discuss your situation and, if requested, assess a clearly agreed technical scope.",
+    features: ["Backup status and existing recovery evidence","Firewall, networks and secure remote access","Updates, endpoint protection and administrative rights","MFA, email security and incident procedures","Written action plan and personal review of findings"],
+    benefit: "You receive clear priorities instead of an overwhelming list of technical problems.",
+    limit: "The free initial consultation provides orientation without technical testing. The paid business assessment requires written agreement and authorisation. It is not a penetration test or certification and cannot guarantee protection from attacks. Remediation is offered separately.",
+    steps: ["Initial consultation without obligation (20–30 minutes)","Commission the technical assessment based on an offer","Discuss findings and plan measures"] },
+  { slug: "backup", icon: "database", title: "Backup & recovery", subtitle: "Protect your data and demonstrate recoverability.",
+    intro: "A backup is only truly useful when essential data can be restored in an emergency. We develop a backup plan suited to your operational requirements.",
+    features: ["Agree backup scope and recovery objectives","Plan appropriate local and off-site backup destinations","Monitor backup jobs and investigate failures","Agreed restore tests and status reports"],
+    benefit: "You know which systems are protected and what steps are needed in an emergency.",
+    limit: "Storage, licences, retention, testing and recovery objectives are agreed separately. Full disaster recovery is not automatically included.",
+    steps: ["Identify data and critical applications","Set up backups and alerts","Test recovery and agree ongoing support"] },
+  { slug: "firewall-network", icon: "network", title: "Firewall & networking", subtitle: "Secure connections and well-maintained infrastructure.",
+    intro: "We help businesses with firewalls, Wi-Fi and network security. Together we plan a transparent solution that fits your locations and workflows.",
+    features: ["Firewall configuration and controlled access rules","VPN and secure remote access","Network segmentation and secure Wi-Fi","Maintenance, firmware updates and configuration backups","Firewall rental or support based on an individual offer"],
+    benefit: "Network access remains manageable, and changes are planned rather than made ad hoc.",
+    limit: "Hardware, licence scope, rental terms, maintenance windows, replacement and major network changes are agreed in advance.",
+    steps: ["Discuss your existing network and requirements","Agree the solution and rollback plan","Implement, verify and provide ongoing support if required"] },
+  { slug: "security-training", icon: "training", title: "IT security training", subtitle: "Help employees work safely every day.",
+    intro: "Suspicious messages, fraudulent invoices or unexpected MFA prompts: our proposed training uses clear examples and appropriate responses, not blame.",
+    features: ["Introductory workshop: 90 minutes for 5–15 people","Phishing, payment fraud, passwords and MFA","Safe handling of files and confidential data","Practical exercises, knowledge check and handout","Refresher (30 minutes), management briefing (60 minutes) or annual package by agreement"],
+    benefit: "Employees learn to recognise typical risks and report suspicious situations early.",
+    limit: "These formats are a draft service proposal. No accredited certification, covert monitoring or phishing simulation is included in the standard workshop. Dates and group size are agreed individually.",
+    steps: ["Clarify the audience and incident reporting channels","Deliver a personal workshop","Review lessons and refresh knowledge as needed"] },
+  { slug: "green-it", icon: "leaf", title: "Green IT & infrastructure", subtitle: "Make practical and economical use of existing technology.",
+    intro: "Not every IT upgrade requires new hardware. We assess when existing systems can be retained or should be replaced.",
+    features: ["Inventory and economical modernisation","Suitable SSD/RAM upgrades and business hardware","Refurbished hardware depending on suitability and availability","Consider support status, energy use and total cost"],
+    benefit: "Investments are transparent and aligned with actual needs.",
+    limit: "Availability, warranty, compatibility and ongoing support are checked before purchase. No blanket guarantees on energy or cost savings.",
+    steps: ["Assess existing technology and requirements","Compare continued use, upgrades and replacement","Plan and implement a suitable solution"] }
+];
+
+export const faqsEn = [
+  ["Which businesses do you support?", "We serve business customers in Eberbach, Sinsheim, Heidelberg and the surrounding area. Support depends on your IT and the agreed scope, not on a fixed company size."],
+  ["What is included in the free initial consultation?", "We discuss your situation, key questions and sensible next steps. This is an initial consultation without obligation, not a technical security assessment."],
+  ["Can I book individual services?", "Yes. Security assessments, backups, firewall services and training can be agreed as separate services. Ongoing support is optional."],
+  ["Do you provide remote and on-site support?", "Yes, depending on the request and agreement. Remote and on-site support have different rates. We clarify the terms before you place an order."],
+  ["Is a security assessment a penetration test?", "No. We assess agreed settings and evidence. A penetration test is a separate, authorised engagement and is not included in our standard assessment."],
+  ["How much does IT support cost?", "This depends on the systems, required scope and agreed services. You receive an individual offer. We do not publish unconfirmed prices."]
+] as const;

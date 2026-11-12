@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Header, Footer } from "@/components/Site";
-import "./globals.css";
+import "@/app/globals.css";
 
 export const metadata: Metadata = {
   title: { default: "HG-Systeme | IT-Betreuung & IT-Sicherheit in Eberbach", template: "%s | HG-Systeme" },
