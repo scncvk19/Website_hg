@@ -31,7 +31,7 @@ npm run build
 npm run start
 ```
 
-Ich pinne Next.js und React auf die bei Erstellung (12.11.2026) recherchierten stabilen Versionen. Next.js 16.4.6, React 19.3.1, TypeScript 5.9.3. Der erste lokale Installationsversuch im Arbeitscontainer war wegen fehlender DNS-Auflösung des npm-Registrys nicht möglich. Der tatsächliche Build und die Lockdatei stehen deshalb noch aus. Nach erfolgreichem npm install package-lock.json committen und weitere Installationen mit npm ci durchführen. Vor Veröffentlichung Abhängigkeiten auf Aktualität prüfen.
+Ich pinne Next.js und React auf die bei Erstellung (12.11.2026) recherchierten stabilen Versionen. Next.js 16.4.6, React 19.3.1, TypeScript 5.9.3. Die lokale Abfrage des npm-Registrys im Arbeitscontainer scheiterte an der DNS-Auflösung; eine Installation und ein Build waren deshalb nicht möglich. Der tatsächliche Build und die Lockdatei stehen deshalb noch aus. Nach erfolgreichem npm install package-lock.json committen und weitere Installationen mit npm ci durchführen. Vor Veröffentlichung Abhängigkeiten auf Aktualität prüfen.
 
 ## Struktur
 
@@ -58,4 +58,4 @@ Vercel ist eine mögliche spätere Plattform wie bei OWA Labs. Noch kein Deploym
 
 ## Status
 
-Quellcode und Seitenstruktur erstellt. Build, Browserprüfung, Branding, Datenschutz, tatsächliche Leistungsfreigabe und Veröffentlichung sind offen. Siehe [TODO](TODO.md).
+Quellcode und Seitenstruktur erstellt, GitHub-Commit und 13 Seitenrouten geprüft. Die statisch untersuchten internen Linkziele sind vorhanden. Build, Browserprüfung, Branding, Datenschutz, tatsächliche Leistungsfreigabe und Veröffentlichung sind offen. Siehe [TODO](TODO.md).
