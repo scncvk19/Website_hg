@@ -12,7 +12,8 @@ Stand: 12.11.2026 · Interner Entwurf
 | Quellcode im Repository bereitstellen; GitHub-Dateiliste und statische Linkziele prüfen | ✅ |
 | npm-Installation, Lockdatei, Typecheck und Produktionsbuild tatsächlich ausführen | 🔄 |
 | Browserprüfung Desktop, Smartphone und Querformat; Navigation, FAQ, Links und 404 prüfen | ⬜ |
-| Aktuelles Logo, Farben, Teamfotos, Referenzen und Nutzungsrechte intern bestätigen | ⬜ |
+| Farbkonzept auf Blau umstellen, wichtige Textkontraste rechnerisch prüfen und öffentliches Firmenlogo im Entwurf einbinden | ✅ |
+| Original-Logo als freigegebene lokale SVG/PNG übernehmen, Favicon und Corporate Design bestätigen; Teamfotos, Referenzen und Nutzungsrechte prüfen | ⬜ |
 | Unternehmensdaten, Registerangaben und Datenschutzerklärung vervollständigen und fachlich freigeben | ⬜ |
 | Tatsächliche Leistungen, kostenloses Erstgespräch, Schulungsformate und Betreuungspakete durch Geschäftsleitung freigeben | ⬜ |
 | Gegebenenfalls geschützte Vorschau über Vercel einrichten | ⬜ |
