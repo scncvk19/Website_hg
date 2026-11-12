@@ -22,9 +22,9 @@
 .quickPhone:hover{color:var(--teal)}
 .footerGroups{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .footerGroup{min-width:0}
-.footerGroup summary{display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer;list-style:none;font-size:.94rem;font-weight:680;color:var(--navy);padding:15px 0;min-height:48px}
+.footerGroup summary{display:flex;align-items:center;justify-content:flex-start;gap:6px;cursor:pointer;list-style:none;font-size:.94rem;font-weight:680;color:var(--navy);padding:15px 0;min-height:48px}
 .footerGroup summary::-webkit-details-marker{display:none}
-.footerGroup summary svg{width:17px;height:17px;color:var(--muted);transition:transform .15s ease}
+.footerGroup summary svg{width:17px;height:17px;flex-shrink:0;color:var(--muted);transition:transform .15s ease}
 .footerGroup[open] summary svg{transform:rotate(180deg)}
 .footerLinks{display:flex;flex-direction:column;gap:8px;padding:0 0 16px;font-size:.88rem;line-height:1.55;overflow-wrap:anywhere}
 .footerLinks a:hover,.footerBottom a:hover{text-decoration:underline;text-underline-offset:3px;color:var(--teal)}
