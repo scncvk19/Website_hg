@@ -17,7 +17,6 @@ export default function Home() {
       </div>
       <ITConcept lang="de"/>
     </div></section>
-    <div className="trust-strip"><div className="container trust-inner"><span>Erfahrung in der</span><strong>Medizin</strong><span className="trust-divider"/><strong>Automobilbranche</strong><span className="trust-divider"/><Link className="text-link" href="/ueber-uns#branchen">Industrie & Automatisierung <Icon name="arrow"/></Link></div></div>
     <ITApproach lang="de"/>
     <section className="section" id="leistungen"><div className="container"><SectionHeading eyebrow="Unsere Leistungen" title="Ihre IT. Gut betreut." text="Von der täglichen Unterstützung bis zur sicheren Infrastruktur: Wir stimmen die Leistungen auf Ihr Unternehmen ab."/><ServiceCards/></div></section>
     

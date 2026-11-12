@@ -17,7 +17,6 @@ export default function Home() {
       </div>
       <ITConcept lang="en"/>
     </div></section>
-    <div className="trust-strip"><div className="container trust-inner"><span>Experience in</span><strong>Healthcare</strong><span className="trust-divider"/><strong>Automotive</strong><span className="trust-divider"/><Link className="text-link" href="/en/about#industries">Industry & automation <Icon name="arrow"/></Link></div></div>
     <ITApproach lang="en"/>
     <section className="section" id="services"><div className="container"><SectionHeading eyebrow="Our services" title="Your IT. In good hands." text="From day-to-day support to secure infrastructure, we tailor our services to your business."/><ServiceCards lang="en"/></div></section>
     

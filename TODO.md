@@ -9,6 +9,7 @@ Stand: 12.11.2026 · Interner Entwurf
 | Sieben Leistungsseiten, Startseite, Über uns, Ratgeber und Kontakt angelegt | ✅ |
 | Industrie um Datenerfassung, Datenverarbeitung und Prozesssteuerung ergänzen; Automatisierungs-Leistungsseite DE/EN | ✅ |
 | IT-Konzept mit sechs verlinkten Themen und Neukunden-Stufenpyramide DE/EN umsetzen | ✅ |
+| Branchenleiste zwischen IT-Konzept und Neukundenmodell auf beiden Startseiten entfernen; Branchenbeschreibung unter Über uns behalten | ✅ |
 | Automatisierungsumfang und Vorgehensmodell fachlich freigeben; Pyramide, Links und mobile Darstellung prüfen | ⬜ |
 | Responsive CSS, mobile Navigation, Tastatur-Fokus und lokale Icons implementiert | ✅ |
 | Social-Media-Links zentral vorbereiten; Firmen-LinkedIn mit lokalen Icons einbinden | ✅ |

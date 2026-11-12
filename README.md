@@ -60,7 +60,7 @@ Ich pflege die Texte in den vorhandenen Dateien. Deutsch und Englisch bleiben ge
 | GitHub, Instagram, LinkedIn | `lib/social.ts` → `socialProfiles`; LinkedIn übernimmt `company.linkedin` |
 | Deutsche Leistungen, Leistungsumfang, FAQ | `lib/content.ts` → `services`, `faqs` |
 | Englische Leistungen und FAQ | `lib/content-en.ts` → `servicesEn`, `faqsEn` |
-| Startseite, Überschrift, Einleitung, Branchenleiste | `app/(de)/page.tsx`, `app/(en)/en/page.tsx` |
+| Startseite, Überschrift, Einleitung | `app/(de)/page.tsx`, `app/(en)/en/page.tsx` |
 | Branchen und Unternehmensbeschreibung | `app/(de)/ueber-uns/page.tsx`, `app/(en)/en/about/page.tsx` |
 | Leistungsübersichten und Detailseiten | `app/(de)/leistungen/`, `app/(en)/en/services/`; Inhalte zentral in den Leistungsdateien |
 | IT-Konzept und sechs verlinkte Bereiche | `components/ITConcept.tsx` |
@@ -150,6 +150,8 @@ Der alternative WatchGuard-Import war erfolgreich (Commit 5ac780c). Microsoft, P
 
 
 ### IT-Konzept, Neukunden und Automatisierung
+
+Ich habe die Branchenleiste zwischen dem Einstieg und dem Neukundenmodell entfernt. Die Startseite führt direkt vom IT-Konzept zum Vorgehensmodell. Die Branchenbeschreibung bleibt unter Über uns in beiden Sprachen erhalten.
 
 Ich habe die bestehende IT-Konzept-Grafik in einer gemeinsamen DE/EN-Komponente erweitert. Sechs verlinkte Leistungsbereiche führen direkt zu Backup, Netzwerk, Sicherheit, Support, Awareness und Automatisierung. Die neue Stufenpyramide auf beiden Startseiten erklärt die Arbeitsweise vom Erfassen der Architektur über Risikobewertung und Abhärtung bis zu Prozessoptimierung und laufendem Betrieb. Die fünf Schritte sind im Quelltext chronologisch, visuell vom Fundament nach oben angeordnet; auf kleinen Geräten erscheinen gleich breite Stufen. Sie ersetzt den bisherigen wiederholten Sicherheitscheck-Block und verweist weiter auf die bestehende Sicherheitscheck-Seite. Änderungen erfolgen nach Vereinbarung, mit geeigneter Sicherung und Prüfung. 
 
