@@ -1,0 +1,72 @@
+[
+  {
+    "id": "azure",
+    "path": "/images/certificates/microsoft/azure-associate.svg",
+    "url": "https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-associate-badge.svg"
+  },
+  {
+    "id": "itil",
+    "path": "/images/certificates/itil/itil4-foundation.png",
+    "url": "https://images.credly.com/images/8b943c4b-c186-4e9f-84aa-004322b76eed/image.png"
+  },
+  {
+    "id": "kaspersky",
+    "path": "/images/certificates/archive/kaspersky.jpg",
+    "url": "https://www.hg-systeme.de/.cm4all/uproc.php/0/.Kaspersky.jpg/picture-200?_=183f0b8d6d4"
+  },
+  {
+    "id": "knox",
+    "path": "/images/certificates/archive/knox.jpg",
+    "url": "https://www.hg-systeme.de/.cm4all/uproc.php/0/.Samsung%20Knox.jpg/picture-200?_=183f0ba22d0"
+  },
+  {
+    "id": "terra",
+    "path": "/images/certificates/archive/terra.jpg",
+    "url": "https://www.hg-systeme.de/.cm4all/uproc.php/0/.terra%20cloud%202020.jpg/picture-200?_=183f0ba4210"
+  },
+  {
+    "id": "passwordsafe-2020",
+    "path": "/images/certificates/archive/passwordsafe-2020.jpg",
+    "url": "https://www.hg-systeme.de/.cm4all/uproc.php/0/.Password%20Safe%202020.jpg/picture-200?_=183f0ba0778"
+  },
+  {
+    "id": "passwordsafe-2017",
+    "path": "/images/certificates/archive/passwordsafe-2017.jpg",
+    "url": "https://www.hg-systeme.de/.cm4all/uproc.php/0/.Password%20Safe%202017.jpg/picture-200?_=183f0b9dc80"
+  },
+  {
+    "id": "medidoc",
+    "path": "/images/certificates/archive/medidoc.jpg",
+    "url": "https://www.hg-systeme.de/.cm4all/uproc.php/0/.medidoc%202018_1.jpg/picture-200?_=183f0b9a5d0"
+  },
+  {
+    "id": "macmon-partner",
+    "path": "/images/certificates/archive/macmon-partner.jpg",
+    "url": "https://www.hg-systeme.de/.cm4all/uproc.php/0/.macmon%20Partner%202018.jpg/picture-200?_=183f0b98e60"
+  },
+  {
+    "id": "macmon",
+    "path": "/images/certificates/archive/macmon.jpg",
+    "url": "https://www.hg-systeme.de/.cm4all/uproc.php/0/.macmon%202018.jpg/picture-200?_=183f0b93488"
+  },
+  {
+    "id": "windows-2019",
+    "path": "/images/certificates/archive/windows-2019.jpg",
+    "url": "https://www.hg-systeme.de/.cm4all/uproc.php/0/.Abschlusszertifikat_Windows%20Server%202019%20Grundkurs%20Grundlagen%20Installation%20und%20Konfiguration.jpg/picture-200?_=183f0b8bf58"
+  },
+  {
+    "id": "sway",
+    "path": "/images/certificates/archive/sway.jpg",
+    "url": "https://www.hg-systeme.de/.cm4all/uproc.php/0/.Abschlusszertifikat_Sway%20Grundkurs.jpg/picture-200?_=183f0b8a018"
+  },
+  {
+    "id": "automotive",
+    "path": "/images/certificates/archive/automotive.jpg",
+    "url": "https://www.hg-systeme.de/.cm4all/uproc.php/0/.KFZ%20Gewerbe%202018.jpg/picture-200?_=183f0b905a8"
+  },
+  {
+    "id": "emc",
+    "path": "/images/certificates/archive/emc.jpg",
+    "url": "https://www.hg-systeme.de/.cm4all/uproc.php/0/.EMC_16_Authorized_Partner.jpg/picture-200?_=17e9d0693a8"
+  }
+]

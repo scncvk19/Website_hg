@@ -3,14 +3,14 @@ import type { Language } from "./locale";
 // Angaben zu Azure, ITIL und Dell stammen aus dem Projektauftrag.
 // Partnerlevel, persönliche Zertifikatstitel, Laufzeiten und Markenrechte sind vor Veröffentlichung zu prüfen.
 type Copy = Record<Language, string>;
-type Credential = { id: string; icon: string; name: string; category: "technology" | "qualification"; description: Copy; evidence: "requested" | "profile" | "historical" | "website" };
+type Credential = { id: string; icon: string; name: string; category: "technology" | "qualification"; description: Copy; evidence: "confirmed" | "requested" | "profile" | "historical" | "website" };
 export const credentials: Credential[] = [
-  { id:"azure", icon:"cloud", name:"Microsoft Azure", category:"technology", description:{de:"Cloud-Technologie und hybride Infrastruktur.",en:"Cloud technology and hybrid infrastructure."}, evidence:"requested" },
+  { id:"azure", icon:"cloud", name:"Microsoft Certified: Azure Administrator Associate (AZ-104)", category:"qualification", description:{de:"Verwaltung, Absicherung und Überwachung von Azure-Umgebungen.",en:"Administration, security and monitoring of Azure environments."}, evidence:"confirmed" },
   { id:"dell", icon:"server", name:"Dell Partner", category:"technology", description:{de:"Business-Hardware und Server-Infrastruktur.",en:"Business hardware and server infrastructure."}, evidence:"requested" },
   { id:"watchguard", icon:"shield", name:"WatchGuard", category:"technology", description:{de:"Firewalls und Netzwerksicherheit.",en:"Firewalls and network security."}, evidence:"profile" },
   { id:"microsoft", icon:"monitor", name:"Microsoft", category:"technology", description:{de:"Microsoft-Technologien und IT-Infrastruktur.",en:"Microsoft technologies and IT infrastructure."}, evidence:"profile" },
   { id:"passwordsafe", icon:"key", name:"Passwordsafe", category:"technology", description:{de:"Passwortmanagement und sichere Zugangsdaten.",en:"Password management and secure credentials."}, evidence:"profile" },
-  { id:"itil", icon:"award", name:"ITIL", category:"qualification", description:{de:"Strukturierte IT-Service-Prozesse und Service-Management.",en:"Structured IT service processes and service management."}, evidence:"requested" },
+  { id:"itil", icon:"award", name:"ITIL® 4 Foundation", category:"qualification", description:{de:"Grundlagen des IT-Service-Managements nach ITIL 4.",en:"Foundation-level IT service management knowledge based on ITIL 4."}, evidence:"confirmed" },
   { id:"privacy", icon:"shield", name:"Datenschutz / Data protection", category:"qualification", description:{de:"Datenschutzqualifikationen laut Unternehmensprofil.",en:"Data protection qualifications listed in the company profile."}, evidence:"profile" },
   { id:"windows", icon:"training", name:"Windows Server", category:"qualification", description:{de:"Historisch dokumentierte Schulungen zur Server-Administration.",en:"Historically documented server administration training."}, evidence:"historical" },
   { id:"security", icon:"training", name:"IT-Security & Awareness", category:"qualification", description:{de:"Regelmäßige Fortbildung und Sicherheitsbewusstsein im Arbeitsalltag.",en:"Ongoing professional development and security awareness at work."}, evidence:"website" }
@@ -38,3 +38,6 @@ export const certificateRecords: CertificateRecord[] = [
   {id:"automotive",title:"KFZ-Gewerbe",year:"2018",icon:"award",description:{de:"Veröffentlichter Nachweis im Bereich KFZ-Gewerbe.",en:"Published record relating to the automotive trade."},source:"archive"},
   {id:"emc",title:"EMC Authorized Partner",icon:"server",description:{de:"Auf der bisherigen Startseite veröffentlichtes Partnerabzeichen; kein Nachweis eines aktuellen Dell-Partnerlevels.",en:"Partner badge published on the previous homepage; not proof of a current Dell partner tier."},source:"emc"}
 ];
+
+// Die beiden persönlichen Qualifikationen wurden im Projektauftrag konkret bestätigt.
+export const featuredCertificates = credentials.filter(item => item.evidence === "confirmed");

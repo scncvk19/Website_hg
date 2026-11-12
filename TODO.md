@@ -23,7 +23,8 @@ Stand: 12.11.2026 · Interner Entwurf
 | Favicon aus Firmenlogo für Deutsch und Englisch einbinden | ✅ |
 | Partner-, Technologie- und Qualifikationsübersicht mit lokalen Icons (DE/EN) auf Startseite und Über-uns-Seite ergänzen | ✅ |
 | Öffentliche Zertifikatsseite erneut abgleichen; zweisprachiges Archiv mit elf Nachweisen und historischem EMC-Abzeichen erstellen | ✅ |
-| Originaldateien für Azure, ITIL und Dell-Partnerstatus erhalten, konkrete Titel und Gültigkeit prüfen sowie freigegebene Zertifikatsbilder lokal einbinden | ⬜ |
+| AZ-104 und ITIL 4 Foundation konkret benennen, dezente Abzeichen und zwölf historische Bildquellen in DE/EN integrieren | ✅ |
+| Zertifikatsbilder lokal importieren, persönliche Gültigkeit/Partnerstatus sowie Rechte und personenbezogene Angaben prüfen, externe Bild-Fallbacks vor Veröffentlichung entfernen | ⬜ |
 | Darstellung und Kontrast von Logo, Favicon und Referenzkarten im Browser prüfen; Corporate Design, Teamfotos, Kundenreferenzen und Nutzungsrechte bestätigen | ⬜ |
 | Unternehmensdaten, Registerangaben und Datenschutzerklärung vervollständigen und fachlich freigeben | ⬜ |
 | Tatsächliche Leistungen, kostenloses Erstgespräch, Schulungsformate und Betreuungspakete durch Geschäftsleitung freigeben | ⬜ |
