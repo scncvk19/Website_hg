@@ -1,0 +1,32 @@
+name: Import certificate images
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/import-certificates.yml'
+permissions:
+  contents: write
+concurrency:
+  group: certificate-image-import
+  cancel-in-progress: false
+jobs:
+  import:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Download and validate old public certificates
+        run: python3 scripts/import_certificate_images.py --archive-only
+      - name: Save the complete historical collection
+        run: |
+          git add -- public/images/certificates/archive
+          if git diff --cached --quiet; then
+            echo "All images are already present."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Import historical HG-Systeme certificate images"
+          git push origin HEAD:main

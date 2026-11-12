@@ -67,3 +67,7 @@
 .certificate-image-archive{width:100%;height:142px;margin-bottom:15px;background:#f5f7fa;border:1px solid var(--line);border-radius:8px;padding:8px}
 @media(max-width:740px){.featured-certificates{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:400px){.featured-certificate{gap:12px;padding:14px}.certificate-image-badge{width:58px;height:58px}}
+
+/* Lokal gespeicherte Nachweise in Originalgröße öffnen. */
+a.certificate-image-archive:hover{border-color:var(--teal)}
+a.certificate-image-archive:focus-visible{outline:3px solid var(--teal);outline-offset:3px}

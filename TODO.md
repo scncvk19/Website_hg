@@ -24,7 +24,10 @@ Stand: 12.11.2026 · Interner Entwurf
 | Partner-, Technologie- und Qualifikationsübersicht mit lokalen Icons (DE/EN) auf Startseite und Über-uns-Seite ergänzen | ✅ |
 | Öffentliche Zertifikatsseite erneut abgleichen; zweisprachiges Archiv mit elf Nachweisen und historischem EMC-Abzeichen erstellen | ✅ |
 | AZ-104 und ITIL 4 Foundation konkret benennen, dezente Abzeichen und zwölf historische Bildquellen in DE/EN integrieren | ✅ |
-| Zertifikatsbilder lokal importieren, persönliche Gültigkeit/Partnerstatus sowie Rechte und personenbezogene Angaben prüfen, externe Bild-Fallbacks vor Veröffentlichung entfernen | ⬜ |
+| Zertifikatsseite mit „Zertifizierungen“ und „Veröffentlichte Nachweise“ strukturieren; externe Bild-Fallbacks entfernen | ✅ |
+| Historische Bilddateien per GitHub-Import lokal ins Repository übernehmen und Ergebnis verifizieren | 🔄 |
+| Azure-/ITIL-Abzeichen lokal importieren, Gültigkeit/Partnerstatus sowie Rechte und personenbezogene Angaben aller Bilder prüfen | ⬜ |
+| Offene Freigaben und Entscheidungen in OFFENE-FRAGEN.md dokumentieren | ✅ |
 | Darstellung und Kontrast von Logo, Favicon und Referenzkarten im Browser prüfen; Corporate Design, Teamfotos, Kundenreferenzen und Nutzungsrechte bestätigen | ⬜ |
 | Unternehmensdaten, Registerangaben und Datenschutzerklärung vervollständigen und fachlich freigeben | ⬜ |
 | Tatsächliche Leistungen, kostenloses Erstgespräch, Schulungsformate und Betreuungspakete durch Geschäftsleitung freigeben | ⬜ |
