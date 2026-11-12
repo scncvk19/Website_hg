@@ -10,10 +10,10 @@ import styles from "./navigation.module.css";
 // Lokales Firmenlogo für beide Sprachen und alle Seiten.
 const logoUrl = "/images/branding/hg-systeme-logo.png";
 const copy = {
- de: { nav:["Leistungen","Über uns","Ratgeber","Kontakt"], preview:"Interner Website-Entwurf · Noch nicht zur Veröffentlichung freigegeben", brand:"HG-Systeme – Startseite", navigation:"Hauptnavigation", mobile:"Mobile Navigation", menu:"Menü", open:"Navigation öffnen", consultation:"Erstgespräch", existing:"Bestandskunden-Support", tagline:"Mit uns immer sicher vernetzt!", region:"IT-Dienstleistungen aus Eberbach.", company:"Unternehmen", guide:"Ratgeber & FAQ", customers:"Bestandskunden", legal:"Impressum", privacy:"Datenschutz", draft:"Interner Entwurf", more:"Mehr erfahren", bandLabel:"Persönlich. Regional. Verständlich.", bandTitle:"Was können wir für Ihre IT tun?", bandText:"Erzählen Sie uns, was Sie beschäftigt. Gemeinsam finden wir einen sinnvollen nächsten Schritt.", bandButton:"Erstgespräch vereinbaren" },
- en: { nav:["Services","About us","IT guide","Contact"], preview:"Internal website draft · Not approved for publication", brand:"HG-Systeme – Home", navigation:"Main navigation", mobile:"Mobile navigation", menu:"Menu", open:"Open navigation", consultation:"Initial consultation", existing:"Existing customer support", tagline:"Stay securely connected with us!", region:"IT services from Eberbach.", company:"Company", guide:"IT guide & FAQ", customers:"Existing customers", legal:"Legal notice", privacy:"Privacy", draft:"Internal draft", more:"Learn more", bandLabel:"Personal. Regional. Clear.", bandTitle:"How can we help with your IT?", bandText:"Tell us what you need. Together we will find a sensible next step.", bandButton:"Arrange a consultation" }
+ de: { nav:["Willkommen","Leistungen","Über uns","Ratgeber","Kontakt"], preview:"Interner Website-Entwurf · Noch nicht zur Veröffentlichung freigegeben", brand:"HG-Systeme – Startseite", navigation:"Hauptnavigation", mobile:"Mobile Navigation", menu:"Menü", open:"Navigation öffnen", consultation:"Erstgespräch", existing:"Bestandskunden-Support", tagline:"Mit uns immer sicher vernetzt!", region:"IT-Dienstleistungen aus Eberbach.", company:"Unternehmen", guide:"Ratgeber & FAQ", customers:"Bestandskunden", legal:"Impressum", privacy:"Datenschutz", draft:"Interner Entwurf", more:"Mehr erfahren", bandLabel:"Persönlich. Regional. Verständlich.", bandTitle:"Was können wir für Ihre IT tun?", bandText:"Erzählen Sie uns, was Sie beschäftigt. Gemeinsam finden wir einen sinnvollen nächsten Schritt.", bandButton:"Erstgespräch vereinbaren" },
+ en: { nav:["Welcome","Services","About us","IT guide","Contact"], preview:"Internal website draft · Not approved for publication", brand:"HG-Systeme – Home", navigation:"Main navigation", mobile:"Mobile navigation", menu:"Menu", open:"Open navigation", consultation:"Initial consultation", existing:"Existing customer support", tagline:"Stay securely connected with us!", region:"IT services from Eberbach.", company:"Company", guide:"IT guide & FAQ", customers:"Existing customers", legal:"Legal notice", privacy:"Privacy", draft:"Internal draft", more:"Learn more", bandLabel:"Personal. Regional. Clear.", bandTitle:"How can we help with your IT?", bandText:"Tell us what you need. Together we will find a sensible next step.", bandButton:"Arrange a consultation" }
 } as const;
-const navRoutes = [routes.services, routes.about, routes.guide, routes.contact];
+const navRoutes = [routes.home, routes.services, routes.about, routes.guide, routes.contact];
 export function Brand({ lang = "de" }: { lang?: Language }) {
   return <Link href={routes.home[lang]} className="brand" aria-label={copy[lang].brand}><img className="official-logo" src={logoUrl} alt="HG-Systeme" width={2172} height={724}/></Link>;
 }
@@ -40,15 +40,15 @@ export function Footer({ lang = "de" }: { lang?: Language }) {
     </div>
     <div className={styles.footerGroups}>
       <details className={styles.footerGroup}>
-        <summary>{t.nav[0]}<Icon name="chevron-down"/></summary>
+        <summary>{t.nav[1]}<Icon name="chevron-down"/></summary>
         <div className={styles.footerLinks}>{items.map(s=><Link key={s.slug} href={routes.services[lang]+"/"+s.slug}>{s.title}</Link>)}</div>
       </details>
       <details className={styles.footerGroup}>
         <summary>{t.company}<Icon name="chevron-down"/></summary>
-        <div className={styles.footerLinks}><Link href={routes.about[lang]}>{t.nav[1]}</Link><Link href={routes.certificates[lang]}>{de?"Partner & Qualifikationen":"Partners & qualifications"}</Link><Link href={routes.guide[lang]}>{t.guide}</Link></div>
+        <div className={styles.footerLinks}><Link href={routes.home[lang]}>{t.nav[0]}</Link><Link href={routes.about[lang]}>{t.nav[2]}</Link><Link href={routes.certificates[lang]}>{de?"Partner & Qualifikationen":"Partners & qualifications"}</Link><Link href={routes.guide[lang]}>{t.guide}</Link></div>
       </details>
       <details className={styles.footerGroup}>
-        <summary>{t.nav[3]}<Icon name="chevron-down"/></summary>
+        <summary>{t.nav[4]}<Icon name="chevron-down"/></summary>
         <div className={styles.footerLinks}>
           <address>{company.name}<br/>{company.street}<br/>{company.city}</address>
           <a href={"mailto:"+company.email}>{company.email}</a>
