@@ -16,6 +16,7 @@ Stand: 12.11.2026 · Interner Entwurf
 | npm-Installation, TypeScript, Produktionsbuild und vier lokale Herstellerlogos nach Bereinigung in GitHub Actions prüfen | ✅ |
 | Social-Media-Links zentral vorbereiten; Firmen-LinkedIn mit lokalen Icons einbinden | ✅ |
 | Footer mit geschlossenen, ausklappbaren Bereichen und sichtbaren Rechtslinks vereinfachen | ✅ |
+| Aufklapppfeile im Footer unmittelbar neben den Überschriften platzieren (6 px Abstand) | ✅ |
 | Verzeichnis- und Inhaltspflege in README dokumentieren | ✅ |
 | Offizielle HG-Systeme-GitHub- und Instagram-URLs in lib/social.ts eintragen | ✅ |
 | Navigation Willkommen/Welcome, zentrale E-Mail info@hg-systeme.de und aktualisierte Rechtsseiten DE/EN implementieren | ✅ |
