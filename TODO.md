@@ -28,7 +28,8 @@ Stand: 12.11.2026 · Interner Entwurf
 | Zwölf historische JPG-Dateien per GitHub-Import lokal ins Repository übernehmen und Ergebnis verifizieren | ✅ |
 | Azure-/ITIL-Abzeichen lokal importieren und Ergebnis verifizieren | ✅ |
 | Dezente Herstellerübersicht, G DATA Silver Partner, WatchGuard und verlinkte Textnachweise statt Urkundenbilder | ✅ |
-| Microsoft, Dell und PeopleCert-Logos lokal vorhanden; WatchGuard-Import prüfen; G DATA und Password Safe: freigegebene Dateien ergänzen | 🔄 |
+| Microsoft, PeopleCert, Dell und WatchGuard-Logos lokal importiert und Dateipfade geprüft | ✅ |
+| G DATA und Password Safe: freigegebene Herstellerlogos ergänzen | ⬜ |
 | Zertifikatsgültigkeit, Partnerstatus und Markenfreigaben prüfen | ⬜ |
 | Offene Freigaben und Entscheidungen in OFFENE-FRAGEN.md dokumentieren | ✅ |
 | Darstellung und Kontrast von Logo, Favicon und Referenzkarten im Browser prüfen; Corporate Design, Teamfotos, Kundenreferenzen und Nutzungsrechte bestätigen | ⬜ |
