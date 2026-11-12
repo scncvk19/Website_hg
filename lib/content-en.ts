@@ -36,7 +36,13 @@ export const servicesEn: Service[] = [
     features: ["Inventory and economical modernisation","Suitable SSD/RAM upgrades and business hardware","Refurbished hardware depending on suitability and availability","Consider support status, energy use and total cost"],
     benefit: "Investments are transparent and aligned with actual needs.",
     limit: "Availability, warranty, compatibility and ongoing support are checked before purchase. No blanket guarantees on energy or cost savings.",
-    steps: ["Assess existing technology and requirements","Compare continued use, upgrades and replacement","Plan and implement a suitable solution"] }
+    steps: ["Assess existing technology and requirements","Compare continued use, upgrades and replacement","Plan and implement a suitable solution"] },
+  { slug: "automation", icon: "workflow", title: "Automation & process optimisation", subtitle: "Connect data. Simplify workflows. Improve processes.",
+    intro: "Many businesses collect information across separate systems, transfer data manually or repeat the same tasks. We review existing workflows and help you collect, process and use data systematically for traceable decisions and process control. Reliable connections between IT, applications and operational data are particularly important in industrial environments.",
+    features: ["Map existing workflows, data sources and interfaces","Prepare, combine and analyse structured data","Automate recurring tasks and information flows","Connect applications through suitable interfaces","Make process status visible and control defined software workflows","Consider error handling, access controls, documentation and safe recovery"],
+    benefit: "Reduce manual data transfers, improve traceability and support better decisions. Together we identify automation opportunities based on actual business value.",
+    limit: "Each project is assessed against existing systems, interfaces, data quality and operational requirements. Changes to production equipment, PLCs or safety-critical controls are not part of a general IT service and require separate specialist assessment, authorisation and, where appropriate, specialist partners. No changes to live production systems without approval.",
+    steps: ["Map workflows and data flows together","Define suitable interfaces and goals","Develop a scoped solution and test outside production","Approve, document and provide ongoing support if required"] }
 ];
 
 export const faqsEn = [

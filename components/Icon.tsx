@@ -17,6 +17,9 @@ const paths: Record<string, ReactNode> = {
   award: <><circle cx="12" cy="8" r="5"/><path d="m8 12-2 9 6-3 6 3-2-9"/></>,
   key: <><circle cx="8" cy="9" r="4"/><path d="m11 12 9 9m-4-4 2-2m-5-1 2-2"/></>,
   monitor: <><rect x="3" y="3" width="18" height="13" rx="2"/><path d="M12 16v5M7 21h10"/></>,
+  workflow: <><rect x="2" y="3" width="7" height="6" rx="1"/><rect x="15" y="15" width="7" height="6" rx="1"/><path d="M9 6h8a3 3 0 0 1 3 3v6M15 18H7a3 3 0 0 1-3-3V9"/><path d="m17 12 3 3 3-3"/></>,
+  search: <><circle cx="10" cy="10" r="6"/><path d="m14.5 14.5 6 6"/></>,
+  activity: <path d="M2 12h5l3-8 4 16 3-8h5"/>,
   menu: <path d="M4 6h16M4 12h16M4 18h16"/>
 };
 export default function Icon({ name, className = "" }: { name: string; className?: string }) {

@@ -14,6 +14,7 @@ export const routes = {
   backup: { de: "/leistungen/backup", en: "/en/services/backup" },
   network: { de: "/leistungen/firewall-netzwerk", en: "/en/services/firewall-network" },
   training: { de: "/leistungen/schulungen", en: "/en/services/security-training" },
+  automation: { de: "/leistungen/automatisierung", en: "/en/services/automation" },
   green: { de: "/leistungen/green-it", en: "/en/services/green-it" }
 } as const;
 export function translatedPath(path: string, language: Language) {

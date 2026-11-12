@@ -69,6 +69,15 @@ export const services: Service[] = [
     benefit: "Investitionen werden nachvollziehbar und an den tatsächlichen Bedarf angepasst.",
     limit: "Verfügbarkeit, Garantie, Kompatibilität und laufender Support werden vor der Beschaffung geprüft. Keine pauschalen Energie- oder Einspargarantien.",
     steps: ["Technischen Bestand und Anforderungen erfassen", "Weiterbetrieb, Aufrüstung und Ersatz vergleichen", "Geeignete Lösung planen und umsetzen"]
+  },
+  {
+    slug: "automatisierung", icon: "workflow", title: "Automatisierung & Prozessoptimierung",
+    subtitle: "Daten verbinden. Abläufe vereinfachen. Prozesse gezielt verbessern.",
+    intro: "Viele Unternehmen erfassen Informationen in unterschiedlichen Systemen, übertragen Daten manuell oder müssen wiederkehrende Aufgaben mehrfach bearbeiten. Wir betrachten die vorhandenen Abläufe und unterstützen Sie dabei, Daten strukturiert zu erfassen, zu verarbeiten und für nachvollziehbare Entscheidungen und Prozesssteuerung zu nutzen. Besonders im industriellen Umfeld ist eine verlässliche Verbindung zwischen IT, Anwendungen und betrieblichen Daten wichtig.",
+    features: ["Bestehende Abläufe, Datenquellen und Schnittstellen erfassen", "Daten strukturiert aufbereiten, zusammenführen und auswerten", "Wiederkehrende Aufgaben und Informationsflüsse automatisieren", "Anwendungen über geeignete Schnittstellen verbinden", "Prozessstatus sichtbar machen und definierte softwarebasierte Abläufe steuern", "Fehlerbehandlung, Zugriffsrechte, Dokumentation und sichere Wiederanlaufmöglichkeiten berücksichtigen"],
+    benefit: "Weniger manuelle Übertragungen, nachvollziehbare Datenflüsse und bessere Entscheidungsgrundlagen. Gemeinsam identifizieren wir sinnvolle Automatisierungsmöglichkeiten anhand des tatsächlichen Nutzens.",
+    limit: "Jedes Projekt wird nach Bestand, Schnittstellen, Datenqualität und betrieblichen Anforderungen bewertet. Änderungen an Produktionsanlagen, SPS oder sicherheitskritischen Steuerungen sind nicht Teil eines pauschalen IT-Angebots und erfordern eine gesonderte fachliche Prüfung, Autorisierung und gegebenenfalls spezialisierte Partner. Keine Eingriffe in laufende Produktionssysteme ohne Freigabe.",
+    steps: ["Prozesse und Datenflüsse gemeinsam erfassen", "Geeignete Schnittstellen und Ziele definieren", "Abgegrenzte Lösung entwickeln und außerhalb des Produktivbetriebs prüfen", "Freigeben, dokumentieren und bei Bedarf betreuen"]
   }
 ];
 

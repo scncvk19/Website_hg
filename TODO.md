@@ -6,7 +6,10 @@ Stand: 12.11.2026 · Interner Entwurf
 |---|---|
 | Vorhandenes Repository und OWA-Labs-Architektur geprüft | ✅ |
 | Seitenstruktur, Inhalte und eigene Komponenten entwickelt | ✅ |
-| Sechs Leistungsseiten, Startseite, Über uns, Ratgeber und Kontakt angelegt | ✅ |
+| Sieben Leistungsseiten, Startseite, Über uns, Ratgeber und Kontakt angelegt | ✅ |
+| Industrie um Datenerfassung, Datenverarbeitung und Prozesssteuerung ergänzen; Automatisierungs-Leistungsseite DE/EN | ✅ |
+| IT-Konzept mit sechs verlinkten Themen und Neukunden-Stufenpyramide DE/EN umsetzen | ✅ |
+| Automatisierungsumfang und Vorgehensmodell fachlich freigeben; Pyramide, Links und mobile Darstellung prüfen | ⬜ |
 | Responsive CSS, mobile Navigation, Tastatur-Fokus und lokale Icons implementiert | ✅ |
 | Keine externen Tracker; Entwurfskennzeichnung und Noindex eingerichtet | ✅ |
 | Quellcode im Repository bereitstellen; GitHub-Dateiliste und statische Linkziele prüfen | ✅ |
