@@ -31,7 +31,7 @@ npm run build
 npm run start
 ```
 
-Ich pinne Next.js und React auf die bei Erstellung (12.11.2026) recherchierten stabilen Versionen. Next.js 16.4.6, React 19.3.1, TypeScript 5.9.3. Die lokale Abfrage des npm-Registrys im Arbeitscontainer scheiterte an der DNS-Auflösung; eine Installation und ein Build waren deshalb nicht möglich. Der tatsächliche Build und die Lockdatei stehen deshalb noch aus. Nach erfolgreichem npm install package-lock.json committen und weitere Installationen mit npm ci durchführen. Vor Veröffentlichung Abhängigkeiten auf Aktualität prüfen.
+Ich pinne Next.js und React auf die bei Erstellung (12.11.2026) recherchierten stabilen Versionen. Next.js 16.4.6, React 19.3.1, TypeScript 5.9.3. Die Installation, der Next.js-Produktionsbuild und der TypeScript-Check waren am 12.11.2026 in [GitHub Actions](https://github.com/scncvk19/Website_hg/actions/runs/43207107291) erfolgreich. Eine Lockdatei ist noch nicht eingecheckt. Nach erfolgreichem npm install package-lock.json committen und weitere Installationen mit npm ci durchführen. Vor Veröffentlichung Abhängigkeiten auf Aktualität prüfen.
 
 ## Lokale Vorschau mit Docker Desktop (Windows)
 
@@ -48,7 +48,7 @@ docker compose ps
 
 Ich öffne anschließend http://localhost:3000. Der Port wird nur an 127.0.0.1 gebunden. Das Image website-hg:local wird lokal aus dem privaten Repository gebaut; das Basisimage node:22-bookworm-slim stammt von Docker Hub. Ich veröffentliche kein Firmenimage. Bei Problemen nutze ich `docker compose logs --tail=100 website`; zum Beenden `docker compose down`.
 
-Der Dockerfile baut Next.js und startet als nicht privilegierter Benutzer. Da noch keine package-lock.json vorhanden ist, verwendet der erste Build npm install; bei vorhandener Lockdatei wird npm ci verwendet. Der erste Docker-Build ist noch nicht getestet. Die produktive Firmenwebsite, DNS und bestehende Container bleiben unverändert. Docker Desktop muss für die geschäftliche Nutzung freigegeben sein.
+Der Dockerfile baut Next.js und startet als nicht privilegierter Benutzer. Da noch keine package-lock.json vorhanden ist, verwendet der erste Build npm install; bei vorhandener Lockdatei wird npm ci verwendet. Der aktuelle Stand muss nach der Codebereinigung noch lokal mit Docker Desktop geprüft werden. Die produktive Firmenwebsite, DNS und bestehende Container bleiben unverändert. Docker Desktop muss für die geschäftliche Nutzung freigegeben sein.
 
 ## Struktur und Inhaltspflege
 
@@ -142,7 +142,7 @@ Ich habe die Branchenleiste zwischen dem Einstieg und dem Neukundenmodell entfer
 
 Ich habe die bestehende IT-Konzept-Grafik in einer gemeinsamen DE/EN-Komponente erweitert. Sechs verlinkte Leistungsbereiche führen direkt zu Backup, Netzwerk, Sicherheit, Support, Awareness und Automatisierung. Die neue Stufenpyramide auf beiden Startseiten erklärt die Arbeitsweise vom Erfassen der Architektur über Risikobewertung und Abhärtung bis zu Prozessoptimierung und laufendem Betrieb. Die fünf Schritte sind im Quelltext chronologisch, visuell vom Fundament nach oben angeordnet; auf kleinen Geräten erscheinen gleich breite Stufen. Sie ersetzt den bisherigen wiederholten Sicherheitscheck-Block und verweist weiter auf die bestehende Sicherheitscheck-Seite. Änderungen erfolgen nach Vereinbarung, mit geeigneter Sicherung und Prüfung. 
 
-Für Industrie habe ich Datenerfassung, Datenverarbeitung, Schnittstellen und softwarebasierte Prozesssteuerung konkretisiert. Die siebte Leistungsseite `/leistungen/automatisierung` bzw. `/en/services/automation` ist über die vorhandene zentrale Leistungsstruktur, die Startseite, den Footer und die Sprachauswahl erreichbar. Ich grenze Produktionsanlagen, SPS und sicherheitskritische Steuerungen bewusst ab: kein pauschales OT-Angebot oder Eingriff ohne separate fachliche Prüfung und Freigabe. Die neuen Inhalte sind interne Angebotsentwürfe und werden vor Veröffentlichung fachlich bestätigt. Die Grafiken sind lokale React-/CSS-Komponenten, keine Bilder oder externen Bibliotheken. Build und Browserdarstellung sind noch zu prüfen.
+Für Industrie habe ich Datenerfassung, Datenverarbeitung, Schnittstellen und softwarebasierte Prozesssteuerung konkretisiert. Die siebte Leistungsseite `/leistungen/automatisierung` bzw. `/en/services/automation` ist über die vorhandene zentrale Leistungsstruktur, die Startseite, den Footer und die Sprachauswahl erreichbar. Ich grenze Produktionsanlagen, SPS und sicherheitskritische Steuerungen bewusst ab: kein pauschales OT-Angebot oder Eingriff ohne separate fachliche Prüfung und Freigabe. Die neuen Inhalte sind interne Angebotsentwürfe und werden vor Veröffentlichung fachlich bestätigt. Die Grafiken sind lokale React-/CSS-Komponenten, keine Bilder oder externen Bibliotheken. Der Produktionsbuild ist erfolgreich geprüft; die Browserdarstellung steht noch aus.
 
 
 ### Navigation und kompakter Footer
@@ -153,3 +153,5 @@ Nach dem Vorbild meiner OWA-Labs-Website verwende ich kleine lokale SVG-Social-I
 ### Codeprüfung
 
 Ich habe die nicht mehr genutzten globalen CSS-Regeln für die ursprüngliche Grafik, Branchenleiste, Sicherheitscheck-Grafik, alten Footer und Zertifikatsgalerie entfernt. Überholte Icon-Definitionen und alte Zertifikats-Downloadfunktionen sind bereinigt. Die noch benötigte Dateivalidierung ist direkt im Herstellerlogo-Import enthalten. Die historischen Quellen bleiben nachvollziehbar; die öffentliche Website enthält keine Urkundenbilder. Beide Sprachen und die aktuellen Funktionen bleiben unverändert. Der GitHub-Workflow `Website checks` prüft TypeScript und den Next.js-Produktionsbuild bei Änderungen am Code; er verwendet keine Zugangsdaten und führt keine Bereitstellung aus.
+
+Prüfergebnis 12.11.2026: [Website checks #43207107291](https://github.com/scncvk19/Website_hg/actions/runs/43207107291) erfolgreich für Commit 573ee61. npm-Installation, Produktionsbuild (33 statisch generierte Seiten), `npm run typecheck` und Validierung der vier vorhandenen Herstellerlogos ohne Netzwerkzugriff bestanden. Die Warnungen zu punycode und zur Node-20-Laufzeit der GitHub-Actions sind nicht blockierend; Actions-Versionen bei der nächsten planmäßigen Abhängigkeitspflege aktualisieren. Keine produktive Bereitstellung. Lokale Docker- und Browserprüfung sowie Lockdatei bleiben offen.

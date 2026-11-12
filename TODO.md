@@ -13,7 +13,7 @@ Stand: 12.11.2026 · Interner Entwurf
 | Automatisierungsumfang und Vorgehensmodell fachlich freigeben; Pyramide, Links und mobile Darstellung prüfen | ⬜ |
 | Responsive CSS, mobile Navigation, Tastatur-Fokus und lokale Icons implementiert | ✅ |
 | Ungenutzte CSS-Regeln, Icons und alten Zertifikatsimport entfernen; README und Datenschutztexte konsolidieren | ✅ |
-| TypeScript und Produktionsbuild nach Bereinigung im GitHub-Workflow prüfen | 🔄 |
+| npm-Installation, TypeScript, Produktionsbuild und vier lokale Herstellerlogos nach Bereinigung in GitHub Actions prüfen | ✅ |
 | Social-Media-Links zentral vorbereiten; Firmen-LinkedIn mit lokalen Icons einbinden | ✅ |
 | Footer mit geschlossenen, ausklappbaren Bereichen und sichtbaren Rechtslinks vereinfachen | ✅ |
 | Verzeichnis- und Inhaltspflege in README dokumentieren | ✅ |
@@ -22,8 +22,8 @@ Stand: 12.11.2026 · Interner Entwurf
 | Keine externen Tracker; Entwurfskennzeichnung und Noindex eingerichtet | ✅ |
 | Quellcode im Repository bereitstellen; GitHub-Dateiliste und statische Linkziele prüfen | ✅ |
 | Dockerfile, Compose und Docker-Anleitung für lokale Windows-Vorschau erstellen | ✅ |
-| Docker Desktop auf Firmen-PC prüfen; ersten Docker-Build und lokalen Seitenaufruf bestätigen | 🔄 |
-| npm-Installation, Lockdatei, Typecheck und Produktionsbuild tatsächlich ausführen | 🔄 |
+| Aktuellen bereinigten Stand auf Firmen-PC mit Docker Desktop bauen und im Browser prüfen | 🔄 |
+| package-lock.json aus bestätigter Installation übernehmen und reproduzierbare Installation mit npm ci prüfen | ⬜ |
 | Deutsch/Englisch mit Sprachwechsel, lokalisierten Seiten, Leistungsbeschreibungen und FAQ implementieren | ✅ |
 | Kontaktformular mit Web3Forms, hCaptcha, festem Erfolgsziel und deaktiviertem Standardversand implementieren | ✅ |
 | Firmenpostfach und eigenen Web3Forms-Schlüssel festlegen; Anbieter/Datenschutz freigeben; Captcha serverseitig aktivieren | ⬜ |
@@ -52,4 +52,4 @@ Stand: 12.11.2026 · Interner Entwurf
 
 ## Nächster Schritt
 
-Ich prüfe das Projekt lokal bevorzugt mit Docker Desktop und docker compose up -d --build; alternativ mit npm install, npm run typecheck, npm run build. Danach folgen Browser-Tests einschließlich Sprachwechsel und Kontaktformular. Die externe Formularverarbeitung bleibt bis zur Freigabe und Konfiguration deaktiviert. Das Arbeitsumfeld konnte das npm-Registry nicht auflösen; deshalb ist kein Build-Erfolg bestätigt. Danach bespreche ich Design, Firmenangaben, rechtliche Texte und konkrete Leistungen mit der Geschäftsleitung. Die bestehende Firmenwebsite bleibt bis zu einer späteren ausdrücklich genehmigten Umstellung unverändert.
+Ich prüfe das Projekt lokal bevorzugt mit Docker Desktop und docker compose up -d --build; alternativ mit npm install, npm run typecheck, npm run build. Danach folgen Browser-Tests einschließlich Sprachwechsel und Kontaktformular. Die externe Formularverarbeitung bleibt bis zur Freigabe und Konfiguration deaktiviert. Der GitHub-Prüflauf 43207107291 für Commit 573ee61 hat Installation, Produktionsbuild, TypeScript und Logo-Dateien erfolgreich geprüft. Die Lockdatei und die lokale Docker-/Browserprüfung stehen noch aus. Danach bespreche ich Design, Firmenangaben, rechtliche Texte und konkrete Leistungen mit der Geschäftsleitung. Die bestehende Firmenwebsite bleibt bis zu einer späteren ausdrücklich genehmigten Umstellung unverändert.
