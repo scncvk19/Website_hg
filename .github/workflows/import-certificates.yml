@@ -1,10 +1,6 @@
 name: Import certificate images
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/import-certificates.yml'
 permissions:
   contents: write
 concurrency:
