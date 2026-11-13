@@ -66,7 +66,10 @@ Stand: 13.11.2026 · Interner Entwurf
 | Azure-/ITIL-Abzeichen lokal importieren und Ergebnis verifizieren | ✅ |
 | Dezente Herstellerübersicht, G DATA Silver Partner, WatchGuard und verlinkte Textnachweise statt Urkundenbilder | ✅ |
 | Microsoft, PeopleCert, Dell und WatchGuard-Logos lokal importiert und Dateipfade geprüft | ✅ |
-| G DATA, Netwrix und inoxision: freigegebene Herstellerlogos ergänzen | ⬜ |
+| mediDOK in Herstellerübersicht DE/EN ergänzen; historischen Nachweis erhalten | ✅ |
+| Lokale Netwrix-, inoxision- und mediDOK-Logoquellen und automatische Importkonfiguration ergänzen | ✅ |
+| Tatsächlichen Import der drei neuen Logo-Dateien und Browserdarstellung prüfen | 🔄 |
+| G DATA: freigegebenes Herstellerlogo ergänzen | ⬜ |
 | Zertifikatsgültigkeit, Partnerstatus und Markenfreigaben prüfen | ⬜ |
 | Offene Freigaben und Entscheidungen in OFFENE-FRAGEN.md dokumentieren | ✅ |
 | Darstellung und Kontrast von Logo, Favicon und Referenzkarten im Browser prüfen; Corporate Design, Teamfotos, Kundenreferenzen und Nutzungsrechte bestätigen | ⬜ |
