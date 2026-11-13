@@ -22,9 +22,12 @@ Stand: 12.11.2026 · Interner Entwurf
 | Navigation Willkommen/Welcome, zentrale E-Mail info@hg-systeme.de und aktualisierte Rechtsseiten DE/EN implementieren | ✅ |
 | Startseitenlink auch bei eingeklappter Navigation direkt sichtbar machen (DE/EN) | ✅ |
 | Fehlende Anzeige von Willkommen: veralteten Windows-Checkout e4b6926 und durch lokale Änderungen blockierten Git Pull anhand Terminalausgabe bestätigt; GitHub-Quellcode enthält Willkommen/Welcome | ✅ |
-| Lokale Änderungen in lib/content.ts und lib/social.ts sowie zusätzliche Logo-Dateien sichern und mit main abgleichen; Windows-Checkout und tatsächlich verwendete VM-Projektkopie aktualisieren, neu bauen und Navigation im Browser bestätigen | 🔄 |
-| Beiträge/News DE/EN mit automatischer Anzeige eigener Instagram-Beiträge planen; professionellen Kontotyp und Meta-App-Zugriff bestätigen | 🔄 |
-| Instagram-Lesezugriff nach Freigabe einrichten, serverseitigen Abruf, Cache, Ausfallverhalten, Rechte und Datenschutz prüfen; Beiträge-Seite implementieren und testen | ⬜ |
+| Windows-Checkout aktualisieren und Willkommen im Browser bestätigen; lokale Änderungen einschließlich Logo-Dateien im Stash gesichert | ✅ |
+| Gesicherte lokale Dateien abschließend vergleichen; VM-Projektkopie und laufenden Container separat aktualisieren und prüfen | ⬜ |
+| Beiträge/News DE/EN, Navigation, serverseitigen Instagram-Abruf, begrenzten Cache, sichere Bildroute und Profil-Fallback implementieren | ✅ |
+| Instagram-Kontotyp, Firmen-App, minimale Berechtigungen und eigenen langlebigen Token nach Freigabe bestätigen | 🔄 |
+| Neuen Build und Beitragsseite ohne Token prüfen; Live-Abruf, Bildroute, Fehlerfall, Aktualisierung und beide Sprachen nach Freigabe testen | ⬜ |
+| Meta-Bedingungen, Nutzungsrechte, Datenschutz und regelmäßige Token-Erneuerung klären; automatische Erneuerung bei Bedarf ergänzen | ⬜ |
 | Vorhandene Unternehmensangaben sowie alle Themen der bisherigen Datenschutzseite abgleichen; Google-Maps-Karte mit freiwilliger Aktivierung und externem Kartenlink einbinden | ✅ |
 | Karte, keine Google-Anfrage vor Aktivierung, neue Navigation, E-Mail und Social-Links auf beiden Sprachfassungen im Browser prüfen | ⬜ |
 | Neue Navigation, Social-Links und Footer in beiden Sprachen im Browser prüfen | ⬜ |
@@ -66,3 +69,7 @@ Ich prüfe das Projekt lokal bevorzugt mit Docker Desktop und docker compose up 
 ### Git-Abgleich
 
 Ich habe den auf dem Firmen-PC sichtbaren Commit e4b6926 mit dem GitHub-Stand 8fccb1a verglichen: main war 22 Commits voraus, 13 Dateien waren geändert oder hinzugefügt. Der Pull wurde wegen lokaler Änderungen an lib/content.ts und lib/social.ts abgebrochen. Zwei zusätzliche lokale Logo-Dateien sind nicht versioniert. Die gewünschte E-Mail-Adresse, Firmenprofile, Willkommen/Welcome und das lokale transparente Firmenlogo sind im geprüften main bereits vorhanden. Die uncommitteten lokalen Inhalte und Bilder habe ich noch nicht verglichen. Ich sichere sie vor dem Pull im Stash und prüfe Unterschiede anschließend; kein erzwungener Reset und kein ungeprüftes stash pop. Die auf der VM laufende Version und die Browserdarstellung sind noch nicht bestätigt.
+
+### Bestätigung Windows und Instagram
+
+Der Git Pull auf 09e32f2 ist anhand der Terminalausgabe bestätigt; der neue Browser-Screenshot zeigt Willkommen. Lokale Änderungen bleiben im Stash. Die neue Instagram-Beitragsseite ist im Quellcode umgesetzt, aber standardmäßig deaktiviert. Ich prüfe zunächst den Build und anschließend die Verbindung mit einem freigegebenen professionellen Firmenkonto. Kein Token im Repository, keine echten Medien abgerufen.
