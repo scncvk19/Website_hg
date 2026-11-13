@@ -5,7 +5,7 @@ const marks: Record<string,{file:string;name:string}> = {
  azure:{file:"microsoft.svg",name:"Microsoft"},microsoft:{file:"microsoft.svg",name:"Microsoft"},
  itil:{file:"peoplecert.svg",name:"PeopleCert"},dell:{file:"dell.svg",name:"Dell Technologies"},
  watchguard:{file:"watchguard.png",name:"WatchGuard"},gdata:{file:"gdata.png",name:"G DATA"},
- netwrix:{file:"netwrix.svg",name:"Netwrix Password Secure"},inoxision:{file:"inoxision.svg",name:"inoxision ARCHIVE"}
+ netwrix:{file:"netwrix.jpg",name:"Netwrix Password Secure"},inoxision:{file:"inoxision.png",name:"inoxision ARCHIVE"},medidok:{file:"medidok.png",name:"mediDOK"}
 };
 export default function BrandMark({id,name}:{id:string;name:string}){
  const mark=marks[id];
