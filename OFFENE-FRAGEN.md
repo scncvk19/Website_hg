@@ -18,6 +18,8 @@ Stand: 12.11.2026 · Interner Entwurf
 | 10 | Sind beide Sprachen, Navigation, Formulare, Bilder und Mobilansicht geprüft? | Docker-Build, Typecheck, Browserprüfung und Testversand nach Freigabe durchführen. |
 | 11 | Sind die neuen Navigationselemente und externen Links in beiden Sprachen geprüft? | GitHub (Hg-Systeme428), Instagram (hgsysteme) und LinkedIn sind bestätigt und eingetragen. Willkommen/Welcome, Social-Icons, Kartenaktivierung und Mobilansicht prüfen. |
 
+| 12 | Ist @hgsysteme ein professionelles Instagram-Konto, und ist die Firmen-App für den Abruf eigener Medien freigegeben? | Instagram Login, instagram_business_basic, langlebigen Token lokal konfigurieren; Ablauf/Erneuerung, Rechte und Datenschutz prüfen. Kein öffentlicher Live-Feed vor Freigabe. |
+
 ## Bereits entschieden
 
 Ich behalte Deutsch als Standardsprache, Englisch unter /en, das blaue HG-Design, das transparente lokale Firmenlogo, die beiden konkreten Zertifizierungstitel und eine dezente, verlinkte Textliste unter „Veröffentlichte Nachweise“. Historische Nachweise sind keine Behauptung heutiger Gültigkeit. Die produktive Website bleibt bis zur Freigabe unverändert.
