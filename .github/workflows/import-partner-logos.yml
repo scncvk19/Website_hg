@@ -1,6 +1,10 @@
 name: Import partner logos
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'lib/partner-logo-assets.json'
 permissions:
   contents: write
 concurrency:
