@@ -18,5 +18,20 @@
     "id": "peoplecert",
     "path": "/images/partners/peoplecert.svg",
     "url": "https://cdn.brandfetch.io/id5JrIexGs/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1790897989037"
+  },
+  {
+    "id": "netwrix",
+    "path": "/images/partners/netwrix.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Netwrix_Logo_Dark.jpg"
+  },
+  {
+    "id": "inoxision",
+    "path": "/images/partners/inoxision.png",
+    "url": "https://www.ademis.de/Inoxision%20logo.png"
+  },
+  {
+    "id": "medidok",
+    "path": "/images/partners/medidok.png",
+    "url": "https://medidok.de/wp-content/uploads/2016/12/Logo_mediDOK-300x94.png"
   }
 ]
