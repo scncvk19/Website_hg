@@ -68,7 +68,8 @@ Stand: 13.11.2026 · Interner Entwurf
 | Microsoft, PeopleCert, Dell und WatchGuard-Logos lokal importiert und Dateipfade geprüft | ✅ |
 | mediDOK in Herstellerübersicht DE/EN ergänzen; historischen Nachweis erhalten | ✅ |
 | Lokale Netwrix-, inoxision- und mediDOK-Logoquellen und automatische Importkonfiguration ergänzen | ✅ |
-| Tatsächlichen Import der drei neuen Logo-Dateien und Browserdarstellung prüfen | 🔄 |
+| Netwrix-SVG, inoxision- und mediDOK-PNG lokal im Repository speichern und Dateipfade bestätigen | ✅ |
+| Neue Herstellerlogos im Browser prüfen | ⬜ |
 | G DATA: freigegebenes Herstellerlogo ergänzen | ⬜ |
 | Zertifikatsgültigkeit, Partnerstatus und Markenfreigaben prüfen | ⬜ |
 | Offene Freigaben und Entscheidungen in OFFENE-FRAGEN.md dokumentieren | ✅ |
