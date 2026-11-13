@@ -28,8 +28,10 @@ Stand: 13.11.2026 · Interner Entwurf
 | Windows-Checkout aktualisieren und Willkommen im Browser bestätigen; lokale Änderungen einschließlich Logo-Dateien im Stash gesichert | ✅ |
 | Gesicherte lokale Windows-Dateien abschließend vergleichen | ⬜ |
 | Git-Repository auf Debian-Test-VM klonen und aktuellen main-Stand bestätigen | ✅ |
-| Feste VM-IP mit Netzwerkverantwortlichen abstimmen; DHCP-Reservierung bevorzugt, Gateway/DNS und Netzverwaltung prüfen | 🔄 |
-| Aktuellen Docker-Container auf Test-VM bereitstellen, lokale LAN-Portbindung getrennt vom Repository konfigurieren | ⬜ |
+| Feste IPv4-Adresse in Debian statisch gesetzt (Nutzerrückmeldung) | ✅ |
+| DHCP-Reservierung bzw. Ausschluss der festen Adresse aus dem dynamischen Pool und interne Netzfreigabe bestätigen | ⬜ |
+| Compose-Portbindung über lokale Variable HG_WEBSITE_BIND_IP konfigurierbar machen, Standard localhost erhalten | ✅ |
+| Lokale .env auf Test-VM ergänzen und aktuellen Website-Container starten | 🔄 |
 | Interne Erreichbarkeit von Mitarbeiter-PCs prüfen; keine Internet-Portfreigabe | ⬜ |
 | Beiträge/News DE/EN, Navigation, serverseitigen Instagram-Abruf, begrenzten Cache, sichere Bildroute und Profil-Fallback implementieren | ✅ |
 | Instagram-Kontotyp, Firmen-App, minimale Berechtigungen und eigenen langlebigen Token nach Freigabe bestätigen | ⏸️ |
