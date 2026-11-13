@@ -5,7 +5,7 @@ Interner Entwurf für einen neuen Firmenauftritt von HG-Systeme e.K., Eberbach. 
 ## Was enthalten ist
 
 - Startseite mit regionaler Positionierung, verlinktem IT-Konzept und fünfstufigem Neukundenmodell.
-- Sieben eigene Leistungsseiten: IT-Betreuung, Sicherheitscheck, Backup, Firewall/Netzwerk, Schulungen, Green IT und Automatisierung.
+- Acht eigene Leistungsseiten: IT-Betreuung, Sicherheitscheck, Backup, E-Mail- und Dokumentenarchivierung (inoxision), Firewall/Netzwerk, Schulungen, Green IT und Automatisierung.
 - Über uns mit öffentlich beschriebener Branchenerfahrung (Medizin, Automobil, Industrie).
 - Ratgeber, FAQ und getrennte Kontaktwege für Interessenten und Bestandskunden.
 - Responsive Navigation, mobile Kartenlayouts, lokale SVG-Illustration und Fokusmarkierungen.
@@ -134,7 +134,7 @@ Quellen: [Über uns](https://www.hg-systeme.de/UeBER-UNS/), [Zertifikate](https:
 
 ### Herstellerlogos
 
-Microsoft, PeopleCert, Dell und WatchGuard liegen lokal in `public/images/partners/`. G DATA und Password Safe erscheinen bis zur Freigabe geeigneter Logo-Dateien als Text. Die Zuordnung steht in `components/BrandMark.tsx`, die Importquellen in `lib/partner-logo-assets.json`. Der manuelle GitHub-Workflow `Import partner logos` nutzt ausschließlich `scripts/import_partner_logos.py`, das SVG und PNG prüft und vorhandene gültige Dateien beibehält. Kein automatischer Bilderimport im Betrieb, keine externen Bildanfragen. Markenrechte und Partnerstatus vor Veröffentlichung bestätigen.
+Microsoft, PeopleCert, Dell und WatchGuard liegen lokal in `public/images/partners/`. G DATA, Netwrix Password Secure und inoxision erscheinen bis zur Freigabe geeigneter Logo-Dateien als Text. Die Zuordnung steht in `components/BrandMark.tsx`, die Importquellen in `lib/partner-logo-assets.json`. Der manuelle GitHub-Workflow `Import partner logos` nutzt ausschließlich `scripts/import_partner_logos.py`, das SVG und PNG prüft und vorhandene gültige Dateien beibehält. Kein automatischer Bilderimport im Betrieb, keine externen Bildanfragen. Markenrechte und Partnerstatus vor Veröffentlichung bestätigen.
 
 ### IT-Konzept, Neukunden und Automatisierung
 
@@ -168,6 +168,8 @@ Die Hauptnavigation enthält „Willkommen“ bzw. „Welcome“ als ersten Eint
 
 ### Beiträge / Instagram-Feed
 
+Status: Die Anbindung an Meta ist auf Wunsch zurückgestellt. Der vorbereitete Feed bleibt deaktiviert; ich setze die Einrichtung nicht fort, bis die Firma sie wieder aufnehmen möchte.
+
 Ich habe die Seiten `/beitraege` und `/en/news` mit gemeinsamer Komponente `components/InstagramFeed.tsx`, Navigation, Footer-Link und Sprachwechsel ergänzt. Die Seiten verwenden die vorhandene Gestaltung. Ohne aktivierte Konfiguration, bei einem leeren Feed oder bei einer API-Störung bleibt der Link zu unserem Instagram-Profil verfügbar. Keine erfundenen Posts, keine Widgets und keine zusätzliche Bibliothek.
 
 Die offizielle [Instagram API with Instagram Login](https://developers.facebook.com/docs/instagram-platform/instagram-api-with-instagram-login/) benötigt ein professionelles Business-/Creator-Konto. Ich verwende für eigene Beiträge ausschließlich den Lesezugriff `instagram_business_basic`; keine Veröffentlichung, Kommentare oder Nachrichten. Vor dem Abruf prüft der Server den Kontonamen hgsysteme. Aus der zurückgegebenen Medienliste (bis zu 25 Einträge) werden bis zu neun gültige Beiträge nach Datum sortiert angezeigt. Reels erhalten nur Vorschaubilder; bei Galerien wird das Titelbild angezeigt. Texte bleiben in ihrer Originalsprache. Die API-Version ist konfigurierbar (Vorgabe v25.0).
@@ -189,3 +191,7 @@ Ich habe beide Datenschutzentwürfe entsprechend ergänzt. Vor Aktivierung prüf
 ### Git-Abgleich und Navigation
 
 Auf dem Firmen-PC war der alte Checkout e4b6926 wegen lokaler Änderungen blockiert. Die Änderungen wurden im Stash gesichert; der Git Pull auf 09e32f2 wurde anhand der Terminalausgabe bestätigt. Der anschließende Screenshot zeigt Willkommen in der laufenden lokalen Website. Keine erneute Layoutkorrektur erforderlich. Ich lasse den Stash erhalten, bis die zusätzlichen lokalen Dateien und Unterschiede abschließend verglichen sind. Die auf der Linux-VM laufende Kopie wird separat geprüft und aktualisiert.
+
+### Netwrix und inoxision
+
+Ich habe die aktuelle Herstellerbezeichnung [Netwrix Password Secure](https://netwrix.com/de/products/password-secure/) (ehemals Password Safe von MATESO) übernommen. Die historischen Nachweise 2017 und 2020 behalten ihre ursprünglichen Titel und sind ausdrücklich historisch gekennzeichnet. Netwrix erscheint unter IT-Sicherheit und in der Herstellerübersicht. Auf Wunsch habe ich [inoxision ARCHIVE](https://inoxision.de/) als bereits angebotene Archivierungslösung ergänzt: Herstellerübersicht und eigene Leistungsseite `/leistungen/archivierung` bzw. `/en/services/archiving`. Die Servicekarten, Footer-Leistungen und der Sprachwechsel verwenden die zentralen Daten und Routen. Edition, Module, Lizenzen, tatsächlicher Leistungsumfang und Archivierungskonzept werden im konkreten Angebot abgestimmt; keine pauschale GoBD-Konformitätsgarantie. Quellen: [Herstellerdokumentation zur Umbenennung](https://helpcenter-be.netwrix.com/bundle/PasswordSecure_8.15.1_de/raw/resource/enus/Netwrix_PasswordSecure_8.15.1_de.pdf), [inoxision ARCHIVE](https://inoxision.de/inoxision-archive-ng/). Beide Marken erscheinen zunächst mit Text statt ungeprüfter Logos; keine neuen Partnerstufen oder Zertifizierungen behauptet. Code und Inhalte ergänzt; neuer Build und Browserprüfung noch offen.
