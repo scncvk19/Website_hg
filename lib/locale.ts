@@ -13,6 +13,7 @@ export const routes = {
   support: { de: "/leistungen/it-betreuung", en: "/en/services/it-support" },
   security: { de: "/leistungen/sicherheitscheck", en: "/en/services/security-check" },
   backup: { de: "/leistungen/backup", en: "/en/services/backup" },
+  archiving: { de: "/leistungen/archivierung", en: "/en/services/archiving" },
   network: { de: "/leistungen/firewall-netzwerk", en: "/en/services/firewall-network" },
   training: { de: "/leistungen/schulungen", en: "/en/services/security-training" },
   automation: { de: "/leistungen/automatisierung", en: "/en/services/automation" },
