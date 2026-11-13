@@ -7,6 +7,8 @@ Stand: 13.11.2026 · Interner Entwurf
 | Vorhandenes Repository und OWA-Labs-Architektur geprüft | ✅ |
 | Seitenstruktur, Inhalte und eigene Komponenten entwickelt | ✅ |
 | Acht Leistungsseiten, Startseite, Über uns, Ratgeber und Kontakt angelegt | ✅ |
+| Über-uns-Seite mit Philosophie, Security-Stufenprogramm, Inhaber, Unternehmensgeschichte und drei Mitarbeitern DE/EN erweitern | ✅ |
+| Aktualisierte Über-uns-Seite auf Test-VM bauen und Darstellung prüfen | 🔄 |
 | Netwrix Password Secure statt Password Safe in der aktuellen Herstellerübersicht und IT-Sicherheit; historische Nachweise erhalten | ✅ |
 | inoxision ARCHIVE als Technologie und eigene Archivierungsleistung DE/EN einschließlich Sprachwechsel ergänzen | ✅ |
 | Archivierungsseite, Herstellerkarten und Netwrix-Bezeichnung im neuen Build und Browser prüfen | 🔄 |
@@ -33,8 +35,8 @@ Stand: 13.11.2026 · Interner Entwurf
 | Compose-Portbindung über lokale Variable HG_WEBSITE_BIND_IP konfigurierbar machen, Standard localhost erhalten | ✅ |
 | DNS-Auflösung nach statischer IP-Konfiguration wiederherstellen (vom Nutzer bestätigt) | ✅ |
 | Wiederverwendbares Bereitstellungsskript für die interne Debian-Test-VM erstellen und dokumentieren | ✅ |
-| Bereitstellungsskript auf Test-VM ausführen und Containerstart bestätigen | 🔄 |
-| Interne Erreichbarkeit von Mitarbeiter-PCs prüfen; keine Internet-Portfreigabe | ⬜ |
+| Bereitstellungsskript auf Test-VM ausführen und erfolgreiche Bereitstellung durch Nutzer bestätigen | ✅ |
+| Interne Testumgebung erfolgreich bereitgestellt (Nutzerrückmeldung); gesonderte Prüfung von Mitarbeiter-PCs und Netzfreigabe dokumentieren | 🔄 |
 | Automatischen Website-Containerstart nach VM-Neustart konfigurieren und bei planmäßigem Neustart prüfen | ⬜ |
 | Beiträge/News DE/EN, Navigation, serverseitigen Instagram-Abruf, begrenzten Cache, sichere Bildroute und Profil-Fallback implementieren | ✅ |
 | Instagram-Kontotyp, Firmen-App, minimale Berechtigungen und eigenen langlebigen Token nach Freigabe bestätigen | ⏸️ |
