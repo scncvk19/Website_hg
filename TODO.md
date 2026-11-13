@@ -32,8 +32,10 @@ Stand: 13.11.2026 · Interner Entwurf
 | DHCP-Reservierung bzw. Ausschluss der festen Adresse aus dem dynamischen Pool und interne Netzfreigabe bestätigen | ⬜ |
 | Compose-Portbindung über lokale Variable HG_WEBSITE_BIND_IP konfigurierbar machen, Standard localhost erhalten | ✅ |
 | DNS-Auflösung nach statischer IP-Konfiguration wiederherstellen (vom Nutzer bestätigt) | ✅ |
-| Lokale .env auf Test-VM ergänzen und aktuellen Website-Container starten | 🔄 |
+| Wiederverwendbares Bereitstellungsskript für die interne Debian-Test-VM erstellen und dokumentieren | ✅ |
+| Bereitstellungsskript auf Test-VM ausführen und Containerstart bestätigen | 🔄 |
 | Interne Erreichbarkeit von Mitarbeiter-PCs prüfen; keine Internet-Portfreigabe | ⬜ |
+| Automatischen Website-Containerstart nach VM-Neustart konfigurieren und bei planmäßigem Neustart prüfen | ⬜ |
 | Beiträge/News DE/EN, Navigation, serverseitigen Instagram-Abruf, begrenzten Cache, sichere Bildroute und Profil-Fallback implementieren | ✅ |
 | Instagram-Kontotyp, Firmen-App, minimale Berechtigungen und eigenen langlebigen Token nach Freigabe bestätigen | ⏸️ |
 | Beiträge/News als gemeinsame Instagram- und LinkedIn-Übersicht mit lokalen Icons und zentralen Profil-Links gestalten; deaktivierten Feed vollständig ausblenden | ✅ |
