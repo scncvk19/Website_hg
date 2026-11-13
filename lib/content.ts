@@ -28,7 +28,7 @@ export const services: Service[] = [
   {
     slug: "sicherheitscheck", icon: "shield", title: "IT-Sicherheit & Sicherheitscheck",
     subtitle: "Risiken verstehen. Maßnahmen gezielt angehen.",
-    intro: "Wie gut ist Ihre Firmen-IT auf Ausfälle und Cyberrisiken vorbereitet? Wir besprechen Ihre Situation und prüfen auf Wunsch einen klar vereinbarten technischen Umfang.",
+    intro: "Wie gut ist Ihre Firmen-IT auf Ausfälle und Cyberrisiken vorbereitet? Wir besprechen Ihre Situation und prüfen auf Wunsch einen klar vereinbarten technischen Umfang. Für die zentrale Passwortverwaltung bieten wir Netwrix Password Secure (ehemals Password Safe) als gesonderte Lösung an.",
     features: ["Backup-Status und vorhandene Wiederherstellungsnachweise", "Firewall, Netzwerk und sichere Fernzugänge", "Updates, Endgeräteschutz und administrative Rechte", "MFA, E-Mail-Sicherheit und Notfallorganisation", "Schriftlicher Maßnahmenplan und persönliche Ergebnisbesprechung"],
     benefit: "Sie erhalten nachvollziehbare Prioritäten statt einer unverständlichen Liste technischer Probleme.",
     limit: "Das kostenlose Erstgespräch ist eine Orientierung ohne technische Prüfung. Der kostenpflichtige Business-Check erfolgt nur mit schriftlich vereinbartem Umfang und Freigabe. Kein Penetrationstest, keine Zertifizierung und keine Garantie gegen Angriffe. Maßnahmen werden separat angeboten.",
@@ -42,6 +42,15 @@ export const services: Service[] = [
     benefit: "Sie wissen, welche Systeme gesichert werden und welche Schritte im Ernstfall notwendig sind.",
     limit: "Speicher, Lizenzen, Aufbewahrung, Tests und Wiederanlaufziele werden separat vereinbart. Eine vollständige Notfallwiederherstellung ist kein automatisch enthaltenes Pauschalversprechen.",
     steps: ["Daten und kritische Anwendungen erfassen", "Sicherung und Alarmierung einrichten", "Wiederherstellung erproben und Betreuung vereinbaren"]
+  },
+  {
+    slug: "archivierung", icon: "archive", title: "E-Mail- & Dokumentenarchivierung",
+    subtitle: "Geschäftliche Informationen geordnet aufbewahren und schnell wiederfinden.",
+    intro: "Mit inoxision ARCHIVE bieten wir Unternehmen eine Lösung zur zentralen Archivierung von E-Mails und Dokumenten. Gemeinsam stimmen wir ab, welche Informationen langfristig aufbewahrt werden müssen und wie das Archiv in Ihre bestehende IT und Ihre Arbeitsabläufe eingebunden werden kann.",
+    features: ["Archivierung geschäftlicher E-Mails einschließlich Anhängen", "Strukturierte Ablage von Dokumenten und Belegen je nach gewähltem Modul", "Volltext- und Metadatensuche sowie nachvollziehbare Zugriffsrechte", "Anbindung an vorhandene E-Mail-Systeme und weitere Anwendungen nach technischer Prüfung", "Einrichtung, Aufbewahrungs- und Löschkonzept sowie Betreuung nach Vereinbarung"],
+    benefit: "Relevante Informationen lassen sich zentral aufbewahren und gezielt wiederfinden. Das erleichtert die tägliche Arbeit, Auskunftsprozesse und die nachvollziehbare Dokumentation.",
+    limit: "Produktedition, Module, Lizenzen, Hosting, Speicher, Schnittstellen und Leistungsumfang werden vorab abgestimmt. Die Software kann eine revisionssichere Archivierung unterstützen; die tatsächliche GoBD- und Datenschutzkonformität hängt auch von Konfiguration, betrieblichen Prozessen und rechtlichen Anforderungen ab. Ein Archiv ersetzt keine Datensicherung.",
+    steps: ["Datenquellen, Aufbewahrung und Anforderungen erfassen", "Geeignete inoxision-Lösung und Berechtigungen auswählen", "Archivierung einrichten und Recherche sowie Ablage prüfen", "Betrieb dokumentieren und Betreuung vereinbaren"]
   },
   {
     slug: "firewall-netzwerk", icon: "network", title: "Firewall & Netzwerk",
@@ -84,7 +93,7 @@ export const services: Service[] = [
 export const faqs = [
   ["Für welche Unternehmen sind Sie da?", "Wir richten uns an Geschäftskunden aus Eberbach, Sinsheim, Heidelberg und dem erreichbaren Umland. Die passende Betreuung richtet sich nach Ihrer IT und unserem gemeinsam vereinbarten Leistungsumfang, nicht nach einer festen Unternehmensgröße."],
   ["Was beinhaltet das kostenlose Erstgespräch?", "Wir besprechen Ihre Situation, wichtige Fragen und sinnvolle nächste Schritte. Es handelt sich um eine unverbindliche Orientierung, nicht um einen technischen Sicherheitscheck."],
-  ["Kann ich einzelne Leistungen buchen?", "Ja. Sicherheitscheck, Backup, Firewall, Schulung oder Automatisierung können als abgegrenzte Leistungen vereinbart werden. Eine laufende Betreuung ist optional."],
+  ["Kann ich einzelne Leistungen buchen?", "Ja. Sicherheitscheck, Backup, Archivierung, Firewall, Schulung oder Automatisierung können als abgegrenzte Leistungen vereinbart werden. Eine laufende Betreuung ist optional."],
   ["Bieten Sie Remote- und Vor-Ort-Support an?", "Ja, abhängig vom Anliegen und der Vereinbarung. Remote-Support und Vor-Ort-Einsätze werden unterschiedlich abgerechnet. Die Konditionen klären wir vor der Beauftragung."],
   ["Ist ein Sicherheitscheck ein Penetrationstest?", "Nein. Wir prüfen vereinbarte Einstellungen und Nachweise. Ein Penetrationstest ist ein eigenständiger, autorisierter Prüfauftrag und nicht Teil unseres Standardchecks."],
   ["Was kostet die IT-Betreuung?", "Das hängt von den betreuten Systemen, dem gewünschten Umfang und den vereinbarten Serviceleistungen ab. Sie erhalten ein individuelles Angebot. Es werden keine unbestätigten Preise veröffentlicht."]
