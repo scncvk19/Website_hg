@@ -21,7 +21,8 @@ Stand: 12.11.2026 · Interner Entwurf
 | Offizielle HG-Systeme-GitHub- und Instagram-URLs in lib/social.ts eintragen | ✅ |
 | Navigation Willkommen/Welcome, zentrale E-Mail info@hg-systeme.de und aktualisierte Rechtsseiten DE/EN implementieren | ✅ |
 | Startseitenlink auch bei eingeklappter Navigation direkt sichtbar machen (DE/EN) | ✅ |
-| Fehlende Anzeige von Willkommen auf laufender Test-Website untersuchen: tatsächlichen Quellcode, Container/HTTP-Ausgabe und Layout abgleichen | 🔄 |
+| Fehlende Anzeige von Willkommen: veralteten Windows-Checkout e4b6926 und durch lokale Änderungen blockierten Git Pull anhand Terminalausgabe bestätigt; GitHub-Quellcode enthält Willkommen/Welcome | ✅ |
+| Lokale Änderungen in lib/content.ts und lib/social.ts sowie zusätzliche Logo-Dateien sichern und mit main abgleichen; Windows-Checkout und tatsächlich verwendete VM-Projektkopie aktualisieren, neu bauen und Navigation im Browser bestätigen | 🔄 |
 | Beiträge/News DE/EN mit automatischer Anzeige eigener Instagram-Beiträge planen; professionellen Kontotyp und Meta-App-Zugriff bestätigen | 🔄 |
 | Instagram-Lesezugriff nach Freigabe einrichten, serverseitigen Abruf, Cache, Ausfallverhalten, Rechte und Datenschutz prüfen; Beiträge-Seite implementieren und testen | ⬜ |
 | Vorhandene Unternehmensangaben sowie alle Themen der bisherigen Datenschutzseite abgleichen; Google-Maps-Karte mit freiwilliger Aktivierung und externem Kartenlink einbinden | ✅ |
@@ -61,3 +62,7 @@ Stand: 12.11.2026 · Interner Entwurf
 ## Nächster Schritt
 
 Ich prüfe das Projekt lokal bevorzugt mit Docker Desktop und docker compose up -d --build; alternativ mit npm install, npm run typecheck, npm run build. Danach folgen Browser-Tests einschließlich Sprachwechsel und Kontaktformular. Die externe Formularverarbeitung bleibt bis zur Freigabe und Konfiguration deaktiviert. Der GitHub-Prüflauf 43207107291 für Commit 573ee61 hat Installation, Produktionsbuild, TypeScript und Logo-Dateien erfolgreich geprüft. Die Lockdatei und die lokale Docker-/Browserprüfung stehen noch aus. Danach bespreche ich Design, Firmenangaben, rechtliche Texte und konkrete Leistungen mit der Geschäftsleitung. Die bestehende Firmenwebsite bleibt bis zu einer späteren ausdrücklich genehmigten Umstellung unverändert.
+
+### Git-Abgleich
+
+Ich habe den auf dem Firmen-PC sichtbaren Commit e4b6926 mit dem GitHub-Stand 8fccb1a verglichen: main war 22 Commits voraus, 13 Dateien waren geändert oder hinzugefügt. Der Pull wurde wegen lokaler Änderungen an lib/content.ts und lib/social.ts abgebrochen. Zwei zusätzliche lokale Logo-Dateien sind nicht versioniert. Die gewünschte E-Mail-Adresse, Firmenprofile, Willkommen/Welcome und das lokale transparente Firmenlogo sind im geprüften main bereits vorhanden. Die uncommitteten lokalen Inhalte und Bilder habe ich noch nicht verglichen. Ich sichere sie vor dem Pull im Stash und prüfe Unterschiede anschließend; kein erzwungener Reset und kein ungeprüftes stash pop. Die auf der VM laufende Version und die Browserdarstellung sind noch nicht bestätigt.
