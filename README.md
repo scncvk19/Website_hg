@@ -190,7 +190,7 @@ Ich habe beide Datenschutzentwürfe entsprechend ergänzt. Vor Aktivierung prüf
 
 ### Git-Abgleich und Navigation
 
-Auf dem Firmen-PC war der alte Checkout e4b6926 wegen lokaler Änderungen blockiert. Die Änderungen wurden im Stash gesichert; der Git Pull auf 09e32f2 wurde anhand der Terminalausgabe bestätigt. Der anschließende Screenshot zeigt Willkommen in der laufenden lokalen Website. Keine erneute Layoutkorrektur erforderlich. Ich lasse den Stash erhalten, bis die zusätzlichen lokalen Dateien und Unterschiede abschließend verglichen sind. Die auf der Linux-VM laufende Kopie wird separat geprüft und aktualisiert.
+Auf dem Firmen-PC war der alte Checkout e4b6926 wegen lokaler Änderungen blockiert. Die Änderungen wurden im Stash gesichert; der Git Pull auf 09e32f2 wurde anhand der Terminalausgabe bestätigt. Der anschließende Screenshot zeigt Willkommen in der laufenden lokalen Website. Keine erneute Layoutkorrektur erforderlich. Ich lasse den Stash erhalten, bis die zusätzlichen lokalen Dateien und Unterschiede abschließend verglichen sind. Die separate Debian-Test-VM enthält inzwischen einen Git-Checkout unter `~/Website/Website_hg-main/Website_hg`. Am 13.11.2026 wurden erfolgreicher Pull, aktueller main-Stand und unverändertes Arbeitsverzeichnis anhand der Terminalausgabe bestätigt. Der alte ZIP-Ordner bleibt erhalten. Ich prüfe zunächst die Netzwerkverwaltung, Gateway, DNS und eine feste IP-Zuweisung (bevorzugt DHCP-Reservierung durch den Netzwerkverantwortlichen). Die Compose-Konfiguration bindet bisher an 127.0.0.1:3000. Die spätere interne Bindung soll lokal getrennt vom versionierten Compose-Stand erfolgen. Containerstart und LAN-Erreichbarkeit sind noch nicht bestätigt; keine Internet-Portfreigabe.
 
 ### Netwrix und inoxision
 
