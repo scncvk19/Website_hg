@@ -30,8 +30,10 @@ Stand: 13.11.2026 · Interner Entwurf
 | Beiträge/News DE/EN, Navigation, serverseitigen Instagram-Abruf, begrenzten Cache, sichere Bildroute und Profil-Fallback implementieren | ✅ |
 | Instagram-Kontotyp, Firmen-App, minimale Berechtigungen und eigenen langlebigen Token nach Freigabe bestätigen | ⏸️ |
 | Beiträge/News als gemeinsame Instagram- und LinkedIn-Übersicht mit lokalen Icons und zentralen Profil-Links gestalten; deaktivierten Feed vollständig ausblenden | ✅ |
-| Neue Beitragsseite DE/EN, Mobilansicht und beide Profil-Links im Docker-Build prüfen | 🔄 |
-| Gemeinsamen Redaktionsplan für Instagram und LinkedIn abstimmen; Grafik und Kerntext einmal erstellen, Veröffentlichung nach Freigabe | ⬜ |
+| Darstellung der überarbeiteten Website mit Beitragsseite vom Nutzer bestätigt | ✅ |
+| Beide Sprachfassungen, Mobilansicht und tatsächliche Profil-Linkziele abschließend prüfen | ⬜ |
+| Gemeinsamen Redaktionsablauf für Instagram und LinkedIn im Strategie-Repository dokumentieren | ✅ |
+| Ersten gemeinsamen Beitrag mit Grafik und Kerntext erstellen und freigeben; Veröffentlichung auf beiden Kanälen planen | ⬜ |
 | Instagram-Live-Abruf, Bildroute, Fehlerfall und Aktualisierung nach Wiederaufnahme prüfen | ⏸️ |
 | Meta-Bedingungen, Nutzungsrechte, Datenschutz und regelmäßige Token-Erneuerung klären; automatische Erneuerung bei Bedarf ergänzen | ⏸️ |
 | Vorhandene Unternehmensangaben sowie alle Themen der bisherigen Datenschutzseite abgleichen; Google-Maps-Karte mit freiwilliger Aktivierung und externem Kartenlink einbinden | ✅ |
