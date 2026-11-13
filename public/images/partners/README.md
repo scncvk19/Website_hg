@@ -1,4 +1,16 @@
 # Herstellerlogos
-Die lokal eingebundenen Herstellerlogos dienen der Identifikation, nicht als Zertifizierungsbeweis. Microsoft, Dell, WatchGuard und PeopleCert werden aus den dokumentierten Quellen importiert. G DATA Silver Partner: freigegebenes aktuelles Herstellerlogo aus dem Partnerportal als gdata.png ergänzen. Netwrix Password Secure (ehemals Password Safe): freigegebenes aktuelles Herstellerlogo als netwrix.svg ergänzen. inoxision ARCHIVE: freigegebenes Herstellerlogo als inoxision.svg ergänzen. Ohne Datei erscheint der Herstellername. Vor Veröffentlichung Markenrechte und Partnerstatus prüfen.
 
-Stand: microsoft.svg, peoplecert.svg, dell.svg und watchguard.png wurden erfolgreich importiert. G DATA, Netwrix und inoxision werden bis zur Freigabe als Text dargestellt.
+Ich verwende lokal gespeicherte Herstellerlogos zur Identifikation, nicht als Nachweis einer Partnerschaft oder Zertifizierung. Die Originaldateien werden proportional angezeigt und nicht umgefärbt. Markenfreigaben vor Veröffentlichung bestätigen.
+
+| Hersteller | Lokale Datei | Quelle |
+|---|---|---|
+| Microsoft | microsoft.svg | siehe lib/partner-logo-assets.json |
+| PeopleCert | peoplecert.svg | siehe lib/partner-logo-assets.json |
+| Dell | dell.svg | siehe lib/partner-logo-assets.json |
+| WatchGuard | watchguard.png | siehe lib/partner-logo-assets.json |
+| Netwrix | netwrix.jpg | [Netwrix Logo Dark, Herstellerlogo 2025](https://commons.wikimedia.org/wiki/File:Netwrix_Logo_Dark.jpg) |
+| inoxision | inoxision.png | [Herstellerübersicht ADEMIS](https://www.ademis.de/herstelleruebersicht), reines Herstellerlogo ohne Partnerstufe |
+| mediDOK | medidok.png | [Herstellerwebsite](https://medidok.de/), offizielles Logo |
+| G DATA | gdata.png | Freigegebenes Logo aus dem Partnerportal noch offen |
+
+Die drei neuen Dateien sind im Importmanifest hinterlegt. Ich nutze den vorhandenen Workflow zum Import und prüfe die tatsächlichen Dateien anschließend. Ohne Datei greift die Textdarstellung. Die historischen Nachweise bleiben unverändert.
