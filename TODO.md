@@ -31,6 +31,7 @@ Stand: 13.11.2026 · Interner Entwurf
 | Feste IPv4-Adresse in Debian statisch gesetzt (Nutzerrückmeldung) | ✅ |
 | DHCP-Reservierung bzw. Ausschluss der festen Adresse aus dem dynamischen Pool und interne Netzfreigabe bestätigen | ⬜ |
 | Compose-Portbindung über lokale Variable HG_WEBSITE_BIND_IP konfigurierbar machen, Standard localhost erhalten | ✅ |
+| DNS-Auflösung nach statischer IP-Konfiguration wiederherstellen (vom Nutzer bestätigt) | ✅ |
 | Lokale .env auf Test-VM ergänzen und aktuellen Website-Container starten | 🔄 |
 | Interne Erreichbarkeit von Mitarbeiter-PCs prüfen; keine Internet-Portfreigabe | ⬜ |
 | Beiträge/News DE/EN, Navigation, serverseitigen Instagram-Abruf, begrenzten Cache, sichere Bildroute und Profil-Fallback implementieren | ✅ |
