@@ -8,6 +8,7 @@ Stand: 13.11.2026 · Interner Entwurf
 | Seitenstruktur, Inhalte und eigene Komponenten entwickelt | ✅ |
 | Acht Leistungsseiten, Startseite, Über uns, Ratgeber und Kontakt angelegt | ✅ |
 | Über-uns-Seite mit Philosophie, Security-Stufenprogramm, Inhaber, Unternehmensgeschichte und drei Mitarbeitern DE/EN erweitern | ✅ |
+| Erfahrungsangabe unter Über uns von über 20 auf über 30 Jahre ändern (DE/EN) | ✅ |
 | Aktualisierte Über-uns-Seite auf Test-VM bauen und Darstellung prüfen | 🔄 |
 | Netwrix Password Secure statt Password Safe in der aktuellen Herstellerübersicht und IT-Sicherheit; historische Nachweise erhalten | ✅ |
 | inoxision ARCHIVE als Technologie und eigene Archivierungsleistung DE/EN einschließlich Sprachwechsel ergänzen | ✅ |
