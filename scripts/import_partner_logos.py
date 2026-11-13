@@ -12,6 +12,9 @@ def validate(data, suffix):
     if suffix == ".png":
         if not data.startswith(b"\x89PNG\r\n\x1a\n"):
             raise ValueError("not a PNG")
+    elif suffix in {".jpg", ".jpeg"}:
+        if not (data.startswith(b"\xff\xd8\xff") and data.endswith(b"\xff\xd9")):
+            raise ValueError("not a JPEG")
     elif suffix == ".svg":
         if b"<!DOCTYPE" in data.upper() or b"<!ENTITY" in data.upper():
             raise ValueError("SVG declarations not permitted")
