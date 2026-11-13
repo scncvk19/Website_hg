@@ -5,6 +5,7 @@ export const routes = {
   about: { de: "/ueber-uns", en: "/en/about" },
   certificates: { de: "/zertifikate", en: "/en/certificates" },
   guide: { de: "/ratgeber", en: "/en/guide" },
+  news: { de: "/beitraege", en: "/en/news" },
   contact: { de: "/kontakt", en: "/en/contact" },
   legal: { de: "/impressum", en: "/en/legal" },
   privacy: { de: "/datenschutz", en: "/en/privacy" },
