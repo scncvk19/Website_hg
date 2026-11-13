@@ -21,6 +21,9 @@ Stand: 12.11.2026 · Interner Entwurf
 | Offizielle HG-Systeme-GitHub- und Instagram-URLs in lib/social.ts eintragen | ✅ |
 | Navigation Willkommen/Welcome, zentrale E-Mail info@hg-systeme.de und aktualisierte Rechtsseiten DE/EN implementieren | ✅ |
 | Startseitenlink auch bei eingeklappter Navigation direkt sichtbar machen (DE/EN) | ✅ |
+| Fehlende Anzeige von Willkommen auf laufender Test-Website untersuchen: tatsächlichen Quellcode, Container/HTTP-Ausgabe und Layout abgleichen | 🔄 |
+| Beiträge/News DE/EN mit automatischer Anzeige eigener Instagram-Beiträge planen; professionellen Kontotyp und Meta-App-Zugriff bestätigen | 🔄 |
+| Instagram-Lesezugriff nach Freigabe einrichten, serverseitigen Abruf, Cache, Ausfallverhalten, Rechte und Datenschutz prüfen; Beiträge-Seite implementieren und testen | ⬜ |
 | Vorhandene Unternehmensangaben sowie alle Themen der bisherigen Datenschutzseite abgleichen; Google-Maps-Karte mit freiwilliger Aktivierung und externem Kartenlink einbinden | ✅ |
 | Karte, keine Google-Anfrage vor Aktivierung, neue Navigation, E-Mail und Social-Links auf beiden Sprachfassungen im Browser prüfen | ⬜ |
 | Neue Navigation, Social-Links und Footer in beiden Sprachen im Browser prüfen | ⬜ |
