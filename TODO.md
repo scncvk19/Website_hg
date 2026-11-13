@@ -9,7 +9,7 @@ Stand: 13.11.2026 · Interner Entwurf
 | Acht Leistungsseiten, Startseite, Über uns, Ratgeber und Kontakt angelegt | ✅ |
 | Über-uns-Seite mit Philosophie, Security-Stufenprogramm, Inhaber, Unternehmensgeschichte und drei Mitarbeitern DE/EN erweitern | ✅ |
 | Erfahrungsangabe unter Über uns von über 20 auf über 30 Jahre ändern (DE/EN) | ✅ |
-| Aktualisierte Über-uns-Seite auf Test-VM bauen und Darstellung prüfen | 🔄 |
+| Aktualisierte Über-uns-Seite mit über 30 Jahren Erfahrung und drei Mitarbeitern: Darstellung vom Nutzer bestätigt | ✅ |
 | Netwrix Password Secure statt Password Safe in der aktuellen Herstellerübersicht und IT-Sicherheit; historische Nachweise erhalten | ✅ |
 | inoxision ARCHIVE als Technologie und eigene Archivierungsleistung DE/EN einschließlich Sprachwechsel ergänzen | ✅ |
 | Archivierungsseite, Herstellerkarten und Netwrix-Bezeichnung im neuen Build und Browser prüfen | 🔄 |
@@ -37,7 +37,8 @@ Stand: 13.11.2026 · Interner Entwurf
 | DNS-Auflösung nach statischer IP-Konfiguration wiederherstellen (vom Nutzer bestätigt) | ✅ |
 | Wiederverwendbares Bereitstellungsskript für die interne Debian-Test-VM erstellen und dokumentieren | ✅ |
 | Bereitstellungsskript auf Test-VM ausführen und erfolgreiche Bereitstellung durch Nutzer bestätigen | ✅ |
-| Interne Testumgebung erfolgreich bereitgestellt (Nutzerrückmeldung); gesonderte Prüfung von Mitarbeiter-PCs und Netzfreigabe dokumentieren | 🔄 |
+| Interne Testumgebung erfolgreich bereitgestellt und allgemeine Darstellung bestätigt | ✅ |
+| Gesonderte LAN-Zugriffsprüfung und Netzfreigabe dokumentieren | ⬜ |
 | Automatischen Website-Containerstart nach VM-Neustart konfigurieren und bei planmäßigem Neustart prüfen | ⬜ |
 | Beiträge/News DE/EN, Navigation, serverseitigen Instagram-Abruf, begrenzten Cache, sichere Bildroute und Profil-Fallback implementieren | ✅ |
 | Instagram-Kontotyp, Firmen-App, minimale Berechtigungen und eigenen langlebigen Token nach Freigabe bestätigen | ⏸️ |
@@ -88,11 +89,11 @@ Stand: 13.11.2026 · Interner Entwurf
 
 ## Nächster Schritt
 
-Ich prüfe das Projekt lokal bevorzugt mit Docker Desktop und docker compose up -d --build; alternativ mit npm install, npm run typecheck, npm run build. Danach folgen Browser-Tests einschließlich Sprachwechsel und Kontaktformular. Die externe Formularverarbeitung bleibt bis zur Freigabe und Konfiguration deaktiviert. Der GitHub-Prüflauf 43207107291 für Commit 573ee61 hat Installation, Produktionsbuild, TypeScript und Logo-Dateien erfolgreich geprüft. Die Lockdatei und die lokale Docker-/Browserprüfung stehen noch aus. Danach bespreche ich Design, Firmenangaben, rechtliche Texte und konkrete Leistungen mit der Geschäftsleitung. Die bestehende Firmenwebsite bleibt bis zu einer späteren ausdrücklich genehmigten Umstellung unverändert.
+Die interne Debian-Testumgebung läuft; die allgemeine Darstellung der aktualisierten Website einschließlich Über uns wurde am 13.11.2026 bestätigt. Ich verwende für weitere Aktualisierungen git pull --ff-only und scripts/deploy-test.sh. Als nächstes prüfe ich den automatischen Containerstart und die noch offenen gezielten Browser- und Funktionsprüfungen. Die externe Formularverarbeitung bleibt bis zur Freigabe und Konfiguration deaktiviert. Der frühere GitHub-Prüflauf 43207107291 für Commit 573ee61 hat Installation, Produktionsbuild, TypeScript und vier Logo-Dateien erfolgreich geprüft; er ersetzt keine Prüfung neuer Änderungen. Die Lockdatei bleibt offen. Vor einer öffentlichen Umstellung kläre ich die rechtlichen Angaben, Markenfreigaben, Leistungsangebote und das Hosting mit der Geschäftsleitung. Die bestehende Firmenwebsite bleibt unverändert.
 
 ### Git-Abgleich
 
-Ich habe den auf dem Firmen-PC sichtbaren Commit e4b6926 mit dem GitHub-Stand 8fccb1a verglichen: main war 22 Commits voraus, 13 Dateien waren geändert oder hinzugefügt. Der Pull wurde wegen lokaler Änderungen an lib/content.ts und lib/social.ts abgebrochen. Zwei zusätzliche lokale Logo-Dateien sind nicht versioniert. Die gewünschte E-Mail-Adresse, Firmenprofile, Willkommen/Welcome und das lokale transparente Firmenlogo sind im geprüften main bereits vorhanden. Die uncommitteten lokalen Inhalte und Bilder habe ich noch nicht verglichen. Ich sichere sie vor dem Pull im Stash und prüfe Unterschiede anschließend; kein erzwungener Reset und kein ungeprüftes stash pop. Die auf der VM laufende Version und die Browserdarstellung sind noch nicht bestätigt.
+Ich habe den auf dem Firmen-PC sichtbaren Commit e4b6926 mit dem GitHub-Stand 8fccb1a verglichen: main war 22 Commits voraus, 13 Dateien waren geändert oder hinzugefügt. Der Pull wurde wegen lokaler Änderungen an lib/content.ts und lib/social.ts abgebrochen. Zwei zusätzliche lokale Logo-Dateien sind nicht versioniert. Die gewünschte E-Mail-Adresse, Firmenprofile, Willkommen/Welcome und das lokale transparente Firmenlogo sind im geprüften main bereits vorhanden. Die uncommitteten lokalen Inhalte und Bilder habe ich noch nicht verglichen. Ich sichere sie vor dem Pull im Stash und prüfe Unterschiede anschließend; kein erzwungener Reset und kein ungeprüftes stash pop. Die interne VM-Bereitstellung und die allgemeine Browserdarstellung sind inzwischen bestätigt. Die gesicherten Windows-Dateien bleiben separat zu vergleichen.
 
 ### Bestätigung Windows und Instagram
 
