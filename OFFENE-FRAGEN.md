@@ -1,6 +1,6 @@
 # Offene Fragen – Website HG-Systeme
 
-Stand: 12.11.2026 · Interner Entwurf
+Stand: 13.11.2026 · Interner Entwurf
 
 ## Vor Freigabe zu entscheiden
 
@@ -17,9 +17,12 @@ Stand: 12.11.2026 · Interner Entwurf
 | 9 | Wie wird die bestehende Website abgelöst? | Alte URLs, Weiterleitungen, DNS, Backup und Rückweg planen; bestehende Seite bis zur ausdrücklichen Freigabe unverändert lassen. |
 | 10 | Sind beide Sprachen, Navigation, Formulare, Bilder und Mobilansicht geprüft? | Docker-Build, Typecheck, Browserprüfung und Testversand nach Freigabe durchführen. |
 | 11 | Sind die neuen Navigationselemente und externen Links in beiden Sprachen geprüft? | GitHub (Hg-Systeme428), Instagram (hgsysteme) und LinkedIn sind bestätigt und eingetragen. Willkommen/Welcome, Social-Icons, Kartenaktivierung und Mobilansicht prüfen. |
+| 12 | Zurückgestellt: Ist @hgsysteme ein professionelles Instagram-Konto, und ist die Firmen-App für den Abruf eigener Medien freigegeben? | Instagram Login, instagram_business_basic, langlebigen Token lokal konfigurieren; Ablauf/Erneuerung, Rechte und Datenschutz prüfen. Kein öffentlicher Live-Feed vor Freigabe. |
 
-| 12 | Ist @hgsysteme ein professionelles Instagram-Konto, und ist die Firmen-App für den Abruf eigener Medien freigegeben? | Instagram Login, instagram_business_basic, langlebigen Token lokal konfigurieren; Ablauf/Erneuerung, Rechte und Datenschutz prüfen. Kein öffentlicher Live-Feed vor Freigabe. |
+| 13 | Welche inoxision-Editionen, Module, Lizenz- und Betriebsmodelle bieten wir konkret an? | Archivierungsleistung ist bestätigt. Umfang, Schnittstellen, Aufbewahrungs- und Löschkonzept sowie Herstellerlogos und gegebenenfalls Partnerstatus vor Veröffentlichung klären. |
 
 ## Bereits entschieden
 
 Ich behalte Deutsch als Standardsprache, Englisch unter /en, das blaue HG-Design, das transparente lokale Firmenlogo, die beiden konkreten Zertifizierungstitel und eine dezente, verlinkte Textliste unter „Veröffentlichte Nachweise“. Historische Nachweise sind keine Behauptung heutiger Gültigkeit. Die produktive Website bleibt bis zur Freigabe unverändert.
+
+Ich habe die aktuelle Produktbezeichnung Netwrix Password Secure und inoxision ARCHIVE als bestehendes Archivierungsangebot übernommen. Historische Password-Safe-Nachweise behalten ihren Namen. Die Instagram-Anbindung bleibt auf Wunsch zurückgestellt.
