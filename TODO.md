@@ -1,12 +1,15 @@
 # Zentrale To-do-Liste – Website HG-Systeme
 
-Stand: 12.11.2026 · Interner Entwurf
+Stand: 13.11.2026 · Interner Entwurf
 
 | Aufgabe | Status |
 |---|---|
 | Vorhandenes Repository und OWA-Labs-Architektur geprüft | ✅ |
 | Seitenstruktur, Inhalte und eigene Komponenten entwickelt | ✅ |
-| Sieben Leistungsseiten, Startseite, Über uns, Ratgeber und Kontakt angelegt | ✅ |
+| Acht Leistungsseiten, Startseite, Über uns, Ratgeber und Kontakt angelegt | ✅ |
+| Netwrix Password Secure statt Password Safe in der aktuellen Herstellerübersicht und IT-Sicherheit; historische Nachweise erhalten | ✅ |
+| inoxision ARCHIVE als Technologie und eigene Archivierungsleistung DE/EN einschließlich Sprachwechsel ergänzen | ✅ |
+| Archivierungsseite, Herstellerkarten und Netwrix-Bezeichnung im neuen Build und Browser prüfen | 🔄 |
 | Industrie um Datenerfassung, Datenverarbeitung und Prozesssteuerung ergänzen; Automatisierungs-Leistungsseite DE/EN | ✅ |
 | IT-Konzept mit sechs verlinkten Themen und Neukunden-Stufenpyramide DE/EN umsetzen | ✅ |
 | Branchenleiste zwischen IT-Konzept und Neukundenmodell auf beiden Startseiten entfernen; Branchenbeschreibung unter Über uns behalten | ✅ |
@@ -25,9 +28,10 @@ Stand: 12.11.2026 · Interner Entwurf
 | Windows-Checkout aktualisieren und Willkommen im Browser bestätigen; lokale Änderungen einschließlich Logo-Dateien im Stash gesichert | ✅ |
 | Gesicherte lokale Dateien abschließend vergleichen; VM-Projektkopie und laufenden Container separat aktualisieren und prüfen | ⬜ |
 | Beiträge/News DE/EN, Navigation, serverseitigen Instagram-Abruf, begrenzten Cache, sichere Bildroute und Profil-Fallback implementieren | ✅ |
-| Instagram-Kontotyp, Firmen-App, minimale Berechtigungen und eigenen langlebigen Token nach Freigabe bestätigen | 🔄 |
-| Neuen Build und Beitragsseite ohne Token prüfen; Live-Abruf, Bildroute, Fehlerfall, Aktualisierung und beide Sprachen nach Freigabe testen | ⬜ |
-| Meta-Bedingungen, Nutzungsrechte, Datenschutz und regelmäßige Token-Erneuerung klären; automatische Erneuerung bei Bedarf ergänzen | ⬜ |
+| Instagram-Kontotyp, Firmen-App, minimale Berechtigungen und eigenen langlebigen Token nach Freigabe bestätigen | ⏸️ |
+| Beitragsseite ohne Token im normalen Build prüfen | ⬜ |
+| Instagram-Live-Abruf, Bildroute, Fehlerfall und Aktualisierung nach Wiederaufnahme prüfen | ⏸️ |
+| Meta-Bedingungen, Nutzungsrechte, Datenschutz und regelmäßige Token-Erneuerung klären; automatische Erneuerung bei Bedarf ergänzen | ⏸️ |
 | Vorhandene Unternehmensangaben sowie alle Themen der bisherigen Datenschutzseite abgleichen; Google-Maps-Karte mit freiwilliger Aktivierung und externem Kartenlink einbinden | ✅ |
 | Karte, keine Google-Anfrage vor Aktivierung, neue Navigation, E-Mail und Social-Links auf beiden Sprachfassungen im Browser prüfen | ⬜ |
 | Neue Navigation, Social-Links und Footer in beiden Sprachen im Browser prüfen | ⬜ |
@@ -52,7 +56,7 @@ Stand: 12.11.2026 · Interner Entwurf
 | Azure-/ITIL-Abzeichen lokal importieren und Ergebnis verifizieren | ✅ |
 | Dezente Herstellerübersicht, G DATA Silver Partner, WatchGuard und verlinkte Textnachweise statt Urkundenbilder | ✅ |
 | Microsoft, PeopleCert, Dell und WatchGuard-Logos lokal importiert und Dateipfade geprüft | ✅ |
-| G DATA und Password Safe: freigegebene Herstellerlogos ergänzen | ⬜ |
+| G DATA, Netwrix und inoxision: freigegebene Herstellerlogos ergänzen | ⬜ |
 | Zertifikatsgültigkeit, Partnerstatus und Markenfreigaben prüfen | ⬜ |
 | Offene Freigaben und Entscheidungen in OFFENE-FRAGEN.md dokumentieren | ✅ |
 | Darstellung und Kontrast von Logo, Favicon und Referenzkarten im Browser prüfen; Corporate Design, Teamfotos, Kundenreferenzen und Nutzungsrechte bestätigen | ⬜ |
