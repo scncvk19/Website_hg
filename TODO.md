@@ -26,7 +26,11 @@ Stand: 13.11.2026 · Interner Entwurf
 | Startseitenlink auch bei eingeklappter Navigation direkt sichtbar machen (DE/EN) | ✅ |
 | Fehlende Anzeige von Willkommen: veralteten Windows-Checkout e4b6926 und durch lokale Änderungen blockierten Git Pull anhand Terminalausgabe bestätigt; GitHub-Quellcode enthält Willkommen/Welcome | ✅ |
 | Windows-Checkout aktualisieren und Willkommen im Browser bestätigen; lokale Änderungen einschließlich Logo-Dateien im Stash gesichert | ✅ |
-| Gesicherte lokale Dateien abschließend vergleichen; VM-Projektkopie und laufenden Container separat aktualisieren und prüfen | ⬜ |
+| Gesicherte lokale Windows-Dateien abschließend vergleichen | ⬜ |
+| Git-Repository auf Debian-Test-VM klonen und aktuellen main-Stand bestätigen | ✅ |
+| Feste VM-IP mit Netzwerkverantwortlichen abstimmen; DHCP-Reservierung bevorzugt, Gateway/DNS und Netzverwaltung prüfen | 🔄 |
+| Aktuellen Docker-Container auf Test-VM bereitstellen, lokale LAN-Portbindung getrennt vom Repository konfigurieren | ⬜ |
+| Interne Erreichbarkeit von Mitarbeiter-PCs prüfen; keine Internet-Portfreigabe | ⬜ |
 | Beiträge/News DE/EN, Navigation, serverseitigen Instagram-Abruf, begrenzten Cache, sichere Bildroute und Profil-Fallback implementieren | ✅ |
 | Instagram-Kontotyp, Firmen-App, minimale Berechtigungen und eigenen langlebigen Token nach Freigabe bestätigen | ⏸️ |
 | Beiträge/News als gemeinsame Instagram- und LinkedIn-Übersicht mit lokalen Icons und zentralen Profil-Links gestalten; deaktivierten Feed vollständig ausblenden | ✅ |
