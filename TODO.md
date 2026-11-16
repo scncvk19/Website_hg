@@ -21,11 +21,11 @@ Stand: 16.11.2026
 | Datenschutzkontakt Michael Gray (Inhaber), m.gray@hg-systeme.de, DE/EN zentral ergänzt | ✅ |
 | Benennungspflicht nach Art. 37 DSGVO und § 38 BDSG prüfen; ggf. unabhängigen Datenschutzbeauftragten benennen und Kontakt veröffentlichen | ⬜ |
 | Datenschutzerklärung DE/EN auf tatsächlichen Betrieb umgestellt; interne Entwurfshinweise entfernt, Betroffenenrechte/Aufsicht ergänzt, alte Haftungshinweise ins Impressum verschoben | ✅ |
-| Datenschutztexte und tatsächliche Verarbeitungsregeln intern prüfen/freigeben; DPA, Drittlandgarantien, Firmenpostfach-Löschpraxis, Web3Forms-Frist und hCaptcha-Endgerätezugriffe bestätigen | 🔄 |
-| Web3Forms-Aufbewahrung: Ziel sieben Tage bestätigt; Einstellung im Anbieterportal prüfen/umsetzen und tatsächliche Frist in Datenschutzerklärung nachtragen | ⬜ |
-| Aktuelle Rechtstexte und bereinigte Unternehmens-/Qualifikationstexte ins Firmen-Repository übernehmen und Veröffentlichung prüfen | 🔄 |
-| Vercel Hobby für geschäftlichen Betrieb durch zulässigen Tarif/Hosting ersetzen; Auftragsverarbeitung klären | ⬜ |
-| Web3Forms-Empfänger info@hg-systeme.de bestätigt; serverseitige hCaptcha-Prüfung, Auftragsverarbeitung und Löschfristen bestätigen; kein erneuter allgemeiner Funktionstest nötig | ⬜ |
+| Datenschutztexte und tatsächliche Verarbeitungsregeln intern prüfen/freigeben; DPA, Drittlandgarantien, Firmenpostfach-Löschpraxis, etwaige Web3Forms-Sicherungskopien und hCaptcha-Endgerätezugriffe bestätigen | 🔄 |
+| Web3Forms-Aufbewahrung sieben Tage laut Nutzer eingestellt; Datenschutzerklärung DE/EN angepasst | ✅ |
+| Aktuelle Rechtstexte einschließlich Sieben-Tage-Frist und bereinigte Unternehmens-/Qualifikationstexte ins Firmen-Repository übernehmen und Veröffentlichung prüfen | 🔄 |
+| Vercel laut Nutzer erledigt; konkreten geschäftlich zulässigen Tarif und Auftragsverarbeitung bestätigen | 🔄 |
+| Web3Forms-Empfänger info@hg-systeme.de bestätigt; serverseitige hCaptcha-Prüfung und Auftragsverarbeitung bestätigen; kein erneuter allgemeiner Funktionstest nötig | ⬜ |
 | Unternehmensgeschichte (über 30 Jahre IT-Erfahrung), kostenloses unverbindliches Erstgespräch und bereinigte Angebots-/Qualifikationstexte DE/EN umgesetzt | ✅ |
 | Unbestätigte aktuelle Zertifizierungen und Partnerstufen ausgeblendet; historische Nachweise und Technologieübersicht erhalten | ✅ |
 | Aktuelle Zertifikate, Partnerstatus und Markenfreigaben bestätigen; erst danach wieder anzeigen | ⬜ |
