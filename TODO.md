@@ -14,7 +14,7 @@ Stand: 16.11.2026
 | Vercel-Deployment live bestätigt: Startseite und Sitemap HTTP 200, robots.txt Allow: /, kein X-Robots-Tag mit noindex auf Startseite, neue Permissions-Policy aktiv | ✅ |
 | Google Search Console: Domain-Property hg-systeme.de eingerichtet und DNS-CNAME-Bestätigung laut Nutzer erfolgreich | ✅ |
 | Sitemap in Search Console eingereicht; 34 URLs, HTTP 200 und gültiges XML geprüft; Status laut Nutzer erfolgreich | ✅ |
-| Startseite in Search Console live prüfen, Indexierung beantragen und tatsächlichen Indexstatus kontrollieren | 🔄 |
+| Startseite in Search Console live prüfen, Indexierung beantragen und tatsächlichen Indexstatus kontrollieren | ⏸️ |
 | Impressum DE/EN: Firmenname, Amtsgericht Mannheim HRA 332816 und USt-ID DE164684637 bestätigt und ergänzt; internen Prüfhinweis entfernt | ✅ |
 | Geschäfts- und Privatkunden in Startseite, Kontakt, Über uns und Metadaten berücksichtigt | ✅ |
 | Impressum und Datenschutzkontakt im geprüften und übertragenen Dateistand; unmittelbare Live-Inhaltsprüfung der Rechtsseiten noch nicht separat bestätigt | ⏸️ |
@@ -34,7 +34,7 @@ Stand: 16.11.2026
 | Tastatur-Fokusmarkierungen und Textumbruch verbessert; vollständige manuelle Barrierefreiheits-/Kontrastprüfung nicht durchgeführt | ✅ |
 | package-lock.json aus erfolgreichem CI-Build übernommen; Docker und CI auf npm ci umgestellt; npm audit der produktiven Abhängigkeiten ohne bekannte Schwachstellen (Prüfzeitpunkt) | ✅ |
 | Finalen Commit a116fab im CI-Lauf 43859462170 erfolgreich geprüft, Merge ohne Force-Push ins Firmen-Repository, technisches Live-Deployment bestätigt | ✅ |
-| Google-Unternehmensprofil aktualisieren; vorhandene Firmenprofile mit Website verlinken | ⬜ |
+| Bestehendes Google-Unternehmensprofil gefunden (HG Systeme e.Kfm., Markgrafenstraße 3, Eberbach); Unternehmenskategorie, Stammdaten, Beschreibung, Leistungen und Bilder optimieren | 🔄 |
 | Interne Test-VM: DHCP-Freigabe, Neustart und lokale Windows-Stash-Dateien bei Bedarf prüfen | ⏸️ |
 | Instagram-Live-Feed, zusätzliche Tracking- und Marketingdienste | ⏸️ |
 
