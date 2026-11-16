@@ -84,6 +84,8 @@ Stand: 13.11.2026 · Interner Entwurf
 | Übernommene Unternehmensdaten, fehlende Registerangaben und Datenschutzerklärung einschließlich Maps/Hosting/Formular fachlich vervollständigen und freigeben | ⬜ |
 | Tatsächliche Leistungen, kostenloses Erstgespräch, Schulungsformate und Betreuungspakete durch Geschäftsleitung freigeben | ⬜ |
 | Gegebenenfalls geschützte Vorschau über Vercel einrichten | ⬜ |
+| STRATO-Altwebsite (Homepage-Baukasten) als lokale Offline-Kopie sichern und Vollständigkeit prüfen | 🔄 |
+| Baukasten-Wiederherstellung, Domainzuordnung und bisherige DNS-/Mail-Einträge dokumentieren; bestehenden Vertrag erhalten | ⬜ |
 | Produktionshosting, DNS, Migration, alte URLs/Weiterleitungen und Rückweg planen | ⬜ |
 | Veröffentlichung, Indexierung/Sitemap und Google-Unternehmensprofil erst nach Freigabe | ⬜ |
 
