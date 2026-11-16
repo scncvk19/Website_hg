@@ -18,7 +18,7 @@ Ich betreibe die Website als Firmenpräsenz und Kontaktmöglichkeit. Die neue We
 
 ## Entschieden
 
-Ich behalte das bestehende Design, Deutsch und Englisch, die acht Leistungsbereiche, die Firmenprofile und das funktionierende Kontaktformular. Die SEO-Änderungen, Unternehmensangaben und der Datenschutzkontakt sind laut Nutzer bis einschließlich f449601 ins Firmen-Repository übertragen; die tatsächliche Aufnahme und der Produktionsstand sind noch zu prüfen. Keine zusätzlichen Trackingdienste oder komplexe Marketingplattform. Der Instagram-Live-Feed bleibt zurückgestellt. Die Datenschutzerklärung ist auf die tatsächlich eingesetzten Dienste umgestellt. Ich habe die bisherigen Haftungs- und Urheberrechtshinweise sowie den Widerspruch gegen unverlangte Werbung im Impressum erhalten. 
+Ich behalte das bestehende Design, Deutsch und Englisch, die acht Leistungsbereiche, die Firmenprofile und das funktionierende Kontaktformular. Der geprüfte Entwicklungsstand a116fab ist am 16.11.2026 durch Merge 996cf1a ins Firmen-Repository übernommen. Der anschließende Firmenstand 57e7528 und das aktualisierte Vercel-Deployment sind laut Terminalausgabe bestätigt. Die Startseite und Sitemap liefern HTTP 200, robots.txt erlaubt Crawling und der noindex-Header der Startseite ist entfernt. Die tatsächliche Google-Indexierung ist noch zu prüfen. Keine zusätzlichen Trackingdienste oder komplexe Marketingplattform. Der Instagram-Live-Feed bleibt zurückgestellt. Die Datenschutzerklärung ist auf die tatsächlich eingesetzten Dienste umgestellt. Ich habe die bisherigen Haftungs- und Urheberrechtshinweise sowie den Widerspruch gegen unverlangte Werbung im Impressum erhalten. 
 
 ## Betriebliche Verantwortung außerhalb der Website-Aufgaben
 
