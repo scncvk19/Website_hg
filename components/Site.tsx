@@ -46,7 +46,7 @@ export function Footer({ lang = "de" }: { lang?: Language }) {
       </details>
       <details className={styles.footerGroup}>
         <summary>{t.company}<Icon name="chevron-down"/></summary>
-        <div className={styles.footerLinks}><Link href={routes.home[lang]}>{t.nav[0]}</Link><Link href={routes.about[lang]}>{t.nav[2]}</Link><Link href={routes.certificates[lang]}>{de?"Partner & Qualifikationen":"Partners & qualifications"}</Link><Link href={routes.news[lang]}>{t.nav[3]}</Link><Link href={routes.guide[lang]}>{t.guide}</Link></div>
+        <div className={styles.footerLinks}><Link href={routes.home[lang]}>{t.nav[0]}</Link><Link href={routes.about[lang]}>{t.nav[2]}</Link><Link href={routes.certificates[lang]}>{de?"Technologien & Qualifikationen":"Technologies & qualifications"}</Link><Link href={routes.news[lang]}>{t.nav[3]}</Link><Link href={routes.guide[lang]}>{t.guide}</Link></div>
       </details>
       <details className={styles.footerGroup}>
         <summary>{t.nav[5]}<Icon name="chevron-down"/></summary>

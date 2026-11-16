@@ -37,7 +37,7 @@ export const services: Service[] = [
     features: ["Backup-Status und vorhandene Wiederherstellungsnachweise", "Firewall, Netzwerk und sichere Fernzugänge", "Updates, Endgeräteschutz und administrative Rechte", "MFA, E-Mail-Sicherheit und Notfallorganisation", "Schriftlicher Maßnahmenplan und persönliche Ergebnisbesprechung"],
     benefit: "Sie erhalten nachvollziehbare Prioritäten statt einer unverständlichen Liste technischer Probleme.",
     limit: "Das kostenlose Erstgespräch ist eine Orientierung ohne technische Prüfung. Der kostenpflichtige Business-Check erfolgt nur mit schriftlich vereinbartem Umfang und Freigabe. Kein Penetrationstest, keine Zertifizierung und keine Garantie gegen Angriffe. Maßnahmen werden separat angeboten.",
-    steps: ["Unverbindliches Erstgespräch (20–30 Minuten)", "Technischen Check nach Angebot beauftragen", "Befunde persönlich besprechen und Maßnahmen planen"]
+    steps: ["Kostenloses, unverbindliches Erstgespräch (20–30 Minuten)", "Technischen Check nach Angebot beauftragen", "Befunde persönlich besprechen und Maßnahmen planen"]
   },
   {
     slug: "backup", icon: "database", title: "Backup & Wiederherstellung",
@@ -72,7 +72,7 @@ export const services: Service[] = [
     intro: "Verdächtige Nachrichten, gefälschte Rechnungen oder unerwartete MFA-Anfragen: Unsere Schulungsidee setzt auf verständliche Beispiele und richtige Reaktionen, nicht auf Schuldzuweisungen.",
     features: ["Grundlagen-Workshop: 90 Minuten für 5–15 Personen", "Phishing, Zahlungsbetrug, Passwörter und MFA", "Sicherer Umgang mit Dateien und vertraulichen Daten", "Praktische Übungen, Wissenscheck und Merkblatt", "Auffrischung (30 Minuten), Führungskräfte-Briefing (60 Minuten) oder Jahrespaket nach Vereinbarung"],
     benefit: "Ihre Mitarbeiter lernen, typische Risiken zu erkennen und verdächtige Situationen frühzeitig zu melden.",
-    limit: "Die Formate sind ein Angebotsentwurf. Keine akkreditierte Zertifizierung, keine verdeckte Überwachung und keine Phishing-Simulation im Standardworkshop. Termine und Gruppengröße individuell vereinbaren.",
+    limit: "Inhalte, Termine und Gruppengröße stimmen wir individuell ab. Der Standardworkshop umfasst keine akkreditierte Zertifizierung, verdeckte Überwachung oder Phishing-Simulation.",
     steps: ["Zielgruppe und betriebliche Meldewege klären", "Persönlichen Workshop durchführen", "Erkenntnisse wiederholen und bei Bedarf auffrischen"]
   },
   {
@@ -101,5 +101,5 @@ export const faqs = [
   ["Kann ich einzelne Leistungen buchen?", "Ja. Sicherheitscheck, Backup, Archivierung, Firewall, Schulung oder Automatisierung können als abgegrenzte Leistungen vereinbart werden. Eine laufende Betreuung ist optional."],
   ["Bieten Sie Remote- und Vor-Ort-Support an?", "Ja, abhängig vom Anliegen und der Vereinbarung. Remote-Support und Vor-Ort-Einsätze werden unterschiedlich abgerechnet. Die Konditionen klären wir vor der Beauftragung."],
   ["Ist ein Sicherheitscheck ein Penetrationstest?", "Nein. Wir prüfen vereinbarte Einstellungen und Nachweise. Ein Penetrationstest ist ein eigenständiger, autorisierter Prüfauftrag und nicht Teil unseres Standardchecks."],
-  ["Was kostet die IT-Betreuung?", "Das hängt von den betreuten Systemen, dem gewünschten Umfang und den vereinbarten Serviceleistungen ab. Sie erhalten ein individuelles Angebot. Es werden keine unbestätigten Preise veröffentlicht."]
+  ["Was kostet die IT-Betreuung?", "Das hängt von den betreuten Systemen, dem gewünschten Umfang und den vereinbarten Serviceleistungen ab. Sie erhalten ein individuelles Angebot."]
 ] as const;

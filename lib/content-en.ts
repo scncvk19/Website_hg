@@ -12,7 +12,7 @@ export const servicesEn: Service[] = [
     features: ["Backup status and existing recovery evidence","Firewall, networks and secure remote access","Updates, endpoint protection and administrative rights","MFA, email security and incident procedures","Written action plan and personal review of findings"],
     benefit: "You receive clear priorities instead of an overwhelming list of technical problems.",
     limit: "The free initial consultation provides orientation without technical testing. The paid business assessment requires written agreement and authorisation. It is not a penetration test or certification and cannot guarantee protection from attacks. Remediation is offered separately.",
-    steps: ["Initial consultation without obligation (20–30 minutes)","Commission the technical assessment based on an offer","Discuss findings and plan measures"] },
+    steps: ["Free, no-obligation initial consultation (20–30 minutes)","Commission the technical assessment based on an offer","Discuss findings and plan measures"] },
   { slug: "backup", icon: "database", title: "Backup & recovery", subtitle: "Protect your data and demonstrate recoverability.",
     intro: "A backup is only truly useful when essential data can be restored in an emergency. We develop a backup plan suited to your operational requirements.",
     features: ["Agree backup scope and recovery objectives","Plan appropriate local and off-site backup destinations","Monitor backup jobs and investigate failures","Agreed restore tests and status reports"],
@@ -35,7 +35,7 @@ export const servicesEn: Service[] = [
     intro: "Suspicious messages, fraudulent invoices or unexpected MFA prompts: our proposed training uses clear examples and appropriate responses, not blame.",
     features: ["Introductory workshop: 90 minutes for 5–15 people","Phishing, payment fraud, passwords and MFA","Safe handling of files and confidential data","Practical exercises, knowledge check and handout","Refresher (30 minutes), management briefing (60 minutes) or annual package by agreement"],
     benefit: "Employees learn to recognise typical risks and report suspicious situations early.",
-    limit: "These formats are a draft service proposal. No accredited certification, covert monitoring or phishing simulation is included in the standard workshop. Dates and group size are agreed individually.",
+    limit: "Content, dates and group size are agreed individually. The standard workshop does not include accredited certification, covert monitoring or phishing simulation.",
     steps: ["Clarify the audience and incident reporting channels","Deliver a personal workshop","Review lessons and refresh knowledge as needed"] },
   { slug: "green-it", icon: "leaf", title: "Green IT & infrastructure", subtitle: "Make practical and economical use of existing technology.",
     intro: "Not every IT upgrade requires new hardware. We assess when existing systems can be retained or should be replaced.",
@@ -57,5 +57,5 @@ export const faqsEn = [
   ["Can I book individual services?", "Yes. Security assessments, backups, archiving, firewall services, training and automation can be agreed as separate services. Ongoing support is optional."],
   ["Do you provide remote and on-site support?", "Yes, depending on the request and agreement. Remote and on-site support have different rates. We clarify the terms before you place an order."],
   ["Is a security assessment a penetration test?", "No. We assess agreed settings and evidence. A penetration test is a separate, authorised engagement and is not included in our standard assessment."],
-  ["How much does IT support cost?", "This depends on the systems, required scope and agreed services. You receive an individual offer. We do not publish unconfirmed prices."]
+  ["How much does IT support cost?", "This depends on the systems, required scope and agreed services. You receive an individual offer."]
 ] as const;

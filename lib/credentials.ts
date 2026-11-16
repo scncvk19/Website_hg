@@ -5,7 +5,7 @@ import type { Language } from "./locale";
 type Copy = Record<Language, string>;
 type Credential = { id: string; name: string; category: "technology" | "qualification"; description: Copy; evidence: "confirmed" | "requested" | "profile" | "historical" | "website" };
 export const credentials: Credential[] = [
-  { id:"azure", name:"Microsoft Certified: Azure Administrator Associate (AZ-104)", category:"qualification", description:{de:"Verwaltung, Absicherung und Überwachung von Azure-Umgebungen.",en:"Administration, security and monitoring of Azure environments."}, evidence:"confirmed" },
+  { id:"azure", name:"Microsoft Certified: Azure Administrator Associate (AZ-104)", category:"qualification", description:{de:"Verwaltung, Absicherung und Überwachung von Azure-Umgebungen.",en:"Administration, security and monitoring of Azure environments."}, evidence:"requested" },
   { id:"dell", name:"Dell Technologies", category:"technology", description:{de:"Business-Hardware und Server-Infrastruktur.",en:"Business hardware and server infrastructure."}, evidence:"requested" },
   { id:"watchguard", name:"WatchGuard", category:"technology", description:{de:"Firewalls und Netzwerksicherheit.",en:"Firewalls and network security."}, evidence:"profile" },
   { id:"gdata", name:"G DATA CyberDefense", category:"technology", description:{de:"Endpoint-Sicherheit und Cybersecurity.",en:"Endpoint security and cybersecurity."}, evidence:"requested" },
@@ -13,7 +13,7 @@ export const credentials: Credential[] = [
   { id:"netwrix", name:"Netwrix Password Secure", category:"technology", description:{de:"Zentrale Passwortverwaltung und rollenbasierter Zugriff auf Unternehmenszugangsdaten. Ehemals Password Safe von MATESO.",en:"Centralised password management and role-based access to business credentials. Formerly Password Safe by MATESO."}, evidence:"confirmed" },
   { id:"inoxision", name:"inoxision ARCHIVE", category:"technology", description:{de:"E-Mail- und Dokumentenarchivierung mit zentraler Ablage und gezielter Recherche.",en:"Email and document archiving with central storage and targeted search."}, evidence:"confirmed" },
   { id:"medidok", name:"mediDOK", category:"technology", description:{de:"Medizinische Bild- und Dokumentenarchivierung für Arztpraxen, MVZ und Kliniken.",en:"Medical image and document archiving for practices, outpatient medical centres and hospitals."}, evidence:"confirmed" },
-  { id:"itil", name:"ITIL® 4 Foundation", category:"qualification", description:{de:"Grundlagen des IT-Service-Managements nach ITIL 4.",en:"Foundation-level IT service management knowledge based on ITIL 4."}, evidence:"confirmed" },
+  { id:"itil", name:"ITIL® 4 Foundation", category:"qualification", description:{de:"Grundlagen des IT-Service-Managements nach ITIL 4.",en:"Foundation-level IT service management knowledge based on ITIL 4."}, evidence:"requested" },
   { id:"privacy", name:"Datenschutz / Data protection", category:"qualification", description:{de:"Datenschutzqualifikationen laut Unternehmensprofil.",en:"Data protection qualifications listed in the company profile."}, evidence:"profile" },
   { id:"windows", name:"Windows Server", category:"qualification", description:{de:"Historisch dokumentierte Schulungen zur Server-Administration.",en:"Historically documented server administration training."}, evidence:"historical" },
   { id:"security", name:"IT-Security & Awareness", category:"qualification", description:{de:"Regelmäßige Fortbildung und Sicherheitsbewusstsein im Arbeitsalltag.",en:"Ongoing professional development and security awareness at work."}, evidence:"website" }
@@ -34,7 +34,7 @@ export const certificateRecords: CertificateRecord[] = [
   {id:"passwordsafe-2020",title:"Password Safe",year:"2020",description:{de:"Historischer Nachweis aus 2020 unter dem damaligen Produktnamen. Heute Netwrix Password Secure; kein Nachweis aktueller Zertifizierung.",en:"Historical record from 2020 under the original product name. Now Netwrix Password Secure; not proof of current certification."},source:"archive"},
   {id:"passwordsafe-2017",title:"Password Safe",year:"2017",description:{de:"Historischer Nachweis aus 2017 unter dem damaligen Produktnamen. Heute Netwrix Password Secure; kein Nachweis aktueller Zertifizierung.",en:"Historical record from 2017 under the original product name. Now Netwrix Password Secure; not proof of current certification."},source:"archive"},
   {id:"medidoc",title:"medidoc",year:"2018",description:{de:"Historischer Nachweis für medidoc.",en:"Historical medidoc record."},source:"archive"},
-  {id:"macmon-partner",title:"macmon Partner",year:"2018",description:{de:"Historisch veröffentlichter Partnernachweis; aktueller Partnerstatus offen.",en:"Historically published partner record; current status unverified."},source:"archive"},
+  {id:"macmon-partner",title:"macmon Partner",year:"2018",description:{de:"Historischer Partnernachweis aus dem Jahr 2018.",en:"Historical partner record from 2018."},source:"archive"},
   {id:"macmon",title:"macmon",year:"2018",description:{de:"Historischer Nachweis zu macmon.",en:"Historical macmon record."},source:"archive"},
   {id:"windows-2019",title:"Windows Server 2019",description:{de:"Abschlusszertifikat: Grundkurs Grundlagen, Installation und Konfiguration.",en:"Course completion certificate: fundamentals, installation and configuration."},source:"archive"},
   {id:"sway",title:"Microsoft Sway",description:{de:"Abschlusszertifikat: Sway-Grundkurs.",en:"Course completion certificate: introductory Sway course."},source:"archive"},
@@ -42,11 +42,11 @@ export const certificateRecords: CertificateRecord[] = [
   {id:"emc",title:"EMC Authorized Partner",description:{de:"Auf der bisherigen Startseite veröffentlichtes Partnerabzeichen; kein Nachweis eines aktuellen Dell-Partnerlevels.",en:"Partner badge published on the previous homepage; not proof of a current Dell partner tier."},source:"emc"}
 ];
 
-// Die beiden persönlichen Qualifikationen wurden im Projektauftrag konkret bestätigt.
+// Nur aktuell bestätigte Qualifikationen öffentlich als Zertifizierung anzeigen.
 export const featuredCertificates = credentials.filter(item => item.category === "qualification" && item.evidence === "confirmed");
 
-// Partnerangaben: G DATA Silver Partner intern benannt, Dell und WatchGuard ohne unbestätigte Stufe.
-export const partnerLabels: Record<string,string> = {gdata:"Silver Partner",dell:"Partner"};
+// Partnerstufen erst nach aktueller Bestätigung eintragen. Herstellerkarten bleiben sichtbar.
+export const partnerLabels: Record<string,string> = {};
 export const brandLinks: Record<string,string> = {
   azure:"https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/",itil:"https://www.peoplecert.org/",dell:"https://www.dell.com/",watchguard:"https://www.watchguard.com/",gdata:"https://www.gdata.de/",microsoft:"https://www.microsoft.com/",netwrix:"https://netwrix.com/de/products/password-secure/",inoxision:"https://inoxision.de/",medidok:"https://medidok.de/",kaspersky:"https://www.kaspersky.com/",knox:"https://www.samsungknox.com/",terra:"https://www.terracloud.de/","passwordsafe-2020":"https://netwrix.com/de/products/password-secure/","passwordsafe-2017":"https://netwrix.com/de/products/password-secure/",medidoc:"https://medidok.de/","macmon-partner":"https://www.macmon.eu/",macmon:"https://www.macmon.eu/","windows-2019":"https://www.microsoft.com/windows-server",sway:"https://sway.cloud.microsoft/",emc:"https://www.dell.com/"
 };

@@ -17,16 +17,18 @@ Stand: 16.11.2026
 | Geschäfts- und Privatkunden in Startseite, Kontakt, Über uns und Metadaten berücksichtigt | ✅ |
 | Live-Stand von Impressum und Datenschutzkontakt nach bestätigter Übertragung prüfen | 🔄 |
 | W-IdNr. laut Nutzer nicht vorhanden; in beiden Impressumsfassungen nicht aufgeführt | ✅ |
-| Verbraucherstreitbeilegung nach VSBG klären | ⬜ |
+| Verbraucherstreitbeilegung nach VSBG mit Geschäftsleitung klären (Status unbekannt) | ⬜ |
 | Datenschutzkontakt Michael Gray (Inhaber), m.gray@hg-systeme.de, DE/EN zentral ergänzt | ✅ |
 | Benennungspflicht nach Art. 37 DSGVO und § 38 BDSG prüfen; ggf. unabhängigen Datenschutzbeauftragten benennen und Kontakt veröffentlichen | ⬜ |
 | Datenschutzerklärung DE/EN auf tatsächlichen Betrieb umgestellt; interne Entwurfshinweise entfernt, Betroffenenrechte/Aufsicht ergänzt, alte Haftungshinweise ins Impressum verschoben | ✅ |
 | Datenschutztexte und tatsächliche Verarbeitungsregeln intern prüfen/freigeben; DPA, Drittlandgarantien, Firmenpostfach-Löschpraxis, Web3Forms-Frist und hCaptcha-Endgerätezugriffe bestätigen | 🔄 |
-| Web3Forms-Aufbewahrung auf sieben Tage verkürzen, sofern möglich und freigegeben; tatsächliche Einstellung in Datenschutzerklärung nachtragen | ⬜ |
-| Aktuelle Rechtstexte ins Firmen-Repository übernehmen und Veröffentlichung prüfen | ⬜ |
+| Web3Forms-Aufbewahrung: Ziel sieben Tage bestätigt; Einstellung im Anbieterportal prüfen/umsetzen und tatsächliche Frist in Datenschutzerklärung nachtragen | ⬜ |
+| Aktuelle Rechtstexte und bereinigte Unternehmens-/Qualifikationstexte ins Firmen-Repository übernehmen und Veröffentlichung prüfen | 🔄 |
 | Vercel Hobby für geschäftlichen Betrieb durch zulässigen Tarif/Hosting ersetzen; Auftragsverarbeitung klären | ⬜ |
 | Web3Forms-Empfänger info@hg-systeme.de bestätigt; serverseitige hCaptcha-Prüfung, Auftragsverarbeitung und Löschfristen bestätigen; kein erneuter allgemeiner Funktionstest nötig | ⬜ |
-| Öffentliche Entwicklungsvermerke und unbestätigte Partner-/Qualifikationsangaben bereinigen | ⬜ |
+| Unternehmensgeschichte (über 30 Jahre IT-Erfahrung), kostenloses unverbindliches Erstgespräch und bereinigte Angebots-/Qualifikationstexte DE/EN umgesetzt | ✅ |
+| Unbestätigte aktuelle Zertifizierungen und Partnerstufen ausgeblendet; historische Nachweise und Technologieübersicht erhalten | ✅ |
+| Aktuelle Zertifikate, Partnerstatus und Markenfreigaben bestätigen; erst danach wieder anzeigen | ⬜ |
 | Alte STRATO-URLs / Weiterleitungen und Sicherung, DNS-Rückweg inklusive Mail prüfen | ⬜ |
 | Einmalige mobile/DE-EN-/Linkprüfung, Tastatur und Kontrast | ⬜ |
 | package-lock.json übernehmen; Abhängigkeiten und Sicherheitsheader planmäßig pflegen | ⬜ |
