@@ -1,6 +1,6 @@
 # Zentrale To-do-Liste – Website HG-Systeme
 
-Stand: 13.11.2026 · Interner Entwurf
+Stand: 16.11.2026 · Website unter Firmen-Domain erreichbar
 
 | Aufgabe | Status |
 |---|---|
@@ -52,14 +52,19 @@ Stand: 13.11.2026 · Interner Entwurf
 | Vorhandene Unternehmensangaben sowie alle Themen der bisherigen Datenschutzseite abgleichen; Google-Maps-Karte mit freiwilliger Aktivierung und externem Kartenlink einbinden | ✅ |
 | Karte, keine Google-Anfrage vor Aktivierung, neue Navigation, E-Mail und Social-Links auf beiden Sprachfassungen im Browser prüfen | ⬜ |
 | Neue Navigation, Social-Links und Footer in beiden Sprachen im Browser prüfen | ⬜ |
-| Keine externen Tracker; Entwurfskennzeichnung und Noindex eingerichtet | ✅ |
+| Keine externen Tracker; Noindex eingerichtet | ✅ |
+| Domain-Verknüpfung und DNS für neue Website; Erreichbarkeit unter www.hg-systeme.de per Screenshot bestätigt | ✅ |
+| Sichtbaren Entwurfshinweis im Header und Footer DE/EN entfernen | ✅ |
+| Aktualisierung der öffentlich erreichbaren Website nach Deployment prüfen | 🔄 |
 | Quellcode im Repository bereitstellen; GitHub-Dateiliste und statische Linkziele prüfen | ✅ |
 | Dockerfile, Compose und Docker-Anleitung für lokale Windows-Vorschau erstellen | ✅ |
 | Aktuellen bereinigten Stand auf Firmen-PC mit Docker Desktop bauen und im Browser prüfen | 🔄 |
 | package-lock.json aus bestätigter Installation übernehmen und reproduzierbare Installation mit npm ci prüfen | ⬜ |
 | Deutsch/Englisch mit Sprachwechsel, lokalisierten Seiten, Leistungsbeschreibungen und FAQ implementieren | ✅ |
 | Kontaktformular mit Web3Forms, hCaptcha, festem Erfolgsziel und deaktiviertem Standardversand implementieren | ✅ |
-| Firmenpostfach info@hg-systeme.de für öffentliche Kontakte bestätigt; tatsächlichen Web3Forms-Empfänger und eigenen Schlüssel einrichten, Anbieter/Datenschutz freigeben, Captcha serverseitig aktivieren | ⬜ |
+| Eigenen Web3Forms Access Key erstellen (Nutzerrückmeldung) | ✅ |
+| Web3Forms-Empfänger bestätigen, hCaptcha verbindlich aktivieren und Anbieter/Datenschutz freigeben | 🔄 |
+| Formularvariablen in Produktionsumgebung setzen und Deployment aktualisieren | ⬜ |
 | Beide Sprachfassungen, Sprachwechsel, Formular-Fehlerfälle und echte Testzustellung nach Freigabe prüfen | ⬜ |
 | Browserprüfung Desktop, Smartphone und Querformat; Navigation, FAQ, Links und 404 prüfen | ⬜ |
 | Farbkonzept auf Blau umstellen, wichtige Textkontraste rechnerisch prüfen und öffentliches Firmenlogo im Entwurf einbinden | ✅ |
@@ -87,7 +92,7 @@ Stand: 13.11.2026 · Interner Entwurf
 | STRATO-Altwebsite (Homepage-Baukasten) als lokale Offline-Kopie sichern und Vollständigkeit prüfen | 🔄 |
 | Baukasten-Wiederherstellung, Domainzuordnung und bisherige DNS-/Mail-Einträge dokumentieren; bestehenden Vertrag erhalten | ⬜ |
 | Produktionshosting, DNS, Migration, alte URLs/Weiterleitungen und Rückweg planen | ⬜ |
-| Veröffentlichung, Indexierung/Sitemap und Google-Unternehmensprofil erst nach Freigabe | ⬜ |
+| Rechtsseiten und Produktionshosting bestätigen; Indexierung/Noindex, Sitemap und Google-Unternehmensprofil nach Freigabe aktualisieren | ⬜ |
 
 ## Nächster Schritt
 
