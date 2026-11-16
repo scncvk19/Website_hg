@@ -10,6 +10,7 @@ export const company = {
   phone: "06271 77 170",
   tel: "+49627177170",
   email: "info@hg-systeme.de",
+  privacyEmail: "m.gray@hg-systeme.de",
   website: "https://www.hg-systeme.de/",
   linkedin: "https://de.linkedin.com/company/hg-systeme-e-k"
 } as const;

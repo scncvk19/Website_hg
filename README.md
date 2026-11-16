@@ -9,7 +9,7 @@ Ich pflege die Firmenpräsenz unter https://www.hg-systeme.de mit Next.js, React
 - Die Domain ist verbunden. Bestehende DNS-/Mail-Einträge bleiben unverändert.
 - Kontaktformular über Web3Forms und hCaptcha: erfolgreicher Funktionstest durch den Nutzer bestätigt. Die technische Umsetzung bleibt unverändert. Empfänger info@hg-systeme.de ist bestätigt; Auftragsverarbeitung, Datenübermittlungen und Löschfristen separat bestätigen.
 - Kein Tracking laut Nutzer; keine zusätzlichen Marketingdienste. Instagram-API bleibt zurückgestellt; Profilverlinkungen genügen.
-- Impressum DE/EN: Firmenname HG-Systeme e.K., Amtsgericht Mannheim HRA 332816 und USt-ID DE164684637 bestätigt und zentral ergänzt. Ich spreche Geschäfts- und Privatkunden an; keine erfundenen Öffnungszeiten oder Gründungsjahre. Ein Datenschutzbeauftragter ist vorhanden; dessen veröffentlichbare Kontaktangaben fehlen noch. Die Datenschutztexte sind noch nicht abschließend vervollständigt. W-IdNr. bleibt zu klären.
+- Impressum DE/EN: Firmenname HG-Systeme e.K., Amtsgericht Mannheim HRA 332816 und USt-ID DE164684637 bestätigt und zentral ergänzt. Ich spreche Geschäfts- und Privatkunden an; keine erfundenen Öffnungszeiten oder Gründungsjahre. Michael Gray (Inhaber) ist als Ansprechpartner für Datenschutz unter m.gray@hg-systeme.de bestätigt und DE/EN eingetragen. Ich verwende nicht die Bezeichnung Datenschutzbeauftragter, da der Inhaber seine eigenen Entscheidungen nicht unabhängig kontrollieren kann (Art. 38 Abs. 6 DSGVO). Die Benennungspflicht nach Art. 37 DSGVO und § 38 BDSG sowie eine etwaige frühere formelle Benennung kläre ich gesondert. Die Datenschutztexte sind noch nicht abschließend vervollständigt. W-IdNr. bleibt zu klären.
 
 ## Lokale Entwicklung und Pflege
 

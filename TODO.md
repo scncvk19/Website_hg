@@ -17,7 +17,9 @@ Stand: 16.11.2026
 | Geschäfts- und Privatkunden in Startseite, Kontakt, Über uns und Metadaten berücksichtigt | ✅ |
 | Unternehmensangaben und aktualisierte Texte ins Firmen-Repository übernehmen und Live-Stand prüfen | 🔄 |
 | W-IdNr. (falls zugeteilt) und Verbraucherstreitbeilegung nach VSBG klären | ⬜ |
-| Datenschutz DE/EN vervollständigen: Kontakt des vorhandenen Datenschutzbeauftragten, Hosting, Rechtsgrundlagen, Empfänger, Fristen, Rechte und Aufsicht; tatsächliches Formular und kein Tracking bereits bestätigt | ⬜ |
+| Datenschutzkontakt Michael Gray (Inhaber), m.gray@hg-systeme.de, DE/EN zentral ergänzt | ✅ |
+| Benennungspflicht nach Art. 37 DSGVO und § 38 BDSG prüfen; ggf. unabhängigen Datenschutzbeauftragten benennen und Kontakt veröffentlichen | ⬜ |
+| Datenschutz DE/EN vervollständigen: Hosting, Rechtsgrundlagen, Empfänger, Fristen, Rechte und Aufsicht; tatsächliches Formular und kein Tracking bereits bestätigt | ⬜ |
 | Vercel Hobby für geschäftlichen Betrieb durch zulässigen Tarif/Hosting ersetzen; Auftragsverarbeitung klären | ⬜ |
 | Web3Forms-Empfänger info@hg-systeme.de bestätigt; serverseitige hCaptcha-Prüfung, Auftragsverarbeitung und Löschfristen bestätigen; kein erneuter allgemeiner Funktionstest nötig | ⬜ |
 | Öffentliche Entwicklungsvermerke und unbestätigte Partner-/Qualifikationsangaben bereinigen | ⬜ |
