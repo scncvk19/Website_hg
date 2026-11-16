@@ -7,7 +7,7 @@ Stand: 16.11.2026
 | Website DE/EN, acht Leistungen, Unternehmensseite, Ratgeber, Beiträge, Kontakt, Logo und Navigation umgesetzt | ✅ |
 | Interne Debian-Testumgebung bereitgestellt | ✅ |
 | Firmen-Domain verbunden, Website öffentlich erreichbar | ✅ |
-| Firmen-Repository auf a7dc4ad synchronisiert; SEO-Commit 8f92892 laut Nutzer übertragen | ✅ |
+| Firmen-Repository bis einschließlich f449601 (SEO, Unternehmensangaben und Datenschutzkontakt) laut Nutzer aktualisiert | ✅ |
 | Entwurfsleiste und Footer-Hinweis im Quellcode entfernt | ✅ |
 | Kontaktformular aktiviert und erfolgreicher Funktionstest durch Nutzer bestätigt | ✅ |
 | SEO: produktionsabhängige Indexierung, robots.txt und zweisprachige Sitemap im Quellcode umgesetzt; Dankeseiten noindex | ✅ |
@@ -15,8 +15,9 @@ Stand: 16.11.2026
 | Google Search Console einrichten, Sitemap einreichen und Startseite prüfen | ⬜ |
 | Impressum DE/EN: Firmenname, Amtsgericht Mannheim HRA 332816 und USt-ID DE164684637 bestätigt und ergänzt; internen Prüfhinweis entfernt | ✅ |
 | Geschäfts- und Privatkunden in Startseite, Kontakt, Über uns und Metadaten berücksichtigt | ✅ |
-| Unternehmensangaben und aktualisierte Texte ins Firmen-Repository übernehmen und Live-Stand prüfen | 🔄 |
-| W-IdNr. (falls zugeteilt) und Verbraucherstreitbeilegung nach VSBG klären | ⬜ |
+| Live-Stand von Impressum und Datenschutzkontakt nach bestätigter Übertragung prüfen | 🔄 |
+| W-IdNr. laut Nutzer nicht vorhanden; in beiden Impressumsfassungen nicht aufgeführt | ✅ |
+| Verbraucherstreitbeilegung nach VSBG klären | ⬜ |
 | Datenschutzkontakt Michael Gray (Inhaber), m.gray@hg-systeme.de, DE/EN zentral ergänzt | ✅ |
 | Benennungspflicht nach Art. 37 DSGVO und § 38 BDSG prüfen; ggf. unabhängigen Datenschutzbeauftragten benennen und Kontakt veröffentlichen | ⬜ |
 | Datenschutz DE/EN vervollständigen: Hosting, Rechtsgrundlagen, Empfänger, Fristen, Rechte und Aufsicht; tatsächliches Formular und kein Tracking bereits bestätigt | ⬜ |

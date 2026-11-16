@@ -6,7 +6,7 @@ Ich betreibe die Website als Firmenpräsenz und Kontaktmöglichkeit. Die neue We
 
 | Thema | Noch zu bestätigen |
 |---|---|
-| Impressum | W-IdNr. falls zugeteilt; Verbraucherstreitbeilegung nach VSBG klären. Firmenname HG-Systeme e.K., Amtsgericht Mannheim HRA 332816 und USt-ID DE164684637 sind vom Nutzer bestätigt. Bestehende Nennung Michael Gray nach § 18 MStV bleibt. |
+| Impressum | Verbraucherstreitbeilegung nach VSBG klären. Firmenname HG-Systeme e.K., Amtsgericht Mannheim HRA 332816 und USt-ID DE164684637 sind vom Nutzer bestätigt. Bestehende Nennung Michael Gray nach § 18 MStV bleibt. Eine W-IdNr. ist laut Nutzer nicht vorhanden und bleibt im Impressum unerwähnt; erst bei Zuteilung ergänzen. |
 | Datenschutz | Michael Gray (Inhaber), m.gray@hg-systeme.de, ist als Datenschutzkontakt bestätigt und eingetragen. Ich kläre, ob eine formelle Benennung besteht und ob ein unabhängiger Datenschutzbeauftragter nach Art. 37 DSGVO / § 38 BDSG erforderlich ist; die Inhaberrolle ist mit unabhängiger Kontrolle nach Art. 38 Abs. 6 DSGVO unvereinbar. Auch bei weniger als 20 Personen können besondere Verarbeitungstätigkeiten (insbesondere umfangreiche Gesundheitsdaten bei Kunden) die Pflicht auslösen. Hosting, Kontaktverarbeitung, Rechtsgrundlagen, Empfänger, Aufbewahrung, Betroffenenrechte und Aufsicht bleiben offen. Kein Besuchertracking laut Nutzer. |
 | Hosting | Aktuell Vercel Hobby laut Nutzer; geschäftlich zulässiger Tarif oder alternatives Hosting, Auftragsverarbeitung und Datenübermittlungen. |
 | Kontaktformular | Empfänger info@hg-systeme.de bestätigt; serverseitige CAPTCHA-Prüfung, Web3Forms/hCaptcha-Auftragsverarbeitung, Speicherdauer, Datenübermittlungen. Allgemeine Funktion ist bestätigt. |
@@ -18,4 +18,4 @@ Ich betreibe die Website als Firmenpräsenz und Kontaktmöglichkeit. Die neue We
 
 ## Entschieden
 
-Ich behalte das bestehende Design, Deutsch und Englisch, die acht Leistungsbereiche, die Firmenprofile und das funktionierende Kontaktformular. Die SEO-Änderungen sind laut Nutzer ins Firmen-Repository übertragen; die tatsächliche Aufnahme und der Produktionsstand sind noch zu prüfen. Keine zusätzlichen Trackingdienste oder komplexe Marketingplattform. Der Instagram-Live-Feed bleibt zurückgestellt. Die Rechtsseiten übernehmen die bisherigen Inhalte, müssen aber an die tatsächlichen neuen Dienste angepasst werden.
+Ich behalte das bestehende Design, Deutsch und Englisch, die acht Leistungsbereiche, die Firmenprofile und das funktionierende Kontaktformular. Die SEO-Änderungen, Unternehmensangaben und der Datenschutzkontakt sind laut Nutzer bis einschließlich f449601 ins Firmen-Repository übertragen; die tatsächliche Aufnahme und der Produktionsstand sind noch zu prüfen. Keine zusätzlichen Trackingdienste oder komplexe Marketingplattform. Der Instagram-Live-Feed bleibt zurückgestellt. Die Rechtsseiten übernehmen die bisherigen Inhalte, müssen aber an die tatsächlichen neuen Dienste angepasst werden.

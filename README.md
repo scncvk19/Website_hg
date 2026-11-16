@@ -4,12 +4,12 @@ Ich pflege die Firmenpräsenz unter https://www.hg-systeme.de mit Next.js, React
 
 ## Produktiver Betrieb
 
-- Maßgebliches Firmen-Repository: https://github.com/Hg-Systeme428/Website (main). Entwicklungsstand: https://github.com/scncvk19/Website_hg. Die Übertragung des SEO-Commits 8f92892 ins Firmen-Repository wurde am 16.11.2026 vom Nutzer bestätigt.
+- Maßgebliches Firmen-Repository: https://github.com/Hg-Systeme428/Website (main). Entwicklungsstand: https://github.com/scncvk19/Website_hg. Die Übertragung des SEO-Commits 8f92892 und der Unternehmensangaben einschließlich Datenschutzkontakt (f449601) ins Firmen-Repository wurde am 16.11.2026 vom Nutzer bestätigt.
 - Hosting: Vercel, laut Nutzer aktuell Hobby. Die geschäftliche Verwendung ist im Hobby-Tarif nicht zulässig; geeigneten Tarif oder kommerziell zulässiges Hosting kläre ich mit der Geschäftsleitung.
 - Die Domain ist verbunden. Bestehende DNS-/Mail-Einträge bleiben unverändert.
 - Kontaktformular über Web3Forms und hCaptcha: erfolgreicher Funktionstest durch den Nutzer bestätigt. Die technische Umsetzung bleibt unverändert. Empfänger info@hg-systeme.de ist bestätigt; Auftragsverarbeitung, Datenübermittlungen und Löschfristen separat bestätigen.
 - Kein Tracking laut Nutzer; keine zusätzlichen Marketingdienste. Instagram-API bleibt zurückgestellt; Profilverlinkungen genügen.
-- Impressum DE/EN: Firmenname HG-Systeme e.K., Amtsgericht Mannheim HRA 332816 und USt-ID DE164684637 bestätigt und zentral ergänzt. Ich spreche Geschäfts- und Privatkunden an; keine erfundenen Öffnungszeiten oder Gründungsjahre. Michael Gray (Inhaber) ist als Ansprechpartner für Datenschutz unter m.gray@hg-systeme.de bestätigt und DE/EN eingetragen. Ich verwende nicht die Bezeichnung Datenschutzbeauftragter, da der Inhaber seine eigenen Entscheidungen nicht unabhängig kontrollieren kann (Art. 38 Abs. 6 DSGVO). Die Benennungspflicht nach Art. 37 DSGVO und § 38 BDSG sowie eine etwaige frühere formelle Benennung kläre ich gesondert. Die Datenschutztexte sind noch nicht abschließend vervollständigt. W-IdNr. bleibt zu klären.
+- Impressum DE/EN: Firmenname HG-Systeme e.K., Amtsgericht Mannheim HRA 332816 und USt-ID DE164684637 bestätigt und zentral ergänzt. Ich spreche Geschäfts- und Privatkunden an; keine erfundenen Öffnungszeiten oder Gründungsjahre. Michael Gray (Inhaber) ist als Ansprechpartner für Datenschutz unter m.gray@hg-systeme.de bestätigt und DE/EN eingetragen. Ich verwende nicht die Bezeichnung Datenschutzbeauftragter, da der Inhaber seine eigenen Entscheidungen nicht unabhängig kontrollieren kann (Art. 38 Abs. 6 DSGVO). Die Benennungspflicht nach Art. 37 DSGVO und § 38 BDSG sowie eine etwaige frühere formelle Benennung kläre ich gesondert. Die Datenschutztexte sind noch nicht abschließend vervollständigt. Eine W-IdNr. ist laut Nutzer nicht vorhanden; ich lasse sie im Impressum weg und ergänze sie erst bei einer Zuteilung.
 
 ## Lokale Entwicklung und Pflege
 
