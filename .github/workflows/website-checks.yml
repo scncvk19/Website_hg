@@ -8,6 +8,7 @@ on:
       - 'components/**'
       - 'lib/**'
       - 'public/**'
+      - 'scripts/check-website.mjs'
       - 'package*.json'
       - 'tsconfig.json'
       - 'next.config.ts'
@@ -20,10 +21,12 @@ concurrency:
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     env:
       NEXT_TELEMETRY_DISABLED: '1'
       HG_CONTACT_FORM_ENABLED: 'false'
+      HG_INSTAGRAM_ENABLED: 'false'
+      HG_PUBLIC_INDEXING: 'true'
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
@@ -31,10 +34,23 @@ jobs:
           node-version: '22'
       - name: Install dependencies
         run: |
-          if [ -f package-lock.json ]; then npm ci --include=dev --no-audit --no-fund; else npm install --include=dev --no-audit --no-fund; fi
+          if [ ! -f package-lock.json ]; then
+            npm install --package-lock-only --include=dev --ignore-scripts --no-audit --no-fund
+            # One-time lockfile handoff. Only public npm dependency metadata, no secrets.
+            base64 -w2048 package-lock.json | sed 's/^/HG_LOCKFILE_CHUNK:/'
+          fi
+          npm ci --include=dev --no-audit --no-fund
+      - name: Check production dependencies
+        run: npm audit --omit=dev --audit-level=high
       - name: Production build
         run: npm run build
       - name: TypeScript
         run: npm run typecheck
       - name: Verify local logo files
         run: python3 scripts/import_partner_logos.py --check
+      - name: Install temporary browser test tool
+        run: npm install --prefix "$RUNNER_TEMP/hg-browser" --no-save --no-package-lock --no-audit --no-fund playwright@1.56.1
+      - name: Check routes, headers and responsive layout
+        env:
+          HG_BROWSER_MODULE: ${{ runner.temp }}/hg-browser/node_modules/playwright/index.mjs
+        run: node --experimental-strip-types scripts/check-website.mjs
