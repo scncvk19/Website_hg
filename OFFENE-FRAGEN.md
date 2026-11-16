@@ -13,7 +13,7 @@ Ich betreibe die Website als Firmenpräsenz und Kontaktmöglichkeit. Die neue We
 | Google Maps | Bestehende Karte bleibt nach Nutzerentscheidung freiwillig aktivierbar. Einwilligungshinweis präzisiert; Datenschutzlink sprachabhängig. Tatsächliche Datenübermittlungen/Endgerätezugriffe, Widerruf und Anbieterbedingungen prüfen. |
 | Unternehmensdarstellung | Geschäfts- und Privatkunden bestätigt. Öffnungszeiten und Gründungsjahr offen; keine unbestätigten Angaben veröffentlichen. Kostenloses und unverbindliches Erstgespräch bestätigt. Über 30 Jahre beziehen sich auf IT-Erfahrung, nicht Unternehmensalter. Aktuelle Teamangaben und tatsächlichen Leistungsumfang bei Bedarf prüfen. |
 | Qualifikationen/Partner | AZ-104, ITIL, Dell, WatchGuard, G DATA Silver Partner, Markenfreigaben und Referenzrechte noch nicht bestätigt. Ich blende aktuelle persönliche Zertifizierungen und Partnerstufen bis zur Bestätigung aus; Herstellerübersicht und historische Nachweise bleiben erhalten. |
-| Altwebsite | STRATO-Sicherung, Wiederherstellung, alte URL-Ziele und DNS-/Mail-Rückweg bestätigen. |
+| Altwebsite | Weiterleitungen alter STRATO-URLs laut Nutzer eingerichtet; keine erneute Einrichtung nötig. STRATO-Sicherung, Wiederherstellung und DNS-/Mail-Rückweg bleiben unbestätigt. |
 | Archivierung | inoxision-Editionen, Module, Lizenz-/Betriebsmodelle und konkrete Aufbewahrungsanforderungen im Angebot abstimmen. |
 
 ## Entschieden

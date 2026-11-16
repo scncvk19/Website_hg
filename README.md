@@ -68,7 +68,7 @@ Die lokale Testumgebung wurde erfolgreich bereitgestellt. Die IP ist die bestät
 | Docker und lokale Konfiguration | Dockerfile, compose.yaml, .env.example |
 | Aufgaben / Freigaben | TODO.md, OFFENE-FRAGEN.md |
 
-Historische Zertifikate bleiben ausdrücklich historisch. Ich zeige aktuell keine unbestätigten Partnerstufen und persönlichen Zertifizierungen; die Technologieübersicht bleibt bestehen. Nach bestätigter Gültigkeit können die Angaben in lib/credentials.ts wieder aktiviert werden. Herstellerlogos werden lokal ausgeliefert. Der manuelle Importworkflow verwendet scripts/import_partner_logos.py. Die alte Website und frühere Entwicklungsstände sind in der Git-Historie nachvollziehbar; eine separate STRATO-Sicherung ist noch nicht bestätigt.
+Historische Zertifikate bleiben ausdrücklich historisch. Ich zeige aktuell keine unbestätigten Partnerstufen und persönlichen Zertifizierungen; die Technologieübersicht bleibt bestehen. Nach bestätigter Gültigkeit können die Angaben in lib/credentials.ts wieder aktiviert werden. Herstellerlogos werden lokal ausgeliefert. Der manuelle Importworkflow verwendet scripts/import_partner_logos.py. Die alte Website und frühere Entwicklungsstände sind in der Git-Historie nachvollziehbar; die Weiterleitungen der alten STRATO-URLs sind laut Nutzer eingerichtet (16.11.2026). Eine separate STRATO-Sicherung und der DNS-/Mail-Rückweg sind noch nicht bestätigt. Ich lasse vorhandene Weiterleitungen unverändert und nehme keine DNS- oder Mail-Änderungen vor.
 
 ## Kontakt und externe Dienste
 

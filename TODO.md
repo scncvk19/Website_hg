@@ -26,7 +26,8 @@ Stand: 16.11.2026
 | Unternehmensgeschichte (über 30 Jahre IT-Erfahrung), kostenloses unverbindliches Erstgespräch und bereinigte Angebots-/Qualifikationstexte DE/EN umgesetzt | ✅ |
 | Unbestätigte aktuelle Zertifizierungen und Partnerstufen ausgeblendet; historische Nachweise und Technologieübersicht erhalten | ✅ |
 | Aktuelle Zertifikate, Partnerstatus und Markenfreigaben bei späterer Inhaltspflege bestätigen; erst danach wieder anzeigen | ⏸️ |
-| Alte STRATO-URLs / Weiterleitungen und Sicherung, DNS-Rückweg inklusive Mail prüfen | ⬜ |
+| Weiterleitungen alter STRATO-URLs laut Nutzer eingerichtet | ✅ |
+| Alte STRATO-Sicherung und DNS-/Mail-Rückweg bei Betriebsübergabe dokumentieren (keine DNS-Änderungen erforderlich) | ⬜ |
 | Einmalige mobile/DE-EN-/Linkprüfung, Tastatur und Kontrast | ⬜ |
 | package-lock.json übernehmen; Abhängigkeiten und Sicherheitsheader planmäßig pflegen | ⬜ |
 | Google-Unternehmensprofil aktualisieren; vorhandene Firmenprofile mit Website verlinken | ⬜ |
