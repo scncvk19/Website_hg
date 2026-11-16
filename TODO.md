@@ -17,18 +17,15 @@ Stand: 16.11.2026
 | Geschäfts- und Privatkunden in Startseite, Kontakt, Über uns und Metadaten berücksichtigt | ✅ |
 | Live-Stand von Impressum und Datenschutzkontakt nach bestätigter Übertragung prüfen | 🔄 |
 | W-IdNr. laut Nutzer nicht vorhanden; in beiden Impressumsfassungen nicht aufgeführt | ✅ |
-| Verbraucherstreitbeilegung nach VSBG mit Geschäftsleitung klären (Status unbekannt) | ⬜ |
 | Datenschutzkontakt Michael Gray (Inhaber), m.gray@hg-systeme.de, DE/EN zentral ergänzt | ✅ |
-| Benennungspflicht nach Art. 37 DSGVO und § 38 BDSG prüfen; ggf. unabhängigen Datenschutzbeauftragten benennen und Kontakt veröffentlichen | ⬜ |
 | Datenschutzerklärung DE/EN auf tatsächlichen Betrieb umgestellt; interne Entwurfshinweise entfernt, Betroffenenrechte/Aufsicht ergänzt, alte Haftungshinweise ins Impressum verschoben | ✅ |
-| Datenschutztexte und tatsächliche Verarbeitungsregeln intern prüfen/freigeben; DPA, Drittlandgarantien, Firmenpostfach-Löschpraxis, etwaige Web3Forms-Sicherungskopien und hCaptcha-Endgerätezugriffe bestätigen | 🔄 |
 | Web3Forms-Aufbewahrung sieben Tage laut Nutzer eingestellt; Datenschutzerklärung DE/EN angepasst | ✅ |
 | Aktuelle Rechtstexte einschließlich Sieben-Tage-Frist und bereinigte Unternehmens-/Qualifikationstexte ins Firmen-Repository übernehmen und Veröffentlichung prüfen | 🔄 |
-| Vercel laut Nutzer erledigt; konkreten geschäftlich zulässigen Tarif und Auftragsverarbeitung bestätigen | 🔄 |
-| Web3Forms-Empfänger info@hg-systeme.de bestätigt; serverseitige hCaptcha-Prüfung und Auftragsverarbeitung bestätigen; kein erneuter allgemeiner Funktionstest nötig | ⬜ |
+| Vercel vom Nutzer als erledigt gemeldet; konkreten geschäftlich zulässigen Tarif bei Betriebsübergabe bestätigen | 🔄 |
+| Web3Forms-Empfänger info@hg-systeme.de und Funktion bestätigt; serverseitige hCaptcha-Pflicht bei Anbieter prüfen | ⬜ |
 | Unternehmensgeschichte (über 30 Jahre IT-Erfahrung), kostenloses unverbindliches Erstgespräch und bereinigte Angebots-/Qualifikationstexte DE/EN umgesetzt | ✅ |
 | Unbestätigte aktuelle Zertifizierungen und Partnerstufen ausgeblendet; historische Nachweise und Technologieübersicht erhalten | ✅ |
-| Aktuelle Zertifikate, Partnerstatus und Markenfreigaben bestätigen; erst danach wieder anzeigen | ⬜ |
+| Aktuelle Zertifikate, Partnerstatus und Markenfreigaben bei späterer Inhaltspflege bestätigen; erst danach wieder anzeigen | ⏸️ |
 | Alte STRATO-URLs / Weiterleitungen und Sicherung, DNS-Rückweg inklusive Mail prüfen | ⬜ |
 | Einmalige mobile/DE-EN-/Linkprüfung, Tastatur und Kontrast | ⬜ |
 | package-lock.json übernehmen; Abhängigkeiten und Sicherheitsheader planmäßig pflegen | ⬜ |
@@ -36,4 +33,4 @@ Stand: 16.11.2026
 | Interne Test-VM: DHCP-Freigabe, Neustart und lokale Windows-Stash-Dateien bei Bedarf prüfen | ⏸️ |
 | Instagram-Live-Feed, zusätzliche Tracking- und Marketingdienste | ⏸️ |
 
-Ich halte nur die noch relevanten Betriebsaufgaben fest. Die erledigten Entwicklungsschritte sind in der Git-Historie nachvollziehbar. Offene Unternehmensangaben und Freigaben stehen in OFFENE-FRAGEN.md.
+Ich halte nur die noch relevanten Betriebsaufgaben fest. Die erledigten Entwicklungsschritte sind in der Git-Historie nachvollziehbar. Offene betriebliche Rechts- und Datenschutzfragen führe ich getrennt in OFFENE-FRAGEN.md; sie sind auf Nutzerwunsch keine aktiven Website-Entwicklungsaufgaben. Das ist keine Feststellung, dass alle gesetzlichen Pflichten erfüllt sind.
