@@ -12,8 +12,9 @@ Stand: 16.11.2026
 | Kontaktformular aktiviert und erfolgreicher Funktionstest durch Nutzer bestätigt | ✅ |
 | SEO: produktionsabhängige Indexierung, robots.txt und zweisprachige Sitemap im Quellcode umgesetzt; Dankeseiten noindex | ✅ |
 | Vercel-Deployment live bestätigt: Startseite und Sitemap HTTP 200, robots.txt Allow: /, kein X-Robots-Tag mit noindex auf Startseite, neue Permissions-Policy aktiv | ✅ |
-| Google Search Console: Domain-Property einrichten und bestätigen | 🔄 |
-| Sitemap in Search Console einreichen, Indexierung der Startseite prüfen und ggf. beantragen | ⬜ |
+| Google Search Console: Domain-Property hg-systeme.de eingerichtet und DNS-CNAME-Bestätigung laut Nutzer erfolgreich | ✅ |
+| Sitemap in Search Console eingereicht; 34 URLs, HTTP 200 und gültiges XML geprüft; Status laut Nutzer erfolgreich | ✅ |
+| Startseite in Search Console live prüfen, Indexierung beantragen und tatsächlichen Indexstatus kontrollieren | 🔄 |
 | Impressum DE/EN: Firmenname, Amtsgericht Mannheim HRA 332816 und USt-ID DE164684637 bestätigt und ergänzt; internen Prüfhinweis entfernt | ✅ |
 | Geschäfts- und Privatkunden in Startseite, Kontakt, Über uns und Metadaten berücksichtigt | ✅ |
 | Impressum und Datenschutzkontakt im geprüften und übertragenen Dateistand; unmittelbare Live-Inhaltsprüfung der Rechtsseiten noch nicht separat bestätigt | ⏸️ |
