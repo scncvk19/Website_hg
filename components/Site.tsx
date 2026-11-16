@@ -10,8 +10,8 @@ import styles from "./navigation.module.css";
 // Lokales Firmenlogo für beide Sprachen und alle Seiten.
 const logoUrl = "/images/branding/hg-systeme-logo.png";
 const copy = {
- de: { nav:["Willkommen","Leistungen","Über uns","Beiträge","Ratgeber","Kontakt"], preview:"Interner Website-Entwurf · Noch nicht zur Veröffentlichung freigegeben", brand:"HG-Systeme – Startseite", navigation:"Hauptnavigation", mobile:"Mobile Navigation", menu:"Menü", open:"Navigation öffnen", consultation:"Erstgespräch", existing:"Bestandskunden-Support", tagline:"Mit uns immer sicher vernetzt!", region:"IT-Dienstleistungen aus Eberbach.", company:"Unternehmen", guide:"Ratgeber & FAQ", customers:"Bestandskunden", legal:"Impressum", privacy:"Datenschutz", draft:"Interner Entwurf", more:"Mehr erfahren", bandLabel:"Persönlich. Regional. Verständlich.", bandTitle:"Was können wir für Ihre IT tun?", bandText:"Erzählen Sie uns, was Sie beschäftigt. Gemeinsam finden wir einen sinnvollen nächsten Schritt.", bandButton:"Erstgespräch vereinbaren" },
- en: { nav:["Welcome","Services","About us","News","IT guide","Contact"], preview:"Internal website draft · Not approved for publication", brand:"HG-Systeme – Home", navigation:"Main navigation", mobile:"Mobile navigation", menu:"Menu", open:"Open navigation", consultation:"Initial consultation", existing:"Existing customer support", tagline:"Stay securely connected with us!", region:"IT services from Eberbach.", company:"Company", guide:"IT guide & FAQ", customers:"Existing customers", legal:"Legal notice", privacy:"Privacy", draft:"Internal draft", more:"Learn more", bandLabel:"Personal. Regional. Clear.", bandTitle:"How can we help with your IT?", bandText:"Tell us what you need. Together we will find a sensible next step.", bandButton:"Arrange a consultation" }
+ de: { nav:["Willkommen","Leistungen","Über uns","Beiträge","Ratgeber","Kontakt"], brand:"HG-Systeme – Startseite", navigation:"Hauptnavigation", mobile:"Mobile Navigation", menu:"Menü", open:"Navigation öffnen", consultation:"Erstgespräch", existing:"Bestandskunden-Support", tagline:"Mit uns immer sicher vernetzt!", region:"IT-Dienstleistungen aus Eberbach.", company:"Unternehmen", guide:"Ratgeber & FAQ", customers:"Bestandskunden", legal:"Impressum", privacy:"Datenschutz", more:"Mehr erfahren", bandLabel:"Persönlich. Regional. Verständlich.", bandTitle:"Was können wir für Ihre IT tun?", bandText:"Erzählen Sie uns, was Sie beschäftigt. Gemeinsam finden wir einen sinnvollen nächsten Schritt.", bandButton:"Erstgespräch vereinbaren" },
+ en: { nav:["Welcome","Services","About us","News","IT guide","Contact"], brand:"HG-Systeme – Home", navigation:"Main navigation", mobile:"Mobile navigation", menu:"Menu", open:"Open navigation", consultation:"Initial consultation", existing:"Existing customer support", tagline:"Stay securely connected with us!", region:"IT services from Eberbach.", company:"Company", guide:"IT guide & FAQ", customers:"Existing customers", legal:"Legal notice", privacy:"Privacy", more:"Learn more", bandLabel:"Personal. Regional. Clear.", bandTitle:"How can we help with your IT?", bandText:"Tell us what you need. Together we will find a sensible next step.", bandButton:"Arrange a consultation" }
 } as const;
 const navRoutes = [routes.home, routes.services, routes.about, routes.news, routes.guide, routes.contact];
 export function Brand({ lang = "de" }: { lang?: Language }) {
@@ -19,14 +19,14 @@ export function Brand({ lang = "de" }: { lang?: Language }) {
 }
 export function Header({ lang = "de" }: { lang?: Language }) {
   const t = copy[lang];
-  return <><div className="preview-bar">{t.preview}</div><header className={"site-header "+styles.header}><div className="container header-inner"><Brand lang={lang}/>
+  return <header className={"site-header "+styles.header}><div className="container header-inner"><Brand lang={lang}/>
     <nav className="desktop-nav" aria-label={t.navigation}>{navRoutes.map((r,i)=><Link key={r[lang]} href={r[lang]}>{t.nav[i]}</Link>)}</nav>
     <Link className={styles.mobileHome} href={routes.home[lang]}>{t.nav[0]}</Link>
     <div className={styles.desktopSocial}><SocialLinks lang={lang}/></div>
     <Link className="button button-small header-cta" href={routes.contact[lang]}>{t.consultation}<Icon name="arrow"/></Link>
     <LanguageSwitch lang={lang}/>
     <details className="mobile-nav"><summary aria-label={t.open}><Icon name="menu"/> {t.menu}</summary><nav aria-label={t.mobile}>{navRoutes.map((r,i)=><Link key={r[lang]} href={r[lang]}>{t.nav[i]}</Link>)}<Link href={routes.contact[lang]+"#support"}>{t.existing}</Link><div className={styles.mobileSocial}><SocialLinks lang={lang} labels/></div></nav></details>
-  </div></header></>;
+  </div></header>;
 }
 export function Footer({ lang = "de" }: { lang?: Language }) {
   const t=copy[lang], items=lang==="de"?services:servicesEn;
@@ -59,7 +59,7 @@ export function Footer({ lang = "de" }: { lang?: Language }) {
       </details>
     </div>
     <div className={styles.footerBottom}>
-      <span>© {new Date().getFullYear()} {company.name} · {t.draft}</span>
+      <span>© {new Date().getFullYear()} {company.name}</span>
       <nav aria-label={de?"Rechtliche Informationen":"Legal information"}><Link href={routes.legal[lang]}>{t.legal}</Link><Link href={routes.privacy[lang]}>{t.privacy}</Link></nav>
     </div>
   </div></footer>;
