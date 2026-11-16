@@ -24,6 +24,11 @@ export default function Page() {
       <h2>Person responsible for editorial content under section 18(2) MStV</h2>
       <p>{company.owner}<br/>{company.street}<br/>{company.city}, Germany</p>
       <LocationMap lang="en"/>
+      <h2>Further legal information</h2>
+      <h3>Liability for content</h3><p>We prepare information carefully but cannot guarantee its accuracy, completeness or currency. Statutory responsibilities apply to our own content. There is no general obligation to monitor third-party information transmitted or stored; statutory removal and blocking obligations remain. We promptly remove unlawful content when made aware of specific violations.</p>
+      <h3>Liability for links</h3><p>External website operators are responsible for their content. We check for apparent violations when linking. Continuous review without specific indications is unreasonable; we remove affected links once unlawful content becomes known.</p>
+      <h3>Copyright</h3><p>Our content is protected by German copyright law. Uses beyond statutory permissions require written permission. Copies and downloads are limited to private, non-commercial use. We respect third-party rights and identify third-party material. Please report infringements; we remove affected content when notified.</p>
+      <h3>Unsolicited advertising</h3><p>We object to unsolicited advertising sent to published contact details and reserve legal remedies.</p>
     </div></section>
   </>;
 }

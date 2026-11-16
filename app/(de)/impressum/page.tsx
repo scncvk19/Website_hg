@@ -24,6 +24,11 @@ export default function Page() {
       <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
       <p>{company.owner}<br/>{company.street}<br/>{company.city}</p>
       <LocationMap lang="de"/>
+      <h2>Weitere rechtliche Hinweise</h2>
+      <h3>Haftung für Inhalte</h3><p>Wir erstellen unsere Informationen sorgfältig, können aber ihre Richtigkeit, Vollständigkeit und Aktualität nicht garantieren. Für eigene Inhalte gelten die gesetzlichen Verantwortlichkeiten. Es besteht keine allgemeine Pflicht, fremde übermittelte oder gespeicherte Informationen zu überwachen. Gesetzliche Lösch- und Sperrpflichten bleiben bestehen; bei konkreten Hinweisen auf Rechtsverletzungen entfernen wir betroffene Inhalte unverzüglich.</p>
+      <h3>Haftung für Links</h3><p>Für externe Seiten sind deren Betreiber verantwortlich. Bei der Verlinkung prüfen wir erkennbare Rechtsverstöße. Eine laufende Kontrolle ohne konkreten Anlass ist nicht zumutbar; nach Kenntnis rechtswidriger Inhalte entfernen wir betroffene Links.</p>
+      <h3>Urheberrecht</h3><p>Eigene Inhalte und Werke sind nach deutschem Urheberrecht geschützt. Nutzungen außerhalb gesetzlicher Erlaubnisse erfordern die schriftliche Zustimmung der Rechteinhaber. Kopien und Downloads sind nur privat und nicht kommerziell gestattet. Rechte Dritter werden berücksichtigt und fremde Inhalte gekennzeichnet. Bitte melden Sie Rechtsverletzungen; wir entfernen betroffene Inhalte nach Kenntnis.</p>
+      <h3>Unverlangte Werbung</h3><p>Wir widersprechen unverlangter Werbung an veröffentlichte Kontaktdaten und behalten rechtliche Schritte vor.</p>
     </div></section>
   </>;
 }

@@ -20,7 +20,10 @@ Stand: 16.11.2026
 | Verbraucherstreitbeilegung nach VSBG klären | ⬜ |
 | Datenschutzkontakt Michael Gray (Inhaber), m.gray@hg-systeme.de, DE/EN zentral ergänzt | ✅ |
 | Benennungspflicht nach Art. 37 DSGVO und § 38 BDSG prüfen; ggf. unabhängigen Datenschutzbeauftragten benennen und Kontakt veröffentlichen | ⬜ |
-| Datenschutz DE/EN vervollständigen: Hosting, Rechtsgrundlagen, Empfänger, Fristen, Rechte und Aufsicht; tatsächliches Formular und kein Tracking bereits bestätigt | ⬜ |
+| Datenschutzerklärung DE/EN auf tatsächlichen Betrieb umgestellt; interne Entwurfshinweise entfernt, Betroffenenrechte/Aufsicht ergänzt, alte Haftungshinweise ins Impressum verschoben | ✅ |
+| Datenschutztexte und tatsächliche Verarbeitungsregeln intern prüfen/freigeben; DPA, Drittlandgarantien, Firmenpostfach-Löschpraxis, Web3Forms-Frist und hCaptcha-Endgerätezugriffe bestätigen | 🔄 |
+| Web3Forms-Aufbewahrung auf sieben Tage verkürzen, sofern möglich und freigegeben; tatsächliche Einstellung in Datenschutzerklärung nachtragen | ⬜ |
+| Aktuelle Rechtstexte ins Firmen-Repository übernehmen und Veröffentlichung prüfen | ⬜ |
 | Vercel Hobby für geschäftlichen Betrieb durch zulässigen Tarif/Hosting ersetzen; Auftragsverarbeitung klären | ⬜ |
 | Web3Forms-Empfänger info@hg-systeme.de bestätigt; serverseitige hCaptcha-Prüfung, Auftragsverarbeitung und Löschfristen bestätigen; kein erneuter allgemeiner Funktionstest nötig | ⬜ |
 | Öffentliche Entwicklungsvermerke und unbestätigte Partner-/Qualifikationsangaben bereinigen | ⬜ |
