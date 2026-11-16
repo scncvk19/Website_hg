@@ -4,12 +4,12 @@ Ich pflege die Firmenpräsenz unter https://www.hg-systeme.de mit Next.js, React
 
 ## Produktiver Betrieb
 
-- Maßgebliches Firmen-Repository: https://github.com/Hg-Systeme428/Website (main). Entwicklungsstand: https://github.com/scncvk19/Website_hg. Beide waren am 16.11.2026 nach dem Fast-forward auf a7dc4ad synchron.
+- Maßgebliches Firmen-Repository: https://github.com/Hg-Systeme428/Website (main). Entwicklungsstand: https://github.com/scncvk19/Website_hg. Die Übertragung des SEO-Commits 8f92892 ins Firmen-Repository wurde am 16.11.2026 vom Nutzer bestätigt.
 - Hosting: Vercel, laut Nutzer aktuell Hobby. Die geschäftliche Verwendung ist im Hobby-Tarif nicht zulässig; geeigneten Tarif oder kommerziell zulässiges Hosting kläre ich mit der Geschäftsleitung.
 - Die Domain ist verbunden. Bestehende DNS-/Mail-Einträge bleiben unverändert.
-- Kontaktformular über Web3Forms und hCaptcha: erfolgreicher Funktionstest durch den Nutzer bestätigt. Die technische Umsetzung bleibt unverändert. Empfänger, Auftragsverarbeitung, Datenübermittlungen und Löschfristen separat bestätigen.
-- Keine zusätzlichen Tracking- oder Marketingdienste. Instagram-API bleibt zurückgestellt; Profilverlinkungen genügen.
-- Impressum und Datenschutz übernehmen Inhalte der alten Website, enthalten aber noch offene Pflichtangaben und Prüfvermerke. Ich vervollständige sie anhand tatsächlicher Unternehmens- und Verarbeitungsdaten.
+- Kontaktformular über Web3Forms und hCaptcha: erfolgreicher Funktionstest durch den Nutzer bestätigt. Die technische Umsetzung bleibt unverändert. Empfänger info@hg-systeme.de ist bestätigt; Auftragsverarbeitung, Datenübermittlungen und Löschfristen separat bestätigen.
+- Kein Tracking laut Nutzer; keine zusätzlichen Marketingdienste. Instagram-API bleibt zurückgestellt; Profilverlinkungen genügen.
+- Impressum DE/EN: Firmenname HG-Systeme e.K., Amtsgericht Mannheim HRA 332816 und USt-ID DE164684637 bestätigt und zentral ergänzt. Ich spreche Geschäfts- und Privatkunden an; keine erfundenen Öffnungszeiten oder Gründungsjahre. Ein Datenschutzbeauftragter ist vorhanden; dessen veröffentlichbare Kontaktangaben fehlen noch. Die Datenschutztexte sind noch nicht abschließend vervollständigt. W-IdNr. bleibt zu klären.
 
 ## Lokale Entwicklung und Pflege
 
@@ -46,7 +46,7 @@ Die lokale Testumgebung wurde erfolgreich bereitgestellt. Die IP ist die bestät
 
 | Inhalt | Datei / Verzeichnis |
 |---|---|
-| Firmenname, Anschrift, Telefon, E-Mail, LinkedIn | lib/content.ts → company |
+| Firmenname, Inhaber, Register, USt-ID, Anschrift, Telefon, E-Mail, LinkedIn | lib/content.ts → company |
 | Deutsche Leistungen, FAQ | lib/content.ts |
 | Englische Leistungen, FAQ | lib/content-en.ts |
 | Startseite DE/EN | app/(de)/page.tsx, app/(en)/en/page.tsx |
@@ -82,4 +82,4 @@ Die Sitemap enthält die öffentlichen DE-/EN-Routen mit Sprachalternativen, abe
 
 ## Status und Wartung
 
-Ich halte die Website als schlanken Firmenauftritt ohne zusätzliche Plattformen. Der SEO-Quellcode ist zur Übernahme vorbereitet; Live-Deployment und Suchmaschinenaufnahme werden separat bestätigt. Die laufenden Aufgaben stehen in TODO.md, die noch zu bestätigenden Angaben in OFFENE-FRAGEN.md.
+Ich halte die Website als schlanken Firmenauftritt ohne zusätzliche Plattformen. Der SEO-Quellcode wurde laut Nutzer ins Firmen-Repository übertragen; Live-Deployment und Suchmaschinenaufnahme werden separat bestätigt. Die laufenden Aufgaben stehen in TODO.md, die noch zu bestätigenden Angaben in OFFENE-FRAGEN.md.

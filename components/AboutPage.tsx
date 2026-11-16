@@ -8,7 +8,7 @@ import { company } from "@/lib/content";
 const copy = {
   de: {
     title: "Technik verstehen. Menschen unterstützen.",
-    intro: "Wir stehen für persönliche IT-Beratung und praktische Lösungen für Unternehmen aus der Region.",
+    intro: "Wir stehen für persönliche IT-Beratung und praktische Lösungen für Unternehmen und Privatkunden aus der Region.",
     philosophy: "Unsere Philosophie",
     motto: "Mit uns immer sicher vernetzt!",
     philosophyLead: "Seit über 30 Jahren begleiten wir Unternehmen aus Medizin, Automobil und Industrie mit IT-Dienstleistungen und individuellen Unternehmenslösungen. Im Rhein-Neckar-Raum und darüber hinaus sind wir Ansprechpartner für die IT mittelständischer Unternehmen.",
@@ -44,7 +44,7 @@ const copy = {
   },
   en: {
     title: "Understanding technology. Supporting people.",
-    intro: "We provide personal IT advice and practical solutions for businesses in the region.",
+    intro: "We provide personal IT advice and practical solutions for businesses and private customers in the region.",
     philosophy: "Our philosophy",
     motto: "Stay securely connected with us!",
     philosophyLead: "For over 30 years, we have supported healthcare, automotive and industrial businesses with IT services and tailored business solutions. We provide IT expertise to small and medium-sized businesses in the Rhine-Neckar region and beyond.",

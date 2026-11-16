@@ -6,7 +6,7 @@ import "@/app/globals.css";
 
 export const metadata: Metadata = {
   title: { default: "HG-Systeme | IT-Betreuung & IT-Sicherheit in Eberbach", template: "%s | HG-Systeme" },
-  description: "Persönliche IT-Dienstleistungen für Geschäftskunden im Raum Eberbach und Rhein-Neckar: Support, IT-Sicherheit, Backup, Firewall und Schulungen.",
+  description: "Persönliche IT-Dienstleistungen für Geschäfts- und Privatkunden im Raum Eberbach und Rhein-Neckar: Support, IT-Sicherheit, Backup, Firewall und Schulungen.",
   metadataBase: new URL(siteUrl),
   robots: { index: publicIndexing, follow: publicIndexing },
   icons: { icon: { url: "/images/branding/hg-systeme-favicon.png", type: "image/png", sizes: "64x64" } }

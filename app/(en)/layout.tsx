@@ -5,7 +5,7 @@ import { Header, Footer } from "@/components/Site";
 import "@/app/globals.css";
 export const metadata: Metadata = {
   title: { default: "HG-Systeme | IT support & security in Eberbach", template: "%s | HG-Systeme" },
-  description: "Personal IT services for businesses in Eberbach and the Rhine-Neckar region.",
+  description: "Personal IT services for businesses and private customers in Eberbach and the Rhine-Neckar region.",
   metadataBase: new URL(siteUrl),
   robots: { index: publicIndexing, follow: publicIndexing }, icons: { icon: { url: "/images/branding/hg-systeme-favicon.png", type: "image/png", sizes: "64x64" } }
 };

@@ -7,16 +7,19 @@ Stand: 16.11.2026
 | Website DE/EN, acht Leistungen, Unternehmensseite, Ratgeber, Beiträge, Kontakt, Logo und Navigation umgesetzt | ✅ |
 | Interne Debian-Testumgebung bereitgestellt | ✅ |
 | Firmen-Domain verbunden, Website öffentlich erreichbar | ✅ |
-| Firmen-Repository auf a7dc4ad synchronisiert | ✅ |
+| Firmen-Repository auf a7dc4ad synchronisiert; SEO-Commit 8f92892 laut Nutzer übertragen | ✅ |
 | Entwurfsleiste und Footer-Hinweis im Quellcode entfernt | ✅ |
 | Kontaktformular aktiviert und erfolgreicher Funktionstest durch Nutzer bestätigt | ✅ |
 | SEO: produktionsabhängige Indexierung, robots.txt und zweisprachige Sitemap im Quellcode umgesetzt; Dankeseiten noindex | ✅ |
-| SEO-Änderungen ins Firmen-Repository übernehmen; Vercel-Deployment, robots.txt, sitemap.xml und Header prüfen | 🔄 |
+| Vercel-Deployment der SEO-Änderungen, robots.txt, sitemap.xml und Header prüfen | 🔄 |
 | Google Search Console einrichten, Sitemap einreichen und Startseite prüfen | ⬜ |
-| Impressum DE/EN: Registergericht, Registernummer, vorhandene USt-ID/W-IdNr. bestätigen; interne Hinweise entfernen | ⬜ |
-| Datenschutz DE/EN an tatsächliches Hosting, Kontaktformular, Empfänger, Rechtsgrundlagen, Fristen, Rechte und Aufsicht anpassen | ⬜ |
+| Impressum DE/EN: Firmenname, Amtsgericht Mannheim HRA 332816 und USt-ID DE164684637 bestätigt und ergänzt; internen Prüfhinweis entfernt | ✅ |
+| Geschäfts- und Privatkunden in Startseite, Kontakt, Über uns und Metadaten berücksichtigt | ✅ |
+| Unternehmensangaben und aktualisierte Texte ins Firmen-Repository übernehmen und Live-Stand prüfen | 🔄 |
+| W-IdNr. (falls zugeteilt) und Verbraucherstreitbeilegung nach VSBG klären | ⬜ |
+| Datenschutz DE/EN vervollständigen: Kontakt des vorhandenen Datenschutzbeauftragten, Hosting, Rechtsgrundlagen, Empfänger, Fristen, Rechte und Aufsicht; tatsächliches Formular und kein Tracking bereits bestätigt | ⬜ |
 | Vercel Hobby für geschäftlichen Betrieb durch zulässigen Tarif/Hosting ersetzen; Auftragsverarbeitung klären | ⬜ |
-| Web3Forms-Empfänger, serverseitige hCaptcha-Prüfung, Auftragsverarbeitung und Löschfristen bestätigen; kein erneuter allgemeiner Funktionstest nötig | ⬜ |
+| Web3Forms-Empfänger info@hg-systeme.de bestätigt; serverseitige hCaptcha-Prüfung, Auftragsverarbeitung und Löschfristen bestätigen; kein erneuter allgemeiner Funktionstest nötig | ⬜ |
 | Öffentliche Entwicklungsvermerke und unbestätigte Partner-/Qualifikationsangaben bereinigen | ⬜ |
 | Alte STRATO-URLs / Weiterleitungen und Sicherung, DNS-Rückweg inklusive Mail prüfen | ⬜ |
 | Einmalige mobile/DE-EN-/Linkprüfung, Tastatur und Kontrast | ⬜ |

@@ -1,6 +1,10 @@
-// Redaktionelle Inhalte zentral pflegen. Noch nicht zur Veröffentlichung freigegeben.
+// Redaktionelle Inhalte und bestätigte Unternehmensangaben zentral pflegen.
 export const company = {
   name: "HG-Systeme e.K.",
+  owner: "Michael Gray",
+  registerCourt: "Amtsgericht Mannheim",
+  registerNumber: "HRA 332816",
+  vatId: "DE164684637",
   city: "69412 Eberbach",
   street: "Markgrafenstraße 3",
   phone: "06271 77 170",
