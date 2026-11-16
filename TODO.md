@@ -27,9 +27,11 @@ Stand: 16.11.2026
 | Unbestätigte aktuelle Zertifizierungen und Partnerstufen ausgeblendet; historische Nachweise und Technologieübersicht erhalten | ✅ |
 | Aktuelle Zertifikate, Partnerstatus und Markenfreigaben bei späterer Inhaltspflege bestätigen; erst danach wieder anzeigen | ⏸️ |
 | Weiterleitungen alter STRATO-URLs laut Nutzer eingerichtet | ✅ |
-| Alte STRATO-Sicherung und DNS-/Mail-Rückweg bei Betriebsübergabe dokumentieren (keine DNS-Änderungen erforderlich) | ⬜ |
-| Einmalige mobile/DE-EN-/Linkprüfung, Tastatur und Kontrast | ⬜ |
-| package-lock.json übernehmen; Abhängigkeiten und Sicherheitsheader planmäßig pflegen | ⬜ |
+| Alte STRATO-Sicherung und DNS-/Mail-Rückweg separat bei Betriebsübergabe dokumentieren (keine DNS-Änderungen erforderlich) | ⏸️ |
+| Technische Prüfung: 36 Seiten, interne Links, Sprachwechsel, Robots/Sitemap, Sicherheitsheader und Browser-Overflow/Mobilnavigation bei fünf Breiten im CI-Lauf 43859016499 bestanden | ✅ |
+| Tastatur-Fokusmarkierungen und Textumbruch verbessert; vollständige manuelle Barrierefreiheits-/Kontrastprüfung nicht durchgeführt | ✅ |
+| package-lock.json aus erfolgreichem CI-Build übernommen; Docker und CI auf npm ci umgestellt; npm audit der produktiven Abhängigkeiten ohne bekannte Schwachstellen (Prüfzeitpunkt) | ✅ |
+| Letzten Commit mit Lockdatei und FAQ-Korrektur per CI prüfen; Firmen-Repository fast-forward abgleichen und Live-Deployment kontrollieren | 🔄 |
 | Google-Unternehmensprofil aktualisieren; vorhandene Firmenprofile mit Website verlinken | ⬜ |
 | Interne Test-VM: DHCP-Freigabe, Neustart und lokale Windows-Stash-Dateien bei Bedarf prüfen | ⏸️ |
 | Instagram-Live-Feed, zusätzliche Tracking- und Marketingdienste | ⏸️ |

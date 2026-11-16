@@ -96,7 +96,7 @@ export const services: Service[] = [
 ];
 
 export const faqs = [
-  ["Für welche Unternehmen sind Sie da?", "Wir richten uns an Geschäftskunden aus Eberbach, Sinsheim, Heidelberg und dem erreichbaren Umland. Die passende Betreuung richtet sich nach Ihrer IT und unserem gemeinsam vereinbarten Leistungsumfang, nicht nach einer festen Unternehmensgröße."],
+  ["Welche Kunden betreuen Sie?", "Wir unterstützen Geschäfts- und Privatkunden aus Eberbach, Sinsheim, Heidelberg und dem erreichbaren Umland. Die passende Betreuung richtet sich nach Ihrer IT und dem gemeinsam vereinbarten Leistungsumfang."],
   ["Was beinhaltet das kostenlose Erstgespräch?", "Wir besprechen Ihre Situation, wichtige Fragen und sinnvolle nächste Schritte. Es handelt sich um eine unverbindliche Orientierung, nicht um einen technischen Sicherheitscheck."],
   ["Kann ich einzelne Leistungen buchen?", "Ja. Sicherheitscheck, Backup, Archivierung, Firewall, Schulung oder Automatisierung können als abgegrenzte Leistungen vereinbart werden. Eine laufende Betreuung ist optional."],
   ["Bieten Sie Remote- und Vor-Ort-Support an?", "Ja, abhängig vom Anliegen und der Vereinbarung. Remote-Support und Vor-Ort-Einsätze werden unterschiedlich abgerechnet. Die Konditionen klären wir vor der Beauftragung."],

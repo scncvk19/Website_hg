@@ -33,13 +33,7 @@ jobs:
         with:
           node-version: '22'
       - name: Install dependencies
-        run: |
-          if [ ! -f package-lock.json ]; then
-            npm install --package-lock-only --include=dev --ignore-scripts --no-audit --no-fund
-            # One-time lockfile handoff. Only public npm dependency metadata, no secrets.
-            base64 -w2048 package-lock.json | sed 's/^/HG_LOCKFILE_CHUNK:/'
-          fi
-          npm ci --include=dev --no-audit --no-fund
+        run: npm ci --include=dev --no-audit --no-fund
       - name: Check production dependencies
         run: npm audit --omit=dev --audit-level=high
       - name: Production build

@@ -16,13 +16,13 @@ Ich pflege die Firmenpräsenz unter https://www.hg-systeme.de mit Next.js, React
 Voraussetzung: Node.js 22 oder neuer und npm. Im Firmen-Checkout:
 
 ```bash
-npm install
-npm run typecheck
+npm ci
 npm run build
+npm run typecheck
 npm run dev
 ```
 
-Lokal unter http://localhost:3000. Nach dem Erstellen und Einchecken einer Lockdatei verwende ich npm ci. Der GitHub-Workflow Website checks prüft TypeScript und den Produktionsbuild. Ich ändere beide Sprachfassungen und prüfe die betroffenen Seiten vor dem Push. Keine Zugangsdaten oder Kundendaten einchecken.
+Lokal unter http://localhost:3000. Ich verwende die eingecheckte package-lock.json und npm ci für reproduzierbare Installationen. GitHub Actions prüft die produktiven Abhängigkeiten per npm audit, Produktionsbuild, TypeScript, lokale Herstellerlogos, alle 36 Seiten einschließlich Dankeseiten, interne Links, Robots-Metadaten, Sitemap, HTTP-Sicherheitsheader und das Layout in Chrome bei 320, 390, 844, 1280 und 1440 px. Die Browserprüfung verwendet ein temporäres Testwerkzeug außerhalb der Anwendungsabhängigkeiten; keine echten Formularanfragen oder externen Dienste im Test. Ich ändere beide Sprachfassungen und prüfe die betroffenen Seiten. Keine Zugangsdaten oder Kundendaten einchecken.
 
 ### Docker-Testumgebung
 
@@ -86,4 +86,4 @@ Die Sitemap enthält die öffentlichen DE-/EN-Routen mit Sprachalternativen, abe
 
 ## Status und Wartung
 
-Ich halte die Website als schlanken Firmenauftritt ohne zusätzliche Plattformen. Der SEO-Quellcode wurde laut Nutzer ins Firmen-Repository übertragen; Live-Deployment und Suchmaschinenaufnahme werden separat bestätigt. Die laufenden Aufgaben stehen in TODO.md, die noch zu bestätigenden Angaben in OFFENE-FRAGEN.md.
+Ich halte die Website als schlanken Firmenauftritt ohne zusätzliche Plattformen. Die technische Abschlussprüfung (GitHub Actions [43859016499](https://github.com/scncvk19/Website_hg/actions/runs/43859016499), Commit 72882cd) war erfolgreich: Build, TypeScript, npm audit (keine bekannten Schwachstellen in produktiven Abhängigkeiten zum Prüfzeitpunkt), Logo-, Link- und Browserprüfung bestanden. Ich habe die dort erzeugte Lockdatei übernommen, Docker und CI auf npm ci umgestellt, die Kunden-FAQ DE/EN an die bestätigte Zielgruppe angepasst und die Sicherheitsheader um eine restriktive Permissions-Policy für Kamera, Mikrofon und Zahlungen ergänzt. Globale Tastatur-Fokusmarkierungen und Umbruch langer Überschriften sind verbessert. Die abschließende CI-Prüfung des neuen Commits und Live-Deployment erfolgen nach Übernahme. Der SEO-Quellcode wurde laut Nutzer ins Firmen-Repository übertragen; Live-Deployment und Suchmaschinenaufnahme werden separat bestätigt. Die laufenden Aufgaben stehen in TODO.md, die noch zu bestätigenden Angaben in OFFENE-FRAGEN.md.

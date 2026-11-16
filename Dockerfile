@@ -5,9 +5,8 @@ WORKDIR /app
 RUN chown node:node /app
 
 USER node
-COPY --chown=node:node package*.json ./
-# Sobald eine Lockdatei vorhanden ist, reproduzierbar mit npm ci installieren.
-RUN if [ -f package-lock.json ]; then npm ci --include=dev --no-fund --no-audit; else npm install --include=dev --no-fund --no-audit; fi
+COPY --chown=node:node package.json package-lock.json ./
+RUN npm ci --include=dev --no-fund --no-audit
 
 COPY --chown=node:node . .
 RUN npm run build

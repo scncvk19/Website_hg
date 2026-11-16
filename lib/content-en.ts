@@ -52,7 +52,7 @@ export const servicesEn: Service[] = [
 ];
 
 export const faqsEn = [
-  ["Which businesses do you support?", "We serve business customers in Eberbach, Sinsheim, Heidelberg and the surrounding area. Support depends on your IT and the agreed scope, not on a fixed company size."],
+  ["Which customers do you support?", "We support businesses and private customers in Eberbach, Sinsheim, Heidelberg and the surrounding area. Support depends on your IT and the agreed scope."],
   ["What is included in the free initial consultation?", "We discuss your situation, key questions and sensible next steps. This is an initial consultation without obligation, not a technical security assessment."],
   ["Can I book individual services?", "Yes. Security assessments, backups, archiving, firewall services, training and automation can be agreed as separate services. Ongoing support is optional."],
   ["Do you provide remote and on-site support?", "Yes, depending on the request and agreement. Remote and on-site support have different rates. We clarify the terms before you place an order."],
